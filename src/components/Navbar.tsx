@@ -1,0 +1,114 @@
+import { useState, useEffect } from "react";
+import { Shield, Menu, X, ArrowRight, Globe } from "lucide-react";
+import Logo from "./Logo";
+
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const menuItems = [
+    { name: "About", href: "#about" },
+    { name: "Problems", href: "#problems" },
+    { name: "Services", href: "#services" },
+    { name: "SEO vs AEO", href: "#seo-aeo" },
+    { name: "Process", href: "#process" },
+    { name: "UAE Spotlight", href: "#uae-spotlight" }
+  ];
+
+  return (
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled 
+          ? "py-4 bg-ids-black/90 backdrop-blur-md border-b border-ids-purple/20 shadow-[0_10px_30px_rgba(0,0,0,0.5)]" 
+          : "py-6 bg-transparent"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between">
+          
+          {/* Logo */}
+          <a href="#" className="flex items-center group">
+            <Logo height={38} className="w-auto transform transition-transform duration-300 group-hover:scale-[1.02]" />
+          </a>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-8">
+            {menuItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="font-sans text-[13px] font-medium text-slate-300 hover:text-ids-magenta transition-colors tracking-wide relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-ids-magenta after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left"
+              >
+                {item.name}
+              </a>
+            ))}
+          </nav>
+
+          {/* Desktop Call to Action */}
+          <div className="hidden md:flex items-center gap-4">
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800/40 border border-slate-700/50 text-[11px] font-mono font-medium text-slate-300">
+              <Globe className="w-3.5 h-3.5 text-ids-magenta animate-pulse" />
+              <span>CA | DXB</span>
+            </div>
+            <a
+              href="#contact"
+              className="relative inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-ids-purple to-ids-violet hover:from-ids-magenta hover:to-ids-purple text-sm font-semibold text-white shadow-[0_4px_15px_rgba(123,47,190,0.3)] hover:shadow-[0_4px_25px_rgba(192,38,211,0.5)] transition-all duration-300 hover:-translate-y-0.5 group active:scale-95"
+            >
+              <span>Free Strategy Call</span>
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </a>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 rounded-xl bg-slate-800/50 border border-slate-700/50 text-slate-300 hover:text-white transition-colors"
+          >
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Drawer (with native CSS height transitions) */}
+      <div 
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          mobileMenuOpen ? "opacity-100 max-h-[400px] border-b border-slate-800 bg-ids-black" : "opacity-0 max-h-0 pointer-events-none"
+        }`}
+      >
+        <div className="px-4 pt-2 pb-6 space-y-4 shadow-[inset_0_4px_20px_rgba(0,0,0,0.5)]">
+          {menuItems.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-slate-300 hover:text-ids-magenta py-2.5 px-4 rounded-xl hover:bg-slate-800/30 font-medium transition-all"
+            >
+              {item.name}
+            </a>
+          ))}
+          <div className="pt-4 border-t border-slate-800 flex flex-col gap-3 px-4">
+            <div className="flex items-center gap-2 text-slate-400 text-xs font-mono">
+              <Globe className="w-4 h-4 text-ids-magenta" />
+              <span>Dual Operations: California & Dubai</span>
+            </div>
+            <a
+              href="#contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full text-center px-4 py-3 rounded-xl bg-gradient-to-r from-ids-purple to-ids-violet text-sm font-semibold text-white shadow-md active:scale-95 transition-all"
+            >
+              Book Free Strategy Call
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}
