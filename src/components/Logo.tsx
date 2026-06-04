@@ -6,12 +6,20 @@ interface LogoProps {
 }
 
 export default function Logo({ className = "", height = 40 }: LogoProps) {
+  // Convert height to number if possible for exact aspect ratio calculation
+  const numHeight = typeof height === "number" 
+    ? height 
+    : parseInt(height as string, 10) || 40;
+  const numWidth = numHeight * 4.5; // Aspect ratio is 540 / 120 = 4.5
+
   return (
     <svg
       viewBox="0 0 540 120"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={{ height }}
+      width={numWidth}
+      height={numHeight}
+      style={{ height: numHeight, width: numWidth }}
       className={`select-none ${className}`}
     >
       <defs>

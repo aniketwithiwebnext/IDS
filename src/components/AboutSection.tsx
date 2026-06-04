@@ -16,37 +16,37 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-24 bg-[#030712] relative overflow-hidden">
-      {/* Decorative Blur elements resembling original Frosted design layout */}
-      <div className="absolute top-1/2 left-[5%] w-96 h-96 bg-blue-600/10 rounded-full blur-[110px] pointer-events-none" />
-      <div className="absolute bottom-1/4 right-[5%] w-[35rem] h-[35rem] bg-indigo-600/5 rounded-full blur-[130px] pointer-events-none" />
+    <section id="about" className="py-24 sm:py-32 bg-white relative overflow-hidden border-b border-slate-150">
+      {/* Soft elegant lights for light mode background depth */}
+      <div className="absolute top-1/2 left-[5%] w-96 h-96 bg-ids-purple/5 rounded-full blur-[110px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-[5%] w-[35rem] h-[35rem] bg-ids-violet/5 rounded-full blur-[130px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Main Info */}
           <div className="lg:col-span-6 flex flex-col space-y-6">
-            <span className="inline-flex self-start px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-[10px] font-bold uppercase tracking-wider rounded-full">
+            <span className="inline-flex self-start px-4 py-1.5 bg-ids-purple/10 border border-ids-purple/30 text-ids-purple text-[10px] font-bold uppercase tracking-wider rounded-full font-mono">
               The IDS Difference
             </span>
-            <h2 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
+            <h2 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-slate-900 tracking-tight leading-tight">
               We Don't Just Build. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-ids-purple via-ids-magenta to-ids-violet font-black">
                 We Secure. We Grow.
               </span> <br />
               We Make You The Answer.
             </h2>
-            <p className="font-sans text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <p className="font-sans text-sm text-slate-700 leading-relaxed font-normal">
               IDS — Impulse Digital Solutions — is a California-based digital powerhouse that integrates IT infrastructure, enterprise-grade cybersecurity, world-class web and app development, AI-driven SEO, cutting-edge AEO, full-service branding, digital marketing, lead generation systems, and comprehensive media monitoring intelligence into one seamless, unified solution.
             </p>
-            <p className="font-sans text-xs sm:text-sm text-slate-400 leading-relaxed">
+            <p className="font-sans text-sm text-slate-600 leading-relaxed font-normal">
               We are backed by a global team with active operations in both the United States and the UAE — giving our clients a rare competitive advantage: Silicon Valley innovation combined with deep international market expertise through our sister company, Impulse Growth Solutions, operating from the heart of Dubai. When you partner with IDS, you don't just get a vendor. You get a growth partner who protects your business as aggressively as it grows it — across two of the world's most dynamic business markets.
             </p>
 
             <div className="pt-4">
               <a
                 href="#contact"
-                className="group relative inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono font-bold text-cyan-400 transition-all duration-300 hover:text-white"
+                className="group relative inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-xs font-mono font-bold text-white transition-all duration-300 shadow-md hover:shadow-lg active:scale-95"
               >
                 <span>Discover Our Full Story</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -54,17 +54,17 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Interactive Dual Continent Cards layout */}
+          {/* Interactive Dual Continent Cards layout: US is clean white card, UAE is premium dark slate card */}
           <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
             
-            {/* USA Card */}
-            <div className="bg-white/5 border border-white/10 backdrop-blur-xl p-6 rounded-2xl flex flex-col justify-between shadow-2xl relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition-all duration-300" />
+            {/* USA Card (Light Theme) */}
+            <div className="bg-slate-50 border border-slate-200 p-6 rounded-2xl flex flex-col justify-between shadow-md relative overflow-hidden group hover:shadow-lg transition-all duration-300">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-ids-purple/5 rounded-full blur-2xl group-hover:bg-ids-purple/10 transition-all duration-300" />
               
               <div>
                 <div className="flex items-center gap-2.5 mb-6">
-                  <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse" />
-                  <h3 className="font-display font-extrabold text-[#06b6d4] uppercase text-xs tracking-wider">USA Operations</h3>
+                  <span className="w-2.5 h-2.5 rounded-full bg-ids-purple animate-pulse" />
+                  <h3 className="font-display font-extrabold text-ids-purple uppercase text-xs tracking-wider">USA Operations</h3>
                 </div>
                 
                 <div className="space-y-4">
@@ -72,12 +72,12 @@ export default function AboutSection() {
                     const PtIcon = pt.icon;
                     return (
                       <div key={i} className="flex gap-3">
-                        <div className="w-7 h-7 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="w-7 h-7 rounded-lg bg-ids-purple/10 text-ids-purple flex items-center justify-center shrink-0 mt-0.5">
                           <PtIcon className="w-3.5 h-3.5" />
                         </div>
                         <div>
-                          <h4 className="font-sans font-semibold text-xs text-white">{pt.label}</h4>
-                          <span className="text-[10px] text-slate-400 font-sans block mt-0.5 leading-snug">{pt.desc}</span>
+                          <h4 className="font-sans font-semibold text-xs text-slate-900">{pt.label}</h4>
+                          <span className="text-[10px] text-slate-500 font-sans block mt-0.5 leading-snug">{pt.desc}</span>
                         </div>
                       </div>
                     );
@@ -85,19 +85,19 @@ export default function AboutSection() {
                 </div>
               </div>
               
-              <div className="pt-6 border-t border-white/5 mt-8 text-[9px] font-mono text-slate-500">
+              <div className="pt-6 border-t border-slate-200 mt-8 text-[9px] font-mono text-slate-400">
                 HO: SACRAMENTO, CALIFORNIA
               </div>
             </div>
 
-            {/* UAE Card */}
-            <div className="bg-indigo-950/20 border border-indigo-500/20 backdrop-blur-xl p-6 rounded-2xl flex flex-col justify-between shadow-2xl relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-indigo-500/10 rounded-full blur-2xl group-hover:bg-indigo-500/25 transition-all duration-300" />
+            {/* UAE Card (Dark Theme for Depth Contrast) */}
+            <div className="bg-slate-950 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-ids-violet/40 transition-all duration-300">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-ids-violet/20 rounded-full blur-2xl group-hover:bg-ids-violet/30 transition-all duration-300" />
               
               <div>
                 <div className="flex items-center gap-2.5 mb-6">
-                  <span className="w-2.5 h-2.5 rounded-full bg-indigo-400 animate-pulse" />
-                  <h3 className="font-display font-extrabold text-indigo-400 uppercase text-xs tracking-wider">UAE Operations</h3>
+                  <span className="w-2.5 h-2.5 rounded-full bg-ids-magenta animate-pulse" />
+                  <h3 className="font-display font-extrabold text-ids-magenta uppercase text-xs tracking-wider">UAE Operations</h3>
                 </div>
                 
                 <div className="space-y-4">
@@ -105,7 +105,7 @@ export default function AboutSection() {
                     const PtIcon = pt.icon;
                     return (
                       <div key={i} className="flex gap-3">
-                        <div className="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-300 flex items-center justify-center shrink-0 mt-0.5">
+                        <div className="w-7 h-7 rounded-lg bg-white/10 text-white flex items-center justify-center shrink-0 mt-0.5">
                           <PtIcon className="w-3.5 h-3.5" />
                         </div>
                         <div>
@@ -118,7 +118,7 @@ export default function AboutSection() {
                 </div>
               </div>
 
-              <div className="pt-6 border-t border-indigo-500/10 mt-8 text-[9px] font-mono text-indigo-400/80">
+              <div className="pt-6 border-t border-white/5 mt-8 text-[9px] font-mono text-ids-magenta/80">
                 MIDDLE EAST OFFICE: MARINA, DUBAI
               </div>
             </div>

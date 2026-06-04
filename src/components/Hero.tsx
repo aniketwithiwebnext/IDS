@@ -63,12 +63,12 @@ export default function Hero() {
             </div>
 
             {/* Headline title banner */}
-            <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-3xl xl:text-5xl text-white tracking-tight leading-[1.1]">
+            <h1 className="font-display font-black text-4xl sm:text-6xl md:text-7xl xl:text-[72px] xl:leading-[1.05] text-white tracking-tight">
               Cybersecurity, Web Development, <br className="hidden sm:inline" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-ids-magenta via-ids-purple to-ids-violet">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-ids-magenta via-ids-purple to-ids-violet font-black">
                 AI-Powered SEO & AEO
               </span> <br className="hidden lg:inline" />
-              — Unstoppable Business Growth.
+              — Unstoppable Growth.
             </h1>
 
             {/* Subheadline description information list */}

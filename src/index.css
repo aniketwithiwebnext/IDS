@@ -33,14 +33,14 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #06b6d4;
+  background: var(--color-ids-purple);
 }
 
 /* Gradients and background glow patterns */
 .grid-pattern {
   background-image: 
-    linear-gradient(rgba(6, 182, 212, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(6, 182, 212, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(123, 47, 190, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(123, 47, 190, 0.04) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
@@ -49,8 +49,8 @@ html {
 }
 
 .glow-card:hover {
-  box-shadow: 0 0 30px rgba(6, 182, 212, 0.15);
-  border-color: rgba(6, 182, 212, 0.4);
+  box-shadow: 0 0 30px rgba(192, 38, 211, 0.15);
+  border-color: rgba(192, 38, 211, 0.4);
   transform: translateY(-2px);
 }
 
