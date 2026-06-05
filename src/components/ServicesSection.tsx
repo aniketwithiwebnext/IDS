@@ -45,10 +45,10 @@ const serviceIconMap: Record<number, React.ComponentType<any>> = {
 };
 
 const pillarColors: Record<string, { bgGlow: string; text: string; label: string; border: string }> = {
-  "pillar-1": { bgGlow: "from-ids-purple/20 to-transparent", text: "text-ids-purple", label: "01 / SECURITY & IT", border: "border-ids-purple/20" },
-  "pillar-2": { bgGlow: "from-ids-violet/20 to-transparent", text: "text-ids-violet", label: "02 / SOLUTIONS DEV", border: "border-ids-violet/20" },
-  "pillar-3": { bgGlow: "from-ids-magenta/20 to-transparent", text: "text-ids-magenta", label: "03 / ORGANIC VISIBILITY", border: "border-ids-magenta/20" },
-  "pillar-4": { bgGlow: "from-[#4F46E5]/20 to-transparent", text: "text-ids-violet", label: "04 / MID-EAST EXPANSION", border: "border-ids-violet/15" }
+  "pillar-3": { bgGlow: "from-ids-magenta/20 to-transparent", text: "text-ids-magenta", label: "01 / ORGANIC VISIBILITY & GROWTH", border: "border-ids-magenta/20" },
+  "pillar-2": { bgGlow: "from-ids-violet/20 to-transparent", text: "text-ids-violet", label: "02 / CONVERSIONS & WEB DEV", border: "border-ids-violet/20" },
+  "pillar-4": { bgGlow: "from-[#4F46E5]/20 to-transparent", text: "text-ids-violet", label: "03 / MID-EAST EXPANSION HUB", border: "border-ids-violet/15" },
+  "pillar-1": { bgGlow: "from-ids-purple/20 to-transparent", text: "text-ids-purple", label: "04 / ENTERPRISE-GRADE SAFETY & IT", border: "border-ids-purple/20" }
 };
 
 export default function ServicesSection() {

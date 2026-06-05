@@ -9,6 +9,7 @@ import TrustBar from "./components/TrustBar";
 import ProblemSection from "./components/ProblemSection";
 import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
+import TechLabShowcase from "./components/TechLabShowcase";
 import SeoAeoSection from "./components/SeoAeoSection";
 import HowItWorks from "./components/HowItWorks";
 import WhyIds from "./components/WhyIds";
@@ -34,6 +35,7 @@ export default function App() {
         <ProblemSection />
         <AboutSection />
         <ServicesSection />
+        <TechLabShowcase />
         <SeoAeoSection />
         <HowItWorks />
         <WhyIds />

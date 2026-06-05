@@ -1,8 +1,33 @@
 import { useState, useEffect } from "react";
-import { ArrowRight, Terminal, Shield, Network, Zap, Cpu } from "lucide-react";
+import { ArrowRight, Terminal, Shield, Network, Zap, Cpu, Play, Pause, Tv, Image as ImageIcon } from "lucide-react";
 
 export default function Hero() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [mediaTab, setMediaTab] = useState<"image" | "video">("image");
+  const [feedLogs, setFeedLogs] = useState<string[]>([
+    "SECURE HANDSHAKE SUCCESSFUL",
+    "NODE LISTENING ON PORT 3000",
+    "AEO ENGINE: COMPILING ENTRIES"
+  ]);
+
+  useEffect(() => {
+    // Generate simulated security logs for immersion
+    const interval = setInterval(() => {
+      const msgs = [
+        `SCANNING REPUTATION BLUEPRINTS [OK]`,
+        `COMPILING SEO ENTRIES FOR GOOGLE 2026`,
+        `CYBER SHIELD ACTIVE ON DUBAI EXPANSION`,
+        `AEO QUERY ROUTE SECURED`,
+        `MEDIA SENTIMENT ANALYSIS UPDATED`
+      ];
+      setFeedLogs((prev) => {
+        const next = [...prev, msgs[Math.floor(Math.random() * msgs.length)]];
+        if (next.length > 5) next.shift();
+        return next;
+      });
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -64,16 +89,16 @@ export default function Hero() {
 
             {/* Headline title banner */}
             <h1 className="font-display font-black text-4xl sm:text-6xl md:text-7xl xl:text-[72px] xl:leading-[1.05] text-white tracking-tight">
-              Cybersecurity, Web Development, <br className="hidden sm:inline" />
+              AI-Powered SEO, AEO & Web Dev, <br className="hidden sm:inline" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-ids-magenta via-ids-purple to-ids-violet font-black">
-                AI-Powered SEO & AEO
+                Unstoppable Digital Growth
               </span> <br className="hidden lg:inline" />
-              — Unstoppable Growth.
+              — Shielded & Secured.
             </h1>
 
             {/* Subheadline description information list */}
             <p className="font-sans text-[15px] sm:text-[16px] text-slate-300 leading-relaxed max-w-2xl">
-              IDS is California's only all-in-one digital partner that builds your brand, secures your business, generates qualified leads, monitors your media presence, grows your revenue, and makes you the answer AI chooses — simultaneously. No more juggling multiple vendors. One team. Total control. Two continents.
+              IDS is California's only all-in-one digital partner that drives your revenue, generates qualified leads, builds your brand, makes you the answer AI engines recommend, and dynamically secures your entire IT infrastructure — simultaneously. No more juggling multiple vendors. One team. Total control. Two continents.
             </p>
 
             {/* Action buttons trigger anchors */}
@@ -101,60 +126,116 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Graphic section featuring mouse tilt parameters */}
+          {/* Graphic section featuring mouse tilt parameters with interactive video/image player */}
           <div className="lg:col-span-5 relative flex items-center justify-center z-10">
             <div
               style={tiltStyle}
-              className="relative w-full max-w-[380px] aspect-[1/1] sm:aspect-[1/1] rounded-3xl bg-slate-900/40 backdrop-blur-xl border border-white/10 p-8 flex flex-col justify-between shadow-[0_20px_50px_rgba(0,0,0,0.5)] cursor-grab active:cursor-grabbing group overflow-hidden"
+              className="relative w-full max-w-[420px] rounded-3xl bg-slate-950/85 backdrop-blur-xl border border-white/10 p-5 sm:p-6 flex flex-col shadow-[0_25px_60px_rgba(0,0,0,0.7)] group overflow-hidden"
             >
               {/* Glassmorphic card context filters */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-ids-purple/10 via-transparent to-ids-violet/10 pointer-events-none opacity-50 group-hover:opacity-100 transition-opacity duration-300" />
-              
-              {/* HUD alignment borders */}
-              <div className="absolute top-4 left-4 right-4 h-[1px] bg-gradient-to-r from-transparent via-ids-purple/30 to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 h-[1px] bg-gradient-to-r from-transparent via-ids-violet/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-ids-purple/10 via-transparent to-ids-violet/10 pointer-events-none opacity-50" />
 
-              <div className="flex items-center justify-between" style={{ transform: "translateZ(30px)" }}>
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                  <span className="font-mono text-[10px] text-emerald-400 font-bold uppercase tracking-widest">Active Operations</span>
+              {/* Media Channel Tab Buttons */}
+              <div className="flex items-center justify-between mb-4 relative z-20">
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => setMediaTab("image")}
+                    className={`flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-mono uppercase font-bold tracking-wider transition-all cursor-pointer ${
+                      mediaTab === "image"
+                        ? "bg-ids-purple/30 text-white border border-ids-purple/50"
+                        : "bg-white/[0.02] text-slate-400 hover:text-white border border-transparent"
+                    }`}
+                  >
+                    <ImageIcon className="w-3.5 h-3.5 text-ids-magenta" />
+                    <span>Secure Hub</span>
+                  </button>
+                  <button
+                    onClick={() => setMediaTab("video")}
+                    className={`flex items-center gap-1 px-3 py-1.5 rounded-lg text-[10px] font-mono uppercase font-bold tracking-wider transition-all cursor-pointer ${
+                      mediaTab === "video"
+                        ? "bg-ids-purple/30 text-white border border-ids-purple/50"
+                        : "bg-white/[0.02] text-slate-400 hover:text-white border border-transparent"
+                    }`}
+                  >
+                    <Tv className="w-3.5 h-3.5 text-ids-magenta animate-pulse" />
+                    <span>Live Feed</span>
+                  </button>
                 </div>
-                <Terminal className="w-4 h-4 text-ids-magenta" />
+                <div className="flex items-center gap-1.5 font-mono text-[9px] text-[#22c55e] bg-[#22c55e]/10 px-2 py-0.5 rounded border border-[#22c55e]/20">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#22c55e] animate-ping" />
+                  <span>ONLINE</span>
+                </div>
               </div>
 
-              {/* Core 3D circular structures representing digital alignment */}
-              <div className="relative my-6 flex items-center justify-center" style={{ transform: "translateZ(80px)" }}>
-                <div className="w-48 h-48 rounded-full border-2 border-ids-purple/20 border-dashed animate-[spin_40s_linear_infinite] flex items-center justify-center">
-                  <div className="w-36 h-36 rounded-full border-2 border-ids-violet/30 border-dotted animate-[spin_20s_linear_infinite_reverse] flex items-center justify-center">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-ids-purple/40 to-ids-violet/45 p-0.5 flex items-center justify-center shadow-[0_0_30px_rgba(123,47,190,0.3)]">
-                      <Shield className="w-10 h-10 text-white" />
+              {/* Outer Screen Display Frame with 16:9 Screen ratio */}
+              <div className="relative w-full aspect-[16/10] bg-black/95 rounded-2xl border border-white/5 overflow-hidden group/screen mb-4 shadow-inner">
+                {mediaTab === "image" ? (
+                  <div className="relative w-full h-full">
+                    {/* Generated photorealistic image of operations command screen */}
+                    <img
+                      src="/src/assets/images/cyber_security_center_1780689979069.png"
+                      alt="IDS Security Command Dashboard"
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover brightness-95 opacity-90 transition-transform duration-500 group-hover/screen:scale-105"
+                    />
+                    
+                    {/* Green Laser scanning bar overlay */}
+                    <div className="absolute inset-x-0 h-[2px] bg-emerald-400/70 shadow-[0_0_12px_#34d399] animate-[bounce_4s_infinite] pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/5 via-transparent to-transparent pointer-events-none" />
+
+                    {/* Hud Coordinates */}
+                    <div className="absolute bottom-2 left-3 bg-black/70 backdrop-blur-md border border-white/10 rounded px-2 py-0.5 font-mono text-[8px] text-white/80">
+                      SYS: SAC-HQ-01-SEC
                     </div>
                   </div>
-                </div>
+                ) : (
+                  <div className="relative w-full h-full">
+                    {/* Live network monitoring loop video */}
+                    <video
+                      src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-screens-with-security-data-and-graphs-41355-large.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover opacity-85"
+                    />
+                    
+                    {/* Cyber line indicators */}
+                    <div className="absolute inset-0 border border-ids-magenta/15 pointer-events-none" />
+                    <div className="absolute top-2 left-3 bg-red-650/80 border border-red-500/30 text-white font-mono text-[8px] px-2 py-0.5 rounded flex items-center gap-1.5 animate-pulse">
+                      <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                      <span>CAM: CORE_NODE_LOG</span>
+                    </div>
+                  </div>
+                )}
 
-                <div className="absolute -top-2 left-6 p-2 rounded-xl bg-slate-950/80 border border-ids-purple/30 font-mono text-[10px] text-ids-magenta animate-[bounce_5s_infinite]">
-                  <Cpu className="w-3.5 h-3.5 inline mr-1 text-ids-purple" />
-                  <span>SECURE-CORE</span>
-                </div>
+                {/* Grid Scan Overlay line design */}
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_0%,_rgba(0,0,0,0.45)_100%)] pointer-events-none" />
+              </div>
 
-                <div className="absolute -bottom-4 right-4 p-2 rounded-xl bg-slate-950/80 border border-ids-violet/30 font-mono text-[10px] text-ids-violet animate-[bounce_6s_infinite_delay-1000]">
-                  <Network className="w-3.5 h-3.5 inline mr-1 text-ids-violet" />
-                  <span>AEO_READY_2026</span>
-                </div>
+              {/* Dynamic Telemetry Logs Console box */}
+              <div className="p-3 bg-slate-900/40 rounded-xl border border-white/5 font-mono text-[9px] text-slate-300 space-y-1 min-h-[75px] flex flex-col justify-end">
+                <span className="text-slate-500 uppercase tracking-widest text-[8px] block mb-1 font-bold">SYSTEM TELEMETRY ENGINE:</span>
+                {feedLogs.map((log, index) => (
+                  <div key={index} className="flex items-center gap-1.5 text-emerald-400/90 leading-tight">
+                    <span className="text-ids-magenta">{`>`}</span>
+                    <span className="truncate">{log}</span>
+                  </div>
+                ))}
               </div>
 
               {/* Coordinates footer inside card */}
-              <div className="flex flex-col space-y-2 mt-auto" style={{ transform: "translateZ(50px)" }}>
-                <div className="h-[1px] bg-slate-800 w-full" />
-                <div className="flex justify-between items-center text-slate-300 text-xs font-mono">
+              <div className="flex flex-col space-y-2 mt-4">
+                <div className="h-[1px] bg-slate-800/60 w-full" />
+                <div className="flex justify-between items-center text-slate-300 text-[11px] font-mono">
                   <div className="flex flex-col">
-                    <span className="text-[9px] text-slate-500 uppercase">CALIFORNIA, USA</span>
-                    <span className="font-semibold text-[11px] text-slate-200">Headquarters</span>
+                    <span className="text-[8px] text-slate-500 uppercase tracking-wider">CALIFORNIA, US</span>
+                    <span className="font-semibold text-slate-200">Headquarters</span>
                   </div>
-                  <div className="h-8 w-[1px] bg-slate-800" />
+                  <div className="h-6 w-[1px] bg-slate-800" />
                   <div className="flex flex-col text-right">
-                    <span className="text-[9px] text-slate-500 uppercase">DUBAI, UAE</span>
-                    <span className="font-semibold text-[11px] text-slate-200">IGS Office Hub</span>
+                    <span className="text-[8px] text-slate-500 uppercase tracking-wider">DUBAI, UAE</span>
+                    <span className="font-semibold text-slate-200">IGS Operations</span>
                   </div>
                 </div>
               </div>

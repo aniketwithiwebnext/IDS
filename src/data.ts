@@ -33,21 +33,21 @@ export const STATS: StatItem[] = [
 export const PROBLEMS: ProblemCard[] = [
   {
     id: 1,
-    title: "Cyber Threats Are Escalating",
-    description: "43% of all cyberattacks target small businesses. Without active monitoring and protection, you are already a target. The question is not whether you will be attacked — it is whether you will be ready when it happens.",
-    icon: "ShieldAlert"
+    title: "Your Pipeline is Empty",
+    description: "Most businesses rely on referrals and hope. Without a structured branding identity, active digital marketing, and a systematic lead generation engine, your growth is unpredictable, inconsistent, and dangerously dependent on luck.",
+    icon: "TrendingDown"
   },
   {
     id: 2,
-    title: "Your Vendors Don't Talk to Each Other",
-    description: "When your IT team, security firm, web developer, and marketing agency work in silos, your business pays the price in gaps, inefficiency, and wasted budget. Disconnected vendors create dangerous blind spots that cost you money and expose you to risk.",
-    icon: "Layers"
-  },
-  {
-    id: 3,
     title: "Invisible to AI Search",
     description: "Google rankings alone are no longer enough. In 2026, ChatGPT, Perplexity, and Copilot answer millions of business queries daily — bypassing traditional search entirely. If AI doesn't know you exist, your competitors are getting those clients right now.",
     icon: "Bot"
+  },
+  {
+    id: 3,
+    title: "You Are Flying Blind",
+    description: "Your brand is being talked about right now — on social media, news sites, review platforms, and AI engines — and you have absolutely no idea what is being said. One unaddressed negative story, one viral complaint, one competitor move you missed — and the damage is done before you even knew it happened.",
+    icon: "EyeOff"
   },
   {
     id: 4,
@@ -57,80 +57,22 @@ export const PROBLEMS: ProblemCard[] = [
   },
   {
     id: 5,
-    title: "Your Pipeline is Empty",
-    description: "Most businesses rely on referrals and hope. Without a structured branding identity, active digital marketing, and a systematic lead generation engine, your growth is unpredictable, inconsistent, and dangerously dependent on luck.",
-    icon: "TrendingDown"
+    title: "Your Vendors Don't Talk to Each Other",
+    description: "When your IT team, security firm, web developer, and marketing agency work in silos, your business pays the price in gaps, inefficiency, and wasted budget. Disconnected vendors create dangerous blind spots that cost you money and expose you to risk.",
+    icon: "Layers"
   },
   {
     id: 6,
-    title: "You Are Flying Blind",
-    description: "Your brand is being talked about right now — on social media, news sites, review platforms, and AI engines — and you have absolutely no idea what is being said. One unaddressed negative story, one viral complaint, one competitor move you missed — and the damage is done before you even knew it happened.",
-    icon: "EyeOff"
+    title: "Cyber Threats Are Escalating",
+    description: "43% of all cyberattacks target small businesses. Without active monitoring and protection, you are already a target. The question is not whether you will be attacked — it is whether you will be ready when it happens.",
+    icon: "ShieldAlert"
   }
 ];
 
 export const PILLARS: Pillar[] = [
   {
-    id: "pillar-1",
-    name: "PILLAR I — CYBERSECURITY & IT",
-    shortName: "Security & IT",
-    icon: "Lock",
-    description: "Enterprise-grade safety, resilience, and scalable architecture optimized to protect and sustain operations worldwide.",
-    services: [
-      {
-        id: 1,
-        name: "Managed Security Services (MSS)",
-        description: "24/7 remote monitoring, proactive threat detection, real-time incident response, and comprehensive risk management. We watch your entire digital infrastructure while you focus on growing your business. Cyberthreats never sleep — and neither do we."
-      },
-      {
-        id: 2,
-        name: "Cloud & Microsoft Services",
-        description: "Seamless migration and optimization of Microsoft Azure and Microsoft 365. Secure, scalable cloud infrastructure built for performance, continuity, and productivity. We ensure your business operates at full capacity from anywhere in the world."
-      },
-      {
-        id: 3,
-        name: "Core IT Services",
-        description: "Network architecture consulting, system integration, data management, and IT strategy consulting. We build the reliable, scalable IT foundation your business needs to grow without limits — remotely delivered, locally impactful."
-      },
-      {
-        id: 4,
-        name: "Penetration Testing",
-        description: "We think like hackers so your enemies cannot act like them. Comprehensive vulnerability testing with detailed, actionable remediation reports. Know your weaknesses before your attackers do — and fix them before it is too late."
-      },
-      {
-        id: 5,
-        name: "Digital Forensics",
-        description: "When a breach happens every second matters. Our forensics team investigates cyber incidents, fraud, and data breaches — collecting legal-grade evidence, analyzing attack vectors, and restoring your security posture fast."
-      },
-      {
-        id: 6,
-        name: "Advanced App Protection",
-        description: "Enterprise-grade application security including Anti-Debugging, Anti-Tampering, MiTM Attack Prevention, Jailbreak Detection, Screenshot Prevention, Screen Recording Prevention, and VPN Detection. Your applications protected at every layer, on every device."
-      }
-    ]
-  },
-  {
-    id: "pillar-2",
-    name: "PILLAR II — WEB & APP DEVELOPMENT",
-    shortName: "Web & App Dev",
-    icon: "Code",
-    description: "Security-first development pairing stunning layout design with secure-hardened deployment architecture.",
-    services: [
-      {
-        id: 7,
-        name: "Website Development",
-        description: "High-performance, security-first websites built with AI-driven tools, seamless UX, and conversion optimization at every layer. From corporate sites to e-commerce platforms — we build digital experiences that turn visitors into loyal customers. Every site we build has cybersecurity embedded from line one of code."
-      },
-      {
-        id: 8,
-        name: "Mobile App Development",
-        description: "Native and cross-platform mobile applications that are visually compelling, functionally advanced, and security-hardened from the ground up. AI chatbots, real-time tracking systems, secure payment gateways, and lead generation tools — all built in."
-      }
-    ]
-  },
-  {
     id: "pillar-3",
-    name: "PILLAR III — DIGITAL GROWTH & VISIBILITY",
+    name: "PILLAR I — DIGITAL GROWTH & VISIBILITY",
     shortName: "Growth & Visibility",
     icon: "Sparkles",
     description: "Dominating traditional Google lookups, innovative AEO chat triggers, brand design, and 24/7 client intelligence monitoring.",
@@ -174,8 +116,27 @@ export const PILLARS: Pillar[] = [
     ]
   },
   {
+    id: "pillar-2",
+    name: "PILLAR II — WEB & APP DEVELOPMENT",
+    shortName: "Web & App Dev",
+    icon: "Code",
+    description: "Security-first development pairing stunning layout design with secure-hardened deployment architecture.",
+    services: [
+      {
+        id: 7,
+        name: "Website Development",
+        description: "High-performance, security-first websites built with AI-driven tools, seamless UX, and conversion optimization at every layer. From corporate sites to e-commerce platforms — we build digital experiences that turn visitors into loyal customers. Every site we build has cybersecurity embedded from line one of code."
+      },
+      {
+        id: 8,
+        name: "Mobile App Development",
+        description: "Native and cross-platform mobile applications that are visually compelling, functionally advanced, and security-hardened from the ground up. AI chatbots, real-time tracking systems, secure payment gateways, and lead generation tools — all built in."
+      }
+    ]
+  },
+  {
     id: "pillar-4",
-    name: "PILLAR IV — UAE & GCC MARKET SERVICES",
+    name: "PILLAR III — UAE & GCC MARKET SERVICES",
     shortName: "UAE & GCC Expansion",
     icon: "Award",
     description: "Launch turnkey campaigns and scale local operations in the zero-tax Gulf consumer hub.",
@@ -199,6 +160,45 @@ export const PILLARS: Pillar[] = [
         id: 18,
         name: "Branding & Creative Production UAE",
         description: "360° branding and creative production for businesses entering or growing in the UAE and GCC. Brand identity, visual design, media production, photography, videography, and brand strategy — all delivered by our in-house creative team operating from Dubai."
+      }
+    ]
+  },
+  {
+    id: "pillar-1",
+    name: "PILLAR IV — CYBERSECURITY & IT",
+    shortName: "Security & IT",
+    icon: "Lock",
+    description: "Enterprise-grade safety, resilience, and scalable architecture optimized to protect and sustain operations worldwide.",
+    services: [
+      {
+        id: 1,
+        name: "Managed Security Services (MSS)",
+        description: "24/7 remote monitoring, proactive threat detection, real-time incident response, and comprehensive risk management. We watch your entire digital infrastructure while you focus on growing your business. Cyberthreats never sleep — and neither do we."
+      },
+      {
+        id: 2,
+        name: "Cloud & Microsoft Services",
+        description: "Seamless migration and optimization of Microsoft Azure and Microsoft 365. Secure, scalable cloud infrastructure built for performance, continuity, and productivity. We ensure your business operates at full capacity from anywhere in the world."
+      },
+      {
+        id: 3,
+        name: "Core IT Services",
+        description: "Network architecture consulting, system integration, data management, and IT strategy consulting. We build the reliable, scalable IT foundation your business needs to grow without limits — remotely delivered, locally impactful."
+      },
+      {
+        id: 4,
+        name: "Penetration Testing",
+        description: "We think like hackers so your enemies cannot act like them. Comprehensive vulnerability testing with detailed, actionable remediation reports. Know your weaknesses before your attackers do — and fix them before it is too late."
+      },
+      {
+        id: 5,
+        name: "Digital Forensics",
+        description: "When a breach happens every second matters. Our forensics team investigates cyber incidents, fraud, and data breaches — collecting legal-grade evidence, analyzing attack vectors, and restoring your security posture fast."
+      },
+      {
+        id: 6,
+        name: "Advanced App Protection",
+        description: "Enterprise-grade application security including Anti-Debugging, Anti-Tampering, MiTM Attack Prevention, Jailbreak Detection, Screenshot Prevention, Screen Recording Prevention, and VPN Detection. Your applications protected at every layer, on every device."
       }
     ]
   }
@@ -240,23 +240,23 @@ export const HOW_IT_WORKS: HowItWorksStep[] = [
 export const WHY_IDS: WhyIDSPoint[] = [
   {
     id: 1,
-    title: "USA + UAE Dual Operations",
-    description: "The only digital partner operating simultaneously in California and Dubai — giving you unmatched reach and operational capability across two of the world's most powerful and fastest-growing business markets."
-  },
-  {
-    id: 2,
-    title: "Security-First in Everything",
-    description: "Cybersecurity is not an add-on at IDS. It is baked into every website we build, every campaign we run, every SEO strategy we execute, and every line of code we write. Security is our foundation."
-  },
-  {
-    id: 3,
     title: "SEO + AEO Combined",
     description: "We don't just rank you on Google. We make you the answer that AI recommends. SEO and AEO delivered together by one integrated team for maximum digital visibility across every platform in 2026."
   },
   {
+    id: 2,
+    title: "Full Funnel Growth",
+    description: "From brand identity to lead generation to conversion — IDS manages your complete digital growth funnel. We don't just build presence, we actively fill your pipeline with qualified, hot buyer leads."
+  },
+  {
+    id: 3,
+    title: "USA + UAE Dual Operations",
+    description: "The only digital partner operating simultaneously in California and Dubai — giving you unmatched reach and operational capability across two of the world's most powerful and fastest-growing business markets."
+  },
+  {
     id: 4,
-    title: "International Market Intelligence",
-    description: "Through IGS in Dubai, we bring real operational international market expertise — not theory. We have the team, the network, and the on-the-ground intelligence that makes UAE GCC entry highly successful."
+    title: "Security-First Foundation",
+    description: "Cybersecurity is not an add-on at IDS. It is backed by enterprise-grade safety, baked into every website, campaign, configuration, and structural pipeline we build. Safe expansion is sustainable growth."
   },
   {
     id: 5,
@@ -265,28 +265,28 @@ export const WHY_IDS: WhyIDSPoint[] = [
   },
   {
     id: 6,
+    title: "Total Brand Intelligence",
+    description: "Through our media monitoring service, you always know exactly what is being said about your brand, your competitors, and your industry across every platform and in every market you operate in."
+  },
+  {
+    id: 7,
+    title: "International Market Intelligence",
+    description: "Through IGS in Dubai, we bring real operational international market expertise — not theory. We have the team, the network, and the on-the-ground intelligence that makes UAE GCC entry highly successful."
+  },
+  {
+    id: 8,
     title: "Transparent Reporting",
     description: "Real-time dashboards, monthly performance reports, and open-door communication at all times. You always know exactly what is happening across every service, campaign, and market with complete clarity."
   },
   {
-    id: 7,
+    id: 9,
     title: "Long-Term Partnership",
     description: "We measure our success by your growth. Our entire business model is built on long-term retainers, not one-off projects. When you grow, we grow. That alignment of incentives changes everything."
   },
   {
-    id: 8,
+    id: 10,
     title: "Remote-First Global Delivery",
     description: "Every single service we offer can be delivered remotely — from California to Dubai to anywhere. No geographical limitations. No timezone excuses. No delays. Pure delivery."
-  },
-  {
-    id: 9,
-    title: "Full Funnel Growth",
-    description: "From brand identity to lead generation to conversion — IDS manages your complete digital growth funnel. We don't just build presence, we actively fill your pipeline with qualified, hot buyer leads."
-  },
-  {
-    id: 10,
-    title: "Total Brand Intelligence",
-    description: "Through our media monitoring service, you always know exactly what is being said about your brand, your competitors, and your industry across every platform and in every market you operate in."
   }
 ];
 

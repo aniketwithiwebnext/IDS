@@ -54,7 +54,7 @@ export default function ProblemSection() {
             return (
               <div
                 key={prob.id}
-                className={`group p-6 bg-white/[0.03] border border-white/10 backdrop-blur-xl rounded-2xl transition-all duration-300 flex flex-col justify-between ${styleProps.border} ${styleProps.glow}`}
+                className={`group p-6 bg-white/[0.03] border border-white/10 backdrop-blur-xl rounded-2xl transition-all duration-300 hover:-translate-y-1.5 hover:bg-white/[0.05] flex flex-col justify-between ${styleProps.border} ${styleProps.glow}`}
               >
                 <div>
                   {/* Icon Frame */}

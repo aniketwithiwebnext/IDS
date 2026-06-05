@@ -32,15 +32,15 @@ export default function AboutSection() {
             <h2 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-slate-900 tracking-tight leading-tight">
               We Don't Just Build. <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-ids-purple via-ids-magenta to-ids-violet font-black">
-                We Secure. We Grow.
+                We Grow. We Secure.
               </span> <br />
               We Make You The Answer.
             </h2>
             <p className="font-sans text-sm text-slate-700 leading-relaxed font-normal">
-              IDS — Impulse Digital Solutions — is a California-based digital powerhouse that integrates IT infrastructure, enterprise-grade cybersecurity, world-class web and app development, AI-driven SEO, cutting-edge AEO, full-service branding, digital marketing, lead generation systems, and comprehensive media monitoring intelligence into one seamless, unified solution.
+              IDS — Impulse Digital Solutions — is a California-based digital powerhouse that integrates world-class web and app development, AI-driven SEO, cutting-edge AEO, full-service branding, digital marketing, lead generation systems, comprehensive media monitoring intelligence, IT infrastructure, and enterprise-grade cybersecurity into one seamless, unified growth solution.
             </p>
             <p className="font-sans text-sm text-slate-600 leading-relaxed font-normal">
-              We are backed by a global team with active operations in both the United States and the UAE — giving our clients a rare competitive advantage: Silicon Valley innovation combined with deep international market expertise through our sister company, Impulse Growth Solutions, operating from the heart of Dubai. When you partner with IDS, you don't just get a vendor. You get a growth partner who protects your business as aggressively as it grows it — across two of the world's most dynamic business markets.
+              We are backed by a global team with active operations in both the United States and the UAE — giving our clients a rare competitive advantage: Silicon Valley innovation combined with deep international market expertise through our sister company, Impulse Growth Solutions, operating from the heart of Dubai. When you partner with IDS, you don't just get a vendor. You get an aggressive marketing and corporate expansion partner who secures your operations and safeguards your reputation as vigilantly as it matches your vision for global digital growth — across two of the world's most dynamic business markets.
             </p>
 
             <div className="pt-4">
@@ -62,9 +62,22 @@ export default function AboutSection() {
               <div className="absolute top-0 right-0 w-24 h-24 bg-ids-purple/5 rounded-full blur-2xl group-hover:bg-ids-purple/10 transition-all duration-300" />
               
               <div>
-                <div className="flex items-center gap-2.5 mb-6">
+                <div className="flex items-center gap-2.5 mb-3">
                   <span className="w-2.5 h-2.5 rounded-full bg-ids-purple animate-pulse" />
                   <h3 className="font-display font-extrabold text-ids-purple uppercase text-xs tracking-wider">USA Operations</h3>
+                </div>
+
+                {/* Regional HQ Node Photo */}
+                <div className="mb-5 h-28 w-full rounded-xl overflow-hidden border border-slate-200 shadow-inner relative z-10">
+                  <img 
+                    src="/src/assets/images/california_office_hq_1780690098348.png" 
+                    alt="IDS California HQ Node" 
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover transition-transform duration-500 scale-100 group-hover:scale-105"
+                  />
+                  <div className="absolute top-2 left-2 bg-slate-950/80 px-2 py-0.5 rounded text-[8px] font-mono text-[#22c55e]">
+                    SECURE NODE: SAC-CA-HQ
+                  </div>
                 </div>
                 
                 <div className="space-y-4">
@@ -95,9 +108,22 @@ export default function AboutSection() {
               <div className="absolute top-0 right-0 w-24 h-24 bg-ids-violet/20 rounded-full blur-2xl group-hover:bg-ids-violet/30 transition-all duration-300" />
               
               <div>
-                <div className="flex items-center gap-2.5 mb-6">
+                <div className="flex items-center gap-2.5 mb-3">
                   <span className="w-2.5 h-2.5 rounded-full bg-ids-magenta animate-pulse" />
                   <h3 className="font-display font-extrabold text-ids-magenta uppercase text-xs tracking-wider">UAE Operations</h3>
+                </div>
+
+                {/* Regional Dubai Node Photo */}
+                <div className="mb-5 h-28 w-full rounded-xl overflow-hidden border border-white/5 shadow-inner relative z-10">
+                  <img 
+                    src="/src/assets/images/dubai_marina_sunset_1780689994078.png" 
+                    alt="IDS Dubai Marina Regional Node" 
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover transition-transform duration-500 scale-100 group-hover:scale-105"
+                  />
+                  <div className="absolute top-2 left-2 bg-slate-950/80 px-2 py-0.5 rounded text-[8px] font-mono text-ids-magenta">
+                    REGIONAL NODE: DXB-UAE
+                  </div>
                 </div>
                 
                 <div className="space-y-4">
