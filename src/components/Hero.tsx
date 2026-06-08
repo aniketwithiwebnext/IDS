@@ -52,6 +52,18 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden bg-ids-black grid-pattern">
       
+      {/* Dynamic Dual-Skyline background image (Change 5) */}
+      <div className="absolute inset-0 z-0 opacity-[0.06] pointer-events-none mix-blend-luminosity">
+        <img
+          src="/src/assets/images/ca_dxb_skyline_1780950361788.png"
+          alt="California and Dubai Dual Skylines Panoramic Background"
+          className="w-full h-full object-cover object-center"
+          loading="lazy"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-ids-black via-transparent to-ids-black" />
+      </div>
+      
       {/* 3D Radiant Core Ambient Lights (Parallax depth layers mapped to mousePos) */}
       <div
         style={{
@@ -97,8 +109,8 @@ export default function Hero() {
             </h1>
 
             {/* Subheadline description information list */}
-            <p className="font-sans text-[15px] sm:text-[16px] text-slate-300 leading-relaxed max-w-2xl">
-              IDS is California's only all-in-one digital partner that drives your revenue, generates qualified leads, builds your brand, makes you the answer AI engines recommend, and dynamically secures your entire IT infrastructure — simultaneously. No more juggling multiple vendors. One team. Total control. Two continents.
+            <p id="hero-subheadline" className="font-sans text-[15px] sm:text-[16px] text-slate-300 leading-relaxed max-w-2xl">
+              IDS is California's only all-in-one digital partner that drives your revenue, generates qualified leads, builds your brand, grows creators and influencers into global names, and dynamically secures your entire IT infrastructure — simultaneously. No more juggling multiple vendors. One team. Total control. Two continents.
             </p>
 
             {/* Action buttons trigger anchors */}

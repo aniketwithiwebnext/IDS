@@ -36,6 +36,21 @@ export default function AboutSection() {
               </span> <br />
               We Make You The Answer.
             </h2>
+
+            {/* Human Team/Office Photo (Change 5) */}
+            <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-md aspect-[16/9] w-full">
+              <img
+                src="/src/assets/images/corporate_team_1780950428207.png"
+                alt="IDS Corporate Specialists and Digital Security Group"
+                className="w-full h-full object-cover object-center transform hover:scale-[1.01] transition-transform duration-500"
+                loading="lazy"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-sm px-2.5 py-1 rounded text-[9px] font-mono text-white tracking-widest font-semibold uppercase">
+                ★ 30+ Coordinated Specialists Hub
+              </div>
+            </div>
+
             <p className="font-sans text-sm text-slate-700 leading-relaxed font-normal">
               IDS — Impulse Digital Solutions — is a California-based digital powerhouse that integrates world-class web and app development, AI-driven SEO, cutting-edge AEO, full-service branding, digital marketing, lead generation systems, comprehensive media monitoring intelligence, IT infrastructure, and enterprise-grade cybersecurity into one seamless, unified growth solution.
             </p>

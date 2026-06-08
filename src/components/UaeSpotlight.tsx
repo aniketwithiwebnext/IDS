@@ -55,6 +55,20 @@ export default function UaeSpotlight() {
                 </span>
               </div>
 
+              {/* Dynamic Dubai Skyline/DIFC Sunset Hero Media Container (Change 5) */}
+              <div className="relative rounded-xl overflow-hidden border border-white/5 shadow-2xl mb-6 aspect-video">
+                <img
+                  src="/src/assets/images/dubai_marina_sunset_1780689994078.png"
+                  alt="Dubai DIFC Sunset and Skyline Operations"
+                  className="w-full h-full object-cover object-center transform hover:scale-[1.01] transition-transform duration-500"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute top-2.5 left-2.5 bg-slate-950/80 backdrop-blur-sm px-2.5 py-1 rounded text-[8px] font-mono tracking-widest text-[#a855f7] uppercase font-bold">
+                  IGS OFFICE HUB: MARINA DISTRICT
+                </div>
+              </div>
+
               {/* Facts Grid layout */}
               <div className="grid grid-cols-2 gap-4">
                 {UAE_FACTS.map((fact, idx) => (

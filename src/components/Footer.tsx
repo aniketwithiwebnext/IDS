@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Linkedin, href: "https://linkedin.com/company/impulse-digital-solutions", label: "LinkedIn" },
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Youtube, href: "#", label: "YouTube" },
     { icon: Instagram, href: "#", label: "Instagram" }
@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="flex flex-col items-center space-y-4 max-w-lg">
           <Logo height={42} className="w-auto" />
           <p className="font-sans text-xs text-slate-400 leading-relaxed">
-            IDS is California's only all-in-one digital partner integrating enterprise Cybersecurity, robust Web & App Development, cutting-edge AI-Powered SEO, and GCC/US Growth Execution.
+            IDS is California's only all-in-one digital partner integrating enterprise Cybersecurity, robust Web & App Development, cutting-edge AI-Powered SEO/AEO, creator monetization pipelines, and GCC/US Growth Execution.
           </p>
         </div>
 
@@ -55,6 +55,8 @@ export default function Footer() {
                 key={i}
                 href={social.href}
                 aria-label={social.label}
+                target={social.href.startsWith("http") ? "_blank" : "_self"}
+                rel="noreferrer"
                 className="w-8 h-8 rounded-full bg-white/5 border border-white/10 hover:border-ids-magenta/40 hover:bg-white/10 text-slate-400 hover:text-white flex items-center justify-center transition-all duration-300"
               >
                 <SocialIcon className="w-4 h-4" />
@@ -63,10 +65,10 @@ export default function Footer() {
           })}
         </div>
 
-        {/* Lower Legal & developer rows */}
+        {/* Lower Legal rows */}
         <div className="flex flex-col items-center gap-4 pt-4 border-t border-white/5 w-full max-w-4xl text-xs text-slate-500 font-sans">
           <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center">
-            <span>© 2026 iWebNext. All rights reserved.</span>
+            <span>© 2026 IDS — Impulse Digital Solutions. All rights reserved.</span>
             <span>California, USA</span>
             <span>Dubai, UAE</span>
           </div>
@@ -77,12 +79,10 @@ export default function Footer() {
             <span className="text-xs font-sans text-slate-400">
               Developed by{" "}
               <a
-                href="https://iwebnext.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold text-ids-magenta hover:text-ids-purple underline underline-offset-4 decoration-ids-magenta/30 hover:decoration-ids-purple transition-all"
+                href="https://impulsedigitalsolutions.us"
+                className="font-semibold text-ids-magenta hover:text-ids-purple transition-all"
               >
-                iWebNext
+                Impulse Digital Solutions
               </a>
             </span>
           </div>

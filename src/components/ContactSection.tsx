@@ -1,6 +1,6 @@
 import { useState, FormEvent } from "react";
 import { CALL_EXPECTATIONS, SERVICE_OPTIONS } from "../data";
-import { Phone, Mail, Globe, MapPin, CheckCircle2, ShieldAlert, Sparkles, Loader2, Info, FileText } from "lucide-react";
+import { Phone, Mail, Globe, MapPin, CheckCircle2, ShieldAlert, Sparkles, Loader2, Info, FileText, Linkedin } from "lucide-react";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -125,14 +125,22 @@ export default function ContactSection() {
             </div>
 
             {/* Contact pointers */}
-            <div className="space-y-3 pt-4 border-t border-white/5">
-              <div className="flex items-center gap-3 text-xs text-slate-300 font-sans">
+            <div className="space-y-4 pt-4 border-t border-white/5">
+              <div className="flex items-center gap-3 text-xs text-slate-300 font-sans hover:text-[#fafafa] transition-colors">
                 <Mail className="w-4 h-4 text-ids-magenta" />
-                <span>grow@impulseids.com</span>
+                <a href="mailto:grow@impulsedigitalsolutions.us">grow@impulsedigitalsolutions.us</a>
               </div>
-              <div className="flex items-center gap-3 text-xs text-slate-300 font-sans">
+              <div className="flex items-center gap-3 text-xs text-slate-300 font-sans hover:text-[#fafafa] transition-colors">
                 <Globe className="w-4 h-4 text-ids-magenta" />
-                <span>www.impulseids.com</span>
+                <a href="https://impulsedigitalsolutions.us" target="_blank" rel="noreferrer">impulsedigitalsolutions.us</a>
+              </div>
+              <div className="flex items-center gap-3 text-xs text-slate-300 font-sans hover:text-[#fafafa] transition-colors">
+                <Phone className="w-4 h-4 text-ids-magenta" />
+                <a href="tel:+16575409315">+1 (657) 540-9315</a>
+              </div>
+              <div className="flex items-center gap-3 text-xs text-slate-300 font-sans hover:text-[#fafafa] transition-colors">
+                <Linkedin className="w-4 h-4 text-ids-magenta" />
+                <a href="https://linkedin.com/company/impulse-digital-solutions" target="_blank" rel="noreferrer">linkedin.com/company/impulse-digital-solutions</a>
               </div>
             </div>
           </div>

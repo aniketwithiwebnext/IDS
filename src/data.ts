@@ -22,12 +22,10 @@ export const BRANDS = [
 ];
 
 export const STATS: StatItem[] = [
-  { id: "stat-1", value: "200+", label: "Projects Delivered" },
-  { id: "stat-2", value: "2", label: "Continents USA & UAE Operations" },
-  { id: "stat-3", value: "98%", label: "Client Retention Rate" },
-  { id: "stat-4", value: "360°", label: "Marketing & Branding" },
-  { id: "stat-5", value: "100%", label: "Security-First Delivery" },
-  { id: "stat-6", value: "AI-Powered", label: "SEO & AEO Growth" }
+  { id: "stat-1", value: "30+", label: "Specialists" },
+  { id: "stat-2", value: "10+", label: "Years in Market" },
+  { id: "stat-3", value: "USA + UAE", label: "2 Continents Operations" },
+  { id: "stat-4", value: "Security-First", label: "Delivery Guarantee" }
 ];
 
 export const PROBLEMS: ProblemCard[] = [
@@ -64,54 +62,108 @@ export const PROBLEMS: ProblemCard[] = [
   {
     id: 6,
     title: "Cyber Threats Are Escalating",
-    description: "43% of all cyberattacks target small businesses. Without active monitoring and protection, you are already a target. The question is not whether you will be attacked — it is whether you will be ready when it happens.",
+    description: "With threats escalating daily, without active monitoring and security protection, you are already a target. The question is not whether you will be attacked — it is whether you will be ready when it happens.",
     icon: "ShieldAlert"
   }
 ];
 
 export const PILLARS: Pillar[] = [
   {
-    id: "pillar-3",
-    name: "PILLAR I — DIGITAL GROWTH & VISIBILITY",
-    shortName: "Growth & Visibility",
+    id: "pillar-1",
+    name: "PILLAR I — DIGITAL GROWTH & MARKETING",
+    shortName: "Digital Growth",
     icon: "Sparkles",
-    description: "Dominating traditional Google lookups, innovative AEO chat triggers, brand design, and 24/7 client intelligence monitoring.",
+    description: "Brand. Marketing. Lead generation. Growth.",
     services: [
       {
-        id: 9,
+        id: 1,
+        name: "Brand Strategy & Development",
+        description: "We build complete brand systems — not just logos — including the strategy, identity, and voice that make your business instantly recognizable and impossible to ignore.",
+        whatItIs: "We build complete brand systems — not just logos — including the strategy, identity, and voice that make your business instantly recognizable and impossible to ignore.",
+        included: [
+          "Brand strategy & positioning",
+          "Logo & full visual identity system",
+          "Color, typography & design language",
+          "Brand voice & messaging framework",
+          "Brand guidelines",
+          "Collateral & templates",
+          "Rebrand & brand refresh"
+        ],
+        whyItMatters: "A strong brand lets you command premium pricing, build instant trust, and stay memorable — it's the foundation everything else is built on."
+      },
+      {
+        id: 2,
+        name: "Full-Funnel Digital Marketing",
+        description: "End-to-end marketing that moves people from first impression to paying customer across every channel, managed as one coordinated system.",
+        whatItIs: "End-to-end marketing that moves people from first impression to paying customer across every channel, managed as one coordinated system.",
+        included: [
+          "Marketing strategy & channel planning",
+          "Social media management",
+          "Content & creative production",
+          "Email & nurture campaigns",
+          "Paid social & display",
+          "Analytics & reporting"
+        ],
+        whyItMatters: "Disconnected one-off campaigns leak money; a full funnel turns attention into revenue and makes every dollar of USD spend work harder."
+      },
+      {
+        id: 3,
+        name: "Lead Generation & Paid Advertising",
+        description: "Systematic, always-on lead engines that fill your pipeline with qualified buyers instead of leaving growth to referrals and luck.",
+        whatItIs: "Systematic, always-on lead engines that fill your pipeline with qualified buyers instead of leaving growth to referrals and luck.",
+        included: [
+          "Paid search & social campaigns (Meta, Google, TikTok, LinkedIn)",
+          "Landing pages & conversion optimization",
+          "Lead capture & qualification",
+          "Retargeting",
+          "Campaign management & A/B testing"
+        ],
+        whyItMatters: "Predictable, measurable lead flow replaces guesswork — you know what each customer costs and can scale on demand."
+      },
+      {
+        id: 4,
         name: "AI-Powered SEO",
-        description: "Beyond conventional rankings — our cybersecurity-integrated SEO strategy protects your site while dominating search results. AI analytics, predictive content modeling, automated keyword research, secure backlinking strategies, and zero black-hat risk. Rank higher. Stay safer. Grow faster."
+        description: "Search engine optimization that gets you found and ranked on Google through technical, content, and authority work — sharpened with AI-driven research and optimization.",
+        whatItIs: "Search engine optimization that gets you found and ranked on Google through technical, content, and authority work — sharpened with AI-driven research and optimization.",
+        included: [
+          "Technical SEO audit & fixes",
+          "Keyword & competitor research",
+          "On-page optimization",
+          "Content strategy",
+          "Link building & authority",
+          "Local SEO",
+          "Ongoing ranking reporting"
+        ],
+        whyItMatters: "Organic search is compounding, high-intent traffic you don't pay per click for — durable visibility that builds over time."
       },
       {
-        id: 10,
+        id: 5,
         name: "AEO — Answer Engine Optimization",
-        description: "The future of search is here. ChatGPT, Perplexity, Google AI Overviews, and Microsoft Copilot now answer millions of business queries daily — bypassing traditional search results entirely. AEO ensures YOUR business is the answer these AI engines recommend. We structure your content, authority, and digital presence so that when a potential client asks an AI \"who is the best cybersecurity company in California?\" — IDS is the answer."
+        description: "Optimization for AI answer engines — ChatGPT, Perplexity, Microsoft Copilot — so your business is the brand they recommend, not just a blue link on Google.",
+        whatItIs: "Optimization for AI answer engines — ChatGPT, Perplexity, Microsoft Copilot — so your business is the brand they recommend, not just a blue link on Google.",
+        included: [
+          "AI visibility audit",
+          "Structured data & entity optimization",
+          "Authoritative content built for AI citation",
+          "Answer-engine monitoring",
+          "Reputation signals across the sources AI reads"
+        ],
+        whyItMatters: "Millions of buying decisions now start with an AI prompt that returns one answer. If that answer isn't you, your competitor is winning clients you never see."
       },
       {
-        id: 11,
-        name: "Branding & Creative Services",
-        description: "Your brand is your most valuable business asset. IDS delivers complete branding solutions — from brand identity, logo design, and visual guidelines to brand strategy, positioning, and full creative production. We build brands that are instantly recognizable, emotionally compelling, and built to dominate their market across USA and UAE."
-      },
-      {
-        id: 12,
-        name: "Digital Marketing",
-        description: "Full-spectrum digital marketing strategy and execution across all platforms. Paid advertising on Google, Meta, and LinkedIn, social media management, content marketing, email campaigns, influencer marketing, and performance marketing — all data-driven, ROI-focused, and tailored to your target market in both the US and UAE."
-      },
-      {
-        id: 13,
-        name: "Lead Generation",
-        description: "We build and manage end-to-end lead generation systems that consistently fill your pipeline with qualified, high-intent prospects. Landing pages, conversion funnels, paid campaigns, LinkedIn outreach, email sequences, and CRM integration — engineered to convert strangers into paying clients on autopilot."
-      },
-      {
-        id: 14,
-        name: "Media Monitoring & Intelligence",
-        description: "Your brand is being talked about right now. Do you know what is being said? IDS delivers comprehensive media monitoring and intelligence services that track every mention of your brand, your competitors, and your industry — across social media, news outlets, review platforms, blogs, podcasts, traditional media, and AI engines — in real time, 24 hours a day, 7 days a week.",
-        bulletTitle: "IDS Media Intelligence Setup:",
-        bullets: [
-          "WHAT WE MONITOR: All major social media platforms (Instagram, X, Facebook, LinkedIn, TikTok, Snapchat, YouTube), global news, blogs, forums, podcasts, TV, radio, and AI engine mentions.",
-          "WHAT YOU GET: Real-time brand alerts, sentiment analysis, competitive intelligence, share of voice, crisis early warning, influencer identification, GCC regional market reports, weekly executive briefings.",
-          "WHY IT MATTERS: In 2026, negative posts can go viral in hours. Out-competed AI answers translate directly to missed deals. Media intelligence is the layer that makes choices smarter and highly profitable."
-        ]
+        id: 6,
+        name: "Media Monitoring & Brand Intelligence",
+        description: "Always-on tracking of what's being said about your brand, competitors, and industry across social, news, review sites, and AI engines.",
+        whatItIs: "Always-on tracking of what's being said about your brand, competitors, and industry across social, news, review sites, and AI engines.",
+        included: [
+          "Real-time brand & keyword monitoring",
+          "Sentiment analysis",
+          "Competitor tracking",
+          "Reputation alerts",
+          "Crisis early-warning",
+          "Regular intelligence reports"
+        ],
+        whyItMatters: "You can't manage what you can't see. One unaddressed story can do damage before you know it exists — monitoring lets you act before it spreads."
       }
     ]
   },
@@ -120,85 +172,277 @@ export const PILLARS: Pillar[] = [
     name: "PILLAR II — WEB & APP DEVELOPMENT",
     shortName: "Web & App Dev",
     icon: "Code",
-    description: "Security-first development pairing stunning layout design with secure-hardened deployment architecture.",
+    description: "Platforms that perform, convert, and scale.",
     services: [
       {
         id: 7,
-        name: "Website Development",
-        description: "High-performance, security-first websites built with AI-driven tools, seamless UX, and conversion optimization at every layer. From corporate sites to e-commerce platforms — we build digital experiences that turn visitors into loyal customers. Every site we build has cybersecurity embedded from line one of code."
+        name: "Website Design & Development",
+        description: "High-performance websites engineered to convert visitors into customers — fast, secure, and built to scale, not just to look good.",
+        whatItIs: "High-performance websites engineered to convert visitors into customers — fast, secure, and built to scale, not just to look good.",
+        included: [
+          "UX/UI design",
+          "Responsive development",
+          "CMS & e-commerce builds",
+          "Speed & performance optimization",
+          "SEO-ready architecture",
+          "Security by design",
+          "Maintenance & support"
+        ],
+        whyItMatters: "Your website is your hardest-working salesperson; a slow or unconvincing one quietly costs you customers every day."
       },
       {
         id: 8,
         name: "Mobile App Development",
-        description: "Native and cross-platform mobile applications that are visually compelling, functionally advanced, and security-hardened from the ground up. AI chatbots, real-time tracking systems, secure payment gateways, and lead generation tools — all built in."
+        description: "Native and cross-platform mobile apps designed for performance, usability, and global scale.",
+        whatItIs: "Native and cross-platform mobile apps designed for performance, usability, and global scale.",
+        included: [
+          "App strategy & UX design",
+          "iOS & Android development",
+          "API & backend integration",
+          "QA & testing",
+          "App store launch",
+          "Ongoing updates & support"
+        ],
+        whyItMatters: "A well-built app deepens customer loyalty and opens a direct, high-engagement channel to your audience."
+      }
+    ]
+  },
+  {
+    id: "pillar-3",
+    name: "PILLAR III — CYBERSECURITY & IT",
+    shortName: "Cybersecurity & IT",
+    icon: "Lock",
+    description: "Growth without security is exposure.",
+    services: [
+      {
+        id: 11,
+        name: "Managed Security Services",
+        description: "Continuous, enterprise-grade protection and monitoring of your systems, networks, and data — security as an always-on service, not a one-time setup.",
+        whatItIs: "Continuous, enterprise-grade protection and monitoring of your systems, networks, and data — security as an always-on service, not a one-time setup.",
+        included: [
+          "24/7 threat monitoring",
+          "Endpoint & network protection",
+          "Threat detection & response",
+          "Security patching",
+          "Compliance support",
+          "Regular security reporting"
+        ],
+        whyItMatters: "Cyber threats are constant and automated; ongoing protection is the difference between catching an attack early and discovering a breach too late."
+      },
+      {
+        id: 12,
+        name: "Cloud & Microsoft Solutions",
+        description: "Setup, migration, and management of your cloud and Microsoft environment for secure, reliable, productive operations.",
+        whatItIs: "Setup, migration, and management of your cloud and Microsoft environment for secure, reliable, productive operations.",
+        included: [
+          "Microsoft 365 & Azure setup",
+          "Cloud migration",
+          "Identity & access management",
+          "Secure configuration",
+          "Backup & recovery",
+          "Ongoing administration"
+        ],
+        whyItMatters: "A properly configured cloud environment is faster, safer, and cheaper to run — a misconfigured one is one of the most common ways businesses get breached."
+      },
+      {
+        id: 13,
+        name: "Core IT Infrastructure Management",
+        description: "Day-to-day management of the IT backbone your business runs on — networks, servers, devices, and support.",
+        whatItIs: "Day-to-day management of the IT backbone your business runs on — networks, servers, devices, and support.",
+        included: [
+          "Network & server management",
+          "Device & endpoint management",
+          "IT helpdesk & support",
+          "System monitoring",
+          "Patch & update management",
+          "Vendor coordination"
+        ],
+        whyItMatters: "Reliable infrastructure keeps your team productive and your operations running; downtime and IT chaos cost real money and momentum."
+      },
+      {
+        id: 14,
+        name: "Penetration Testing & Vulnerability Assessment",
+        description: "Controlled, authorized testing that finds the weaknesses in your systems before real attackers do.",
+        whatItIs: "Controlled, authorized testing that finds the weaknesses in your systems before real attackers do.",
+        included: [
+          "Vulnerability scanning",
+          "Authorized penetration testing",
+          "Risk assessment & prioritization",
+          "Remediation guidance",
+          "Re-testing",
+          "Compliance-ready reporting"
+        ],
+        whyItMatters: "You can't fix what you don't know is broken; proactive testing closes the gaps that lead to breaches and meets the security standards clients and regulators expect."
+      },
+      {
+        id: 15,
+        name: "Digital Forensics & Incident Response",
+        description: "Rapid response when something goes wrong — containing incidents, investigating what happened, and getting you back to safe operations.",
+        whatItIs: "Rapid response when something goes wrong — containing incidents, investigating what happened, and getting you back to safe operations.",
+        included: [
+          "Incident containment",
+          "Forensic investigation",
+          "Root-cause analysis",
+          "Recovery & restoration",
+          "Post-incident reporting",
+          "Prevention recommendations"
+        ],
+        whyItMatters: "When an incident hits, speed and expertise limit the damage, protect your reputation, and help you recover and prove what happened."
+      },
+      {
+        id: 16,
+        name: "Application Security & Protection",
+        description: "Security built into and around your applications so the software your business and customers rely on can't be turned against you.",
+        whatItIs: "Security built into and around your applications so the software your business and customers rely on can't be turned against you.",
+        included: [
+          "Secure code & app review",
+          "Application firewall (WAF)",
+          "API security",
+          "Vulnerability remediation",
+          "Ongoing app monitoring"
+        ],
+        whyItMatters: "Applications are a top attack target; securing them protects your data, your customers, and the trust your business depends on."
       }
     ]
   },
   {
     id: "pillar-4",
-    name: "PILLAR III — UAE & GCC MARKET SERVICES",
-    shortName: "UAE & GCC Expansion",
-    icon: "Award",
-    description: "Launch turnkey campaigns and scale local operations in the zero-tax Gulf consumer hub.",
+    name: "PILLAR IV — CREATORS & INFLUENCERS",
+    shortName: "Creators & Influencers",
+    icon: "Tv",
+    description: "Turn an audience into a business — then take it global.",
     services: [
       {
-        id: 15,
-        name: "UAE Market Entry Strategy",
-        description: "Powered by our sister company IGS in Dubai, we provide US businesses with a complete UAE and GCC market entry solution. Market research, competitive analysis, consumer behavior insights, regulatory guidance, and a full digital launch strategy tailored to the Gulf market. We have the team, the network, and the on-the-ground intelligence to make your UAE expansion successful from day one."
-      },
-      {
-        id: 16,
-        name: "MENA Market Research",
-        description: "Deep-dive market intelligence for the UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman. Consumer behavior analysis, competitor mapping, market sizing, trend forecasting, and opportunity identification. Know the market thoroughly before you invest a single dollar in it."
-      },
-      {
         id: 17,
-        name: "GCC Marketing Strategy & Execution",
-        description: "Full-service marketing strategy for the UAE and GCC market — social media management, paid advertising, influencer marketing, content creation, and performance marketing across all regional platforms including Snapchat, TikTok, and Instagram which dominate GCC consumer behavior."
+        name: "Personal Brand Identity & Positioning",
+        description: "A complete personal brand system that turns a profile into a recognizable, authoritative name.",
+        whatItIs: "A complete personal brand system that turns a profile into a recognizable, authoritative name.",
+        included: [
+          "Brand audit & positioning",
+          "Visual identity system",
+          "Tone of voice & messaging",
+          "Content pillar strategy",
+          "Positioning statement"
+        ],
+        whyItMatters: "A defined brand makes every post compound your authority instead of just filling a feed — and it's what attracts serious brand partners."
       },
       {
         id: 18,
-        name: "Branding & Creative Production UAE",
-        description: "360° branding and creative production for businesses entering or growing in the UAE and GCC. Brand identity, visual design, media production, photography, videography, and brand strategy — all delivered by our in-house creative team operating from Dubai."
+        name: "Content & Growth Strategy (SEO + AEO)",
+        description: "A full growth engine that turns content into reach, audience, and discoverability across platforms and AI search.",
+        whatItIs: "A full growth engine that turns content into reach, audience, and discoverability across platforms and AI search.",
+        included: [
+          "Content strategy & creative direction",
+          "SEO + AEO visibility",
+          "Paid growth campaigns",
+          "Platform-specific optimization (Instagram, TikTok, YouTube, LinkedIn)"
+        ],
+        whyItMatters: "It replaces guesswork and algorithm-dependence with a repeatable system for growing the right audience — and being found on Google and AI engines alike."
+      },
+      {
+        id: 19,
+        name: "Monetization Systems — Media Kit, Rate Card & Outreach",
+        description: "The business infrastructure that turns an audience into income.",
+        whatItIs: "The business infrastructure that turns an audience into income.",
+        included: [
+          "Professional media kit",
+          "Rate card",
+          "Brand partnership deck",
+          "Outreach infrastructure",
+          "Pricing & packaging guidance"
+        ],
+        whyItMatters: "Most creators leave money on the table because they're not packaged to be bought; this makes you easy to hire and confident to charge what you're worth."
+      },
+      {
+        id: 20,
+        name: "Brand Partnership & Deal Negotiation",
+        description: "Hands-on support securing and negotiating brand deals on your behalf.",
+        whatItIs: "Hands-on support securing and negotiating brand deals on your behalf.",
+        included: [
+          "Partner outreach",
+          "Deal sourcing",
+          "Negotiation support",
+          "Contract guidance",
+          "Campaign coordination"
+        ],
+        whyItMatters: "Better deals, better terms, and partners you might never have reached alone — handled by people who do this for a living."
+      },
+      {
+        id: 21,
+        name: "Dubai & Gulf Brand Network Access",
+        description: "Direct access to one of the world's most premium creator markets through our on-ground Dubai team and brand network.",
+        whatItIs: "Direct access to one of the world's most premium creator markets through our on-ground Dubai team and brand network.",
+        included: [
+          "Gulf brand connections & introductions",
+          "UAE campaign pitching & negotiation",
+          "Brand trip & activation coordination",
+          "VIP network access via Impulse Growth Solutions"
+        ],
+        whyItMatters: "The Gulf pays the most and competes the least for international creators — and almost no US creator is positioned to access it. We are."
       }
     ]
   },
   {
-    id: "pillar-1",
-    name: "PILLAR IV — CYBERSECURITY & IT",
-    shortName: "Security & IT",
-    icon: "Lock",
-    description: "Enterprise-grade safety, resilience, and scalable architecture optimized to protect and sustain operations worldwide.",
+    id: "pillar-5",
+    name: "PILLAR V — UAE & GCC MARKET SERVICES",
+    shortName: "UAE & GCC Expansion",
+    icon: "Award",
+    description: "The only California partner with a team on the ground in Dubai.",
     services: [
       {
-        id: 1,
-        name: "Managed Security Services (MSS)",
-        description: "24/7 remote monitoring, proactive threat detection, real-time incident response, and comprehensive risk management. We watch your entire digital infrastructure while you focus on growing your business. Cyberthreats never sleep — and neither do we."
+        id: 22,
+        name: "UAE Market Entry Strategy",
+        description: "A complete, turnkey roadmap for US businesses entering the UAE and Gulf markets.",
+        whatItIs: "A complete, turnkey roadmap for US businesses entering the UAE and Gulf markets.",
+        included: [
+          "Market opportunity assessment",
+          "Entry strategy & positioning",
+          "Regulatory & setup guidance",
+          "Localization strategy",
+          "Go-to-market plan"
+        ],
+        whyItMatters: "The UAE offers extraordinary opportunity but punishes guesswork; a real strategy built by a team on the ground is the difference between expansion and an expensive misstep."
       },
       {
-        id: 2,
-        name: "Cloud & Microsoft Services",
-        description: "Seamless migration and optimization of Microsoft Azure and Microsoft 365. Secure, scalable cloud infrastructure built for performance, continuity, and productivity. We ensure your business operates at full capacity from anywhere in the world."
+        id: 23,
+        name: "MENA Market Research & Intelligence",
+        description: "On-the-ground research and consumer intelligence across the MENA region that US-only agencies simply can't access.",
+        whatItIs: "On-the-ground research and consumer intelligence across the MENA region that US-only agencies simply can't access.",
+        included: [
+          "Market & competitor research",
+          "Consumer insight",
+          "Sector analysis",
+          "Demand & opportunity sizing",
+          "Cultural & localization intelligence"
+        ],
+        whyItMatters: "Decisions made on real regional data — not assumptions — dramatically raise your odds of success in an unfamiliar market."
       },
       {
-        id: 3,
-        name: "Core IT Services",
-        description: "Network architecture consulting, system integration, data management, and IT strategy consulting. We build the reliable, scalable IT foundation your business needs to grow without limits — remotely delivered, locally impactful."
+        id: 24,
+        name: "GCC Marketing Execution",
+        description: "Full marketing delivery across the Gulf, executed locally by our Dubai team.",
+        whatItIs: "Full marketing delivery across the Gulf, executed locally by our Dubai team.",
+        included: [
+          "Regional campaign management",
+          "Localized content & creative",
+          "Social & paid media",
+          "Influencer & partnership activation",
+          "Performance reporting"
+        ],
+        whyItMatters: "Marketing that's culturally fluent and locally executed performs far better than campaigns simply translated and exported from the US."
       },
       {
-        id: 4,
-        name: "Penetration Testing",
-        description: "We think like hackers so your enemies cannot act like them. Comprehensive vulnerability testing with detailed, actionable remediation reports. Know your weaknesses before your attackers do — and fix them before it is too late."
-      },
-      {
-        id: 5,
-        name: "Digital Forensics",
-        description: "When a breach happens every second matters. Our forensics team investigates cyber incidents, fraud, and data breaches — collecting legal-grade evidence, analyzing attack vectors, and restoring your security posture fast."
-      },
-      {
-        id: 6,
-        name: "Advanced App Protection",
-        description: "Enterprise-grade application security including Anti-Debugging, Anti-Tampering, MiTM Attack Prevention, Jailbreak Detection, Screenshot Prevention, Screen Recording Prevention, and VPN Detection. Your applications protected at every layer, on every device."
+        id: 25,
+        name: "UAE Branding & Creative Production",
+        description: "Region-specific branding and creative built to resonate with Gulf audiences.",
+        whatItIs: "Region-specific branding and creative built to resonate with Gulf audiences.",
+        included: [
+          "Localized brand & creative strategy",
+          "Arabic & bilingual creative",
+          "Campaign & content production",
+          "Event & activation creative"
+        ],
+        whyItMatters: "Premium Gulf audiences expect a premium, culturally-attuned brand experience; generic creative signals you don't understand the market."
       }
     ]
   }
@@ -261,7 +505,7 @@ export const WHY_IDS: WhyIDSPoint[] = [
   {
     id: 5,
     title: "One Vendor, Total Savings",
-    description: "Replace 5 to 6 separate vendors with one unified partner. Reduce your operational costs by up to 40% while increasing efficiency, eliminating gaps, and giving your team back hours."
+    description: "Replace 5 to 6 separate vendors with one unified partner. Consolidate your vendor stack and cut overlapping costs significantly while increasing efficiency, eliminating gaps, and giving your team back hours."
   },
   {
     id: 6,

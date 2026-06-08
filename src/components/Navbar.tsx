@@ -18,7 +18,7 @@ export default function Navbar() {
     { name: "About", href: "#about" },
     { name: "Problems", href: "#problems" },
     { name: "Services", href: "#services" },
-    { name: "SEO vs AEO", href: "#seo-aeo" },
+    { name: "Creators & Influencers", href: "#creators" },
     { name: "Process", href: "#process" },
     { name: "UAE Spotlight", href: "#uae-spotlight" }
   ];

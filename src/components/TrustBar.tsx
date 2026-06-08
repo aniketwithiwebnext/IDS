@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from "react";
-import { BRANDS, STATS, BRAND_DELIVERABLES } from "../data";
-import { CheckCircle2, TrendingUp, Award } from "lucide-react";
+import { STATS, BRAND_DELIVERABLES } from "../data";
+import { CheckCircle2, TrendingUp, Award, Building, Landmark, ShoppingBag, Utensils, Film, Sparkles, Anchor } from "lucide-react";
 
 // Robust dynamic scroll-to-view count-up component
 function AnimatedCounter({ value }: { value: string }) {
   const [count, setCount] = useState(0);
   const elementRef = useRef<HTMLDivElement>(null);
   
-  // Extract trailing non-digits like "+", "%", "°" and the leading numbers
+  // Extract trailing non-digits and leading numbers
   const numericMatch = value.match(/^(\d+)(.*)$/);
   const targetNumber = numericMatch ? parseInt(numericMatch[1], 10) : null;
   const suffix = numericMatch ? numericMatch[2] : value;
@@ -78,6 +78,52 @@ function AnimatedCounter({ value }: { value: string }) {
 }
 
 export default function TrustBar() {
+  const [activeCategory, setActiveCategory] = useState<number>(0);
+
+  const clientGroups = [
+    {
+      category: "Global Enterprise & Logistics",
+      icon: Building,
+      clients: ["Dubai International Airports", "DHL Express UAE", "SMSA Express"]
+    },
+    {
+      category: "Global FMCG & Consumer",
+      icon: Anchor,
+      clients: ["Kellogg's", "Red Bull", "Awal Dairy"]
+    },
+    {
+      category: "Luxury & Premium Retail",
+      icon: ShoppingBag,
+      clients: ["Bloomingdale's", "Van Cleef & Arpels", "The Beauty Secrets"]
+    },
+    {
+      category: "Hospitality, F&B & Entertainment",
+      icon: Utensils,
+      clients: [
+        "St. Regis Saadiyat Island", 
+        "Shakespeare and Co.", 
+        "Hello Park", 
+        "Starbucks", 
+        "Hooters"
+      ]
+    },
+    {
+      category: "Entertainment, Media & Sports",
+      icon: Film,
+      clients: ["MTV Lebanon", "Champs", "Al Riyadi Club", "Dubai Marathon (w/ Nike)"]
+    },
+    {
+      category: "Real Estate & Interiors",
+      icon: Landmark,
+      clients: ["Regal Investment Group", "GFS Development", "Fidelity Wallcovering (USA)"]
+    },
+    {
+      category: "Public Sector & Institutional",
+      icon: Sparkles,
+      clients: ["Mohammed Bin Rashid Space Centre", "Dubai Police", "Dubai Customs"]
+    }
+  ];
+
   return (
     <section id="trust" className="relative py-24 bg-slate-50 border-y border-slate-200/80 overflow-hidden">
       {/* Background ambient lighting configured for premium light contrast */}
@@ -86,53 +132,87 @@ export default function TrustBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Trusted By logo board */}
-        <div className="flex flex-col space-y-6 text-center md:text-left mb-16">
+        <div id="reputation" className="flex flex-col space-y-6 text-center md:text-left mb-16 font-sans">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
-              <span className="text-[10px] uppercase font-mono tracking-[0.25em] text-ids-purple font-bold">REPUTATION & SECURITY</span>
+              <span className="text-[10px] uppercase font-mono tracking-[0.25em] text-ids-purple font-bold">REPUTATION & INTEGRATION</span>
               <h3 className="font-display font-bold text-2xl sm:text-3xl text-slate-900 mt-1 tracking-tight">
-                Trusted by Global Brands Across USA & UAE
+                Track Record & Client Portfolios
               </h3>
             </div>
             <div className="flex items-center gap-2 justify-center px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm">
               <Award className="w-4 h-4 text-ids-purple animate-pulse" />
-              <span className="text-xs font-mono text-slate-700">Silicon Valley & Dubai sister hubs</span>
+              <span className="text-xs font-mono text-slate-700">USA & UAE Verified Operations</span>
             </div>
           </div>
- 
-          {/* Scrolling logo ticker line */}
-          <div className="relative w-full overflow-hidden py-5 border-y border-slate-200/60 bg-white/50 backdrop-blur-sm rounded-2xl shadow-sm">
-            <div className="flex items-center space-x-12 animate-[scroll_32s_linear_infinite] whitespace-nowrap">
-              {/* Double up the list for infinite loops */}
-              {[...BRANDS, ...BRANDS, ...BRANDS].map((brand, idx) => (
-                <div key={idx} className="flex items-center space-x-2 shrink-0">
-                  <span className="text-sm font-display font-semibold tracking-tight text-slate-600 hover:text-ids-purple transition-colors duration-300">
-                    {brand.toUpperCase()}
+
+          <p className="font-sans text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
+            IDS and our sister agency in Dubai serve some of the most dynamic companies in logistics, consumer products, luxury retail, and public institutions globally.
+          </p>
+
+          {/* Luxury Tab Switcher for Categories */}
+          <div className="flex flex-wrap gap-2 pt-4 select-none">
+            {clientGroups.map((group, gIdx) => {
+              const GroupIcon = group.icon;
+              return (
+                <button
+                  key={gIdx}
+                  onClick={() => setActiveCategory(gIdx)}
+                  className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold border transition-all duration-300 cursor-pointer ${
+                    activeCategory === gIdx
+                      ? "bg-[#06060A] text-white border-transparent shadow-md"
+                      : "bg-white text-slate-600 border-slate-200 hover:bg-slate-150-hover"
+                  }`}
+                >
+                  <GroupIcon className="w-3.5 h-3.5 mt-0.5" />
+                  <span>{group.category}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Monochrome client display wall block */}
+          <div className="p-6 sm:p-8 bg-white border border-slate-200/80 rounded-2xl shadow-sm min-h-[140px] flex flex-col justify-between relative overflow-hidden">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center">
+              {clientGroups[activeCategory].clients.map((client, cIdx) => (
+                <div
+                  key={cIdx}
+                  className="flex items-center justify-center p-4 rounded-xl bg-slate-50/50 border border-slate-100 hover:border-slate-200 hover:bg-white transition-all duration-300 group min-h-[64px]"
+                >
+                  <span className="font-display font-medium text-xs sm:text-sm tracking-tight text-slate-500 group-hover:text-[#06060A] transition-colors duration-300 text-center uppercase">
+                    {client}
                   </span>
-                  <span className="text-ids-purple/30 text-xs">•</span>
                 </div>
               ))}
+            </div>
+
+            {/* Crucial Specific Qualifier Line (Change 4) */}
+            <div className="mt-6 pt-4 border-t border-slate-200/60 flex items-center justify-between text-[10px] font-mono text-slate-400 select-none">
+              <span>* Excluded representation list: Confidential entities</span>
+              <span className="text-ids-magenta font-semibold tracking-wide uppercase">
+                Excluding NDA / VIP client classifications.
+              </span>
             </div>
           </div>
         </div>
 
         {/* Deliverables Board */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+        <div id="discoveries" className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16 font-sans">
           <div className="space-y-6">
             <div className="flex items-center gap-2">
               <TrendingUp className="w-5 h-5 text-ids-purple" />
-              <span className="font-mono text-xs uppercase tracking-wider text-slate-500 font-semibold">Our Track Record</span>
+              <span className="font-mono text-xs uppercase tracking-wider text-slate-500 font-semibold font-bold">Our Track Record</span>
             </div>
             <h4 className="font-display text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight leading-snug">
               What We Have Delivered <br />For These Brands
             </h4>
-            <p className="font-sans text-slate-600 text-sm leading-relaxed">
+            <p className="font-sans text-slate-600 text-xs sm:text-sm leading-relaxed">
               Impulse Digital Solutions delivers comprehensive brand dominance. From securing core remote network lines to crafting search engine blueprints and local Middle Eastern campaigns, our systems ensure error-free performance.
             </p>
           </div>
 
           <div className="bg-white border border-slate-200 p-8 rounded-2xl shadow-md">
-            <h5 className="font-mono text-[11px] font-bold text-slate-500 uppercase tracking-widest mb-4">Integrated Client Gains</h5>
+            <h5 className="font-mono text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-4 font-bold">Integrated Client Gains</h5>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {BRAND_DELIVERABLES.map((del, i) => (
                 <div key={i} className="flex items-start gap-2.5">
@@ -144,17 +224,17 @@ export default function TrustBar() {
           </div>
         </div>
 
-        {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        {/* Stats Grid - populated with real figures from src/data STATS */}
+        <div id="real-stats-counters" className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {STATS.map((stat) => (
             <div
               key={stat.id}
-              className="p-6 bg-white border border-slate-200 rounded-xl transition-all duration-300 hover:border-ids-purple/40 hover:-translate-y-1 hover:shadow-lg text-center flex flex-col justify-center min-h-[120px]"
+              className="p-6 bg-white border border-slate-200 rounded-xl transition-all duration-300 hover:border-ids-purple/40 hover:-translate-y-1 hover:shadow-lg text-center flex flex-col justify-center min-h-[110px]"
             >
               <div className="text-2xl sm:text-3xl font-display font-black text-transparent bg-clip-text bg-gradient-to-r from-ids-purple via-ids-magenta to-ids-violet">
                 <AnimatedCounter value={stat.value} />
               </div>
-              <div className="text-[10px] text-slate-500 uppercase font-mono tracking-wider mt-2 leading-snug font-medium">
+              <div className="text-[10px] text-slate-500 uppercase font-mono tracking-wider mt-2 leading-snug font-medium font-bold">
                 {stat.label}
               </div>
             </div>
@@ -162,14 +242,6 @@ export default function TrustBar() {
         </div>
 
       </div>
-
-      {/* Styled inline keyframes for scroll ticker */}
-      <style>{`
-        @keyframes scroll {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-33.33%); }
-        }
-      `}</style>
     </section>
   );
 }

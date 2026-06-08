@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { PILLARS } from "../data";
+import { Service } from "../types";
+import { AnimatePresence, motion } from "motion/react";
 import { 
   Lock, 
   Code, 
@@ -19,39 +21,59 @@ import {
   Plane, 
   Map, 
   Compass, 
-  Briefcase 
+  Briefcase,
+  Tv,
+  CheckCircle,
+  X,
+  Target
 } from "lucide-react";
 
 // Flexible iconography mapper for services to make them look custom-styled
 const serviceIconMap: Record<number, React.ComponentType<any>> = {
-  1: ShieldCheck, // Managed Security
-  2: Cpu,         // Cloud & Microsoft
-  3: Terminal,    // Core IT
-  4: ShieldCheck, // Pen Testing
-  5: Terminal,    // Digital Forensics
-  6: Lock,        // App Protection
-  7: Code,        // Website Dev
-  8: Smartphone,  // Mobile App Dev
-  9: Search,      // AI SEO
-  10: Bot,        // AEO
-  11: Palette,    // Branding
-  12: Megaphone,  // Digital Marketing
-  13: TrendingUp, // Lead Gen
-  14: Eye,        // Media Monitoring
-  15: Plane,      // UAE Market entry
-  16: Map,        // MENA Market Research
-  17: Compass,    // GCC Marketing
-  18: Briefcase   // Creative Production UAE
+  1: Palette,      // Brand Strategy
+  2: Megaphone,    // Full Funnel Marketing
+  3: TrendingUp,   // Lead Gen
+  4: Search,       // AI-Powered SEO
+  5: Bot,          // AEO
+  6: Eye,          // Media Monitoring
+  7: Code,         // Website Dev
+  8: Smartphone,   // Mobile App Dev
+  11: ShieldCheck, // Managed Security
+  12: Cpu,         // Cloud Solutions
+  13: Terminal,    // Core IT Infrastructure
+  14: Target,      // Penetration Testing
+  15: Terminal,    // Digital Forensics
+  16: Lock,        // Application Protection
+  17: Target,      // Personal Brand Identity
+  18: Cpu,         // Content Growth Strategy
+  19: Megaphone,   // Monetization Systems
+  20: Briefcase,   // Brand Partnership
+  21: Award,       // Dubai Gulf Network Access
+  22: Plane,       // UAE Market entry
+  23: Map,         // MENA Market Research
+  24: Compass,     // GCC Marketing Execution
+  25: Briefcase    // UAE Branding
 };
 
-const pillarColors: Record<string, { bgGlow: string; text: string; label: string; border: string }> = {
-  "pillar-3": { bgGlow: "from-ids-magenta/20 to-transparent", text: "text-ids-magenta", label: "01 / ORGANIC VISIBILITY & GROWTH", border: "border-ids-magenta/20" },
-  "pillar-2": { bgGlow: "from-ids-violet/20 to-transparent", text: "text-ids-violet", label: "02 / CONVERSIONS & WEB DEV", border: "border-ids-violet/20" },
-  "pillar-4": { bgGlow: "from-[#4F46E5]/20 to-transparent", text: "text-ids-violet", label: "03 / MID-EAST EXPANSION HUB", border: "border-ids-violet/15" },
-  "pillar-1": { bgGlow: "from-ids-purple/20 to-transparent", text: "text-ids-purple", label: "04 / ENTERPRISE-GRADE SAFETY & IT", border: "border-ids-purple/20" }
+const pillarColors: Record<string, { bgGlow: string; text: string; label: string; border: string; icon: React.ComponentType<any> }> = {
+  "pillar-1": { bgGlow: "from-ids-magenta/20 to-transparent", text: "text-ids-magenta", label: "01 / DIGITAL GROWTH & MARKETING", border: "border-ids-magenta/20", icon: Sparkles },
+  "pillar-2": { bgGlow: "from-ids-purple/20 to-transparent", text: "text-ids-purple", label: "02 / CONVERSIONS & WEB DEV", border: "border-ids-purple/20", icon: Code },
+  "pillar-3": { bgGlow: "from-indigo-600/20 to-transparent", text: "text-indigo-400", label: "03 / CYBERSECURITY & IT backbone", border: "border-indigo-500/20", icon: Lock },
+  "pillar-4": { bgGlow: "from-pink-500/20 to-transparent", text: "text-pink-400", label: "04 / CREATORS & INFLUENCERS OVERVIEW", border: "border-pink-500/20", icon: Tv },
+  "pillar-5": { bgGlow: "from-emerald-500/20 to-transparent", text: "text-emerald-400", label: "05 / UAE & GCC REGIONAL MARGINS", border: "border-emerald-500/20", icon: Award }
 };
 
 export default function ServicesSection() {
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
+
+  const handleOpenDetail = (srv: Service) => {
+    setSelectedService(srv);
+  };
+
+  const handleCloseDetail = () => {
+    setSelectedService(null);
+  };
+
   return (
     <section id="services" className="py-24 sm:py-32 bg-ids-black relative overflow-hidden">
       {/* Decorative full-spectrum glowing backdrops */}
@@ -61,44 +83,45 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div id="services-header" className="text-center max-w-3xl mx-auto mb-20">
           <span className="inline-flex px-4 py-1.5 bg-ids-purple/10 border border-ids-purple/30 text-ids-magenta text-[10px] font-bold uppercase tracking-wider rounded-full mb-4 font-mono">
             Strategic Solutions
           </span>
           <h2 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-tight mb-6">
-            18 Enterprise Services. <br className="hidden sm:inline" />
-            4 Strategic Pillars. One Partner.
+            A Full Suite of Enterprise Services. <br className="hidden sm:inline" />
+            Five Strategic Pillars. One Partner.
           </h2>
-          <p className="font-sans text-sm text-slate-300 leading-relaxed font-normal">
-            We eliminate disconnected vendor silos. Our unified experts synchronize your Security, Codebase, organic Search dominance, and International Market strategy.
+          <p className="font-sans text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
+            We eliminate disconnected vendor silos. Our unified experts synchronize your Security, Codebase, organic Search dominance, creator monetization, and GCC Market entry.
           </p>
         </div>
 
-        {/* Vertical timeline/staggered grid of all 4 Pillars to make everything viewable together */}
+        {/* Vertical timeline/staggered grid of all 5 Pillars */}
         <div className="space-y-24">
           {PILLARS.map((pillar, pIdx) => {
             const colors = pillarColors[pillar.id] || pillarColors["pillar-1"];
-            const isPillarEven = pIdx % 2 === 1;
+            const PillarIcon = colors.icon;
 
             return (
               <div 
                 key={pillar.id} 
-                className="relative p-8 sm:p-12 rounded-3xl bg-white/[0.01] border border-white/5 overflow-hidden transition-all duration-300 hover:border-white/10"
+                className="relative p-8 sm:p-12 rounded-3xl bg-white/[0.015] border border-white/5 overflow-hidden transition-all duration-300 hover:border-white/10"
               >
                 {/* Micro glow matching the pillar theme */}
                 <div className={`absolute top-0 inset-x-0 h-48 bg-gradient-to-b ${colors.bgGlow} opacity-30 pointer-events-none`} />
                 
                 {/* Pillar Header Info */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-10 pb-8 border-b border-white/5 relative z-10">
-                  <div className="lg:col-span-4 space-y-2">
-                    <span className="text-[11px] font-mono font-bold text-ids-magenta uppercase tracking-widest block">
+                  <div className="lg:col-span-5 space-y-2">
+                    <span className="text-[11px] font-mono font-bold text-ids-magenta uppercase tracking-widest flex items-center gap-2">
+                      <PillarIcon className="w-3.5 h-3.5" />
                       {colors.label}
                     </span>
                     <h3 className="font-display font-black text-2xl sm:text-3xl text-white tracking-tight uppercase leading-none">
                       {pillar.shortName}
                     </h3>
                   </div>
-                  <div className="lg:col-span-8 flex flex-col justify-end">
+                  <div className="lg:col-span-7 flex flex-col justify-end">
                     <p className="font-sans text-xs sm:text-sm text-slate-300 leading-relaxed">
                       {pillar.description}
                     </p>
@@ -106,24 +129,25 @@ export default function ServicesSection() {
                 </div>
 
                 {/* Grid of services in this specific Pillar */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10 font-sans">
                   {pillar.services.map((srv) => {
                     const ServiceIcon = serviceIconMap[srv.id] || ShieldCheck;
                     
                     return (
                       <div
                         key={srv.id}
-                        className="p-6 bg-[#12121A]/60 border border-white/5 rounded-2xl flex flex-col justify-between hover:border-white/10 hover:bg-[#12121A]/85 transition-all duration-300 min-h-[240px] group relative"
+                        onClick={() => handleOpenDetail(srv)}
+                        className="p-6 bg-[#0c0c12]/80 border border-white/5 hover:border-ids-purple/40 rounded-2xl flex flex-col justify-between hover:bg-[#12121A]/90 transition-all duration-300 min-h-[200px] group relative cursor-pointer"
                       >
                         {/* Hover color accent strip */}
-                        <div className={`absolute top-0 left-0 right-0 h-[3px] rounded-t-2xl bg-gradient-to-r from-ids-purple to-ids-violet transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300`} />
+                        <div className="absolute top-0 left-0 right-0 h-[3px] rounded-t-2xl bg-gradient-to-r from-ids-purple to-ids-violet transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                         
                         <div>
                           <div className="flex items-center justify-between mb-4">
-                            <span className="font-mono text-[10px] text-slate-500 font-semibold uppercase tracking-wider">
-                              SERVICE {srv.id < 10 ? `0${srv.id}` : srv.id}
+                            <span className="font-mono text-[9px] text-slate-500 font-bold uppercase tracking-wider">
+                              SERVICE ID {srv.id < 10 ? `0${srv.id}` : srv.id}
                             </span>
-                            <div className="p-1.5 rounded-lg bg-white/5 text-slate-400 group-hover:text-ids-magenta transition-colors duration-350">
+                            <div className="p-1.5 rounded-lg bg-white/5 text-slate-400 group-hover:text-ids-magenta transition-colors duration-300">
                               <ServiceIcon className="w-4 h-4" />
                             </div>
                           </div>
@@ -132,30 +156,15 @@ export default function ServicesSection() {
                             {srv.name}
                           </h4>
 
-                          <p className="font-sans text-[12.5px] text-slate-300 leading-relaxed">
+                          <p className="font-sans text-[12px] text-slate-300 leading-relaxed">
                             {srv.description}
                           </p>
-
-                          {/* Detail bullets for specialized interactive monitoring */}
-                          {srv.id === 14 && srv.bullets && (
-                            <div className="mt-4 pt-4 border-t border-white/5 space-y-2.5 font-sans">
-                              <span className="text-[10px] font-bold text-ids-magenta uppercase tracking-widest font-mono block">
-                                {srv.bulletTitle}
-                              </span>
-                              {srv.bullets.map((bull, bidx) => (
-                                <div key={bidx} className="flex items-start gap-2 text-xs text-slate-300">
-                                  <span className="text-ids-magenta shrink-0 mt-0.5">•</span>
-                                  <span className="leading-snug">{bull}</span>
-                                </div>
-                              ))}
-                            </div>
-                          )}
                         </div>
 
                         <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-[10px] font-mono text-slate-400 select-none">
-                          <span className="uppercase tracking-wider">Strategic Node</span>
+                          <span className="uppercase tracking-wider text-[9px]">EXPLORE SPECS</span>
                           <span className="flex items-center gap-1 group-hover:text-ids-magenta transition-colors">
-                            DEPLOY <ChevronRight className="w-3 h-3" />
+                            SPECS <ChevronRight className="w-3 h-3" />
                           </span>
                         </div>
                       </div>
@@ -167,6 +176,97 @@ export default function ServicesSection() {
           })}
         </div>
       </div>
+
+      {/* Modern Interactive Slide-Over Drawer / Modal for the Service Appendix (Change 2) */}
+      <AnimatePresence>
+        {selectedService && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+            
+            {/* Modal Backdrop Blur Overlay key */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={handleCloseDetail}
+              className="absolute inset-0 bg-[#040406]/90 backdrop-blur-md cursor-pointer"
+            />
+
+            {/* Main Information Panel */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              transition={{ type: "spring", duration: 0.5 }}
+              className="relative w-full max-w-2xl bg-gradient-to-b from-[#0e0e16] to-[#08080c] border border-white/10 rounded-3xl overflow-hidden shadow-2xl p-6 sm:p-8 relative z-10"
+            >
+              {/* Close Button UI */}
+              <button
+                onClick={handleCloseDetail}
+                className="absolute top-5 right-5 w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/15 cursor-pointer transition-colors"
+                aria-label="Close detail panel"
+              >
+                <X className="w-4 h-4" />
+              </button>
+
+              <div id="service-appendix-detail" className="font-sans space-y-6">
+                
+                {/* Identifier Label */}
+                <span className="text-[10px] font-mono font-bold text-ids-magenta uppercase tracking-widest bg-ids-magenta/15 px-3 py-1 rounded-full inline-flex">
+                  Service Specifications — ID {selectedService.id}
+                </span>
+
+                {/* Primary Category Heading */}
+                <h3 className="font-display font-black text-2xl sm:text-3xl text-white tracking-tight leading-tight pt-1">
+                  {selectedService.name}
+                </h3>
+
+                {/* WHAT IT IS Section */}
+                <div className="space-y-2">
+                  <span className="text-xs uppercase font-mono font-bold text-slate-400 tracking-wider flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-ids-magenta" />
+                    WHAT IT IS:
+                  </span>
+                  <p className="text-sm sm:text-[14px] text-slate-200 leading-relaxed pl-3 font-normal">
+                    {selectedService.whatItIs || selectedService.description}
+                  </p>
+                </div>
+
+                {/* WHAT'S INCLUDED Block */}
+                {selectedService.included && selectedService.included.length > 0 && (
+                  <div className="space-y-2.5">
+                    <span className="text-xs uppercase font-mono font-bold text-slate-400 tracking-wider flex items-center gap-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-ids-purple" />
+                      WHAT'S INCLUDED:
+                    </span>
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 pl-3 font-sans">
+                      {selectedService.included.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-2.5 text-xs text-slate-300">
+                          <CheckCircle className="w-4 h-4 text-ids-magenta shrink-0 mt-0.5" />
+                          <span className="leading-relaxed">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {/* WHY IT MATTERS Block */}
+                {selectedService.whyItMatters && (
+                  <div className="p-5 rounded-2xl bg-white/[0.02] border border-white/5 relative overflow-hidden">
+                    <div className="absolute top-0 bottom-0 left-0 w-1 bg-gradient-to-b from-ids-magenta to-ids-purple" />
+                    <span className="text-xs uppercase font-mono font-bold text-slate-400 tracking-widest block mb-1.5">
+                      WHY IT MATTERS:
+                    </span>
+                    <p className="text-xs sm:text-xs text-slate-300 leading-relaxed">
+                      {selectedService.whyItMatters}
+                    </p>
+                  </div>
+                )}
+                
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

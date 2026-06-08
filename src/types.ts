@@ -5,6 +5,9 @@ export interface Service {
   keyPoints?: string[];
   bulletTitle?: string;
   bullets?: string[];
+  whatItIs?: string;
+  included?: string[];
+  whyItMatters?: string;
 }
 
 export interface Pillar {

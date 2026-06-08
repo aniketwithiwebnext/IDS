@@ -118,7 +118,7 @@ export default function ChatbotWidget() {
                 <Shield className="w-4 h-4 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="text-xs font-bold text-white tracking-wide">iWebNext Assistant</span>
+                <span className="text-xs font-bold text-white tracking-wide">IDS Assistant</span>
                 <span className="text-[9px] font-mono text-emerald-400 uppercase tracking-widest flex items-center gap-1.5 mt-0.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                   ONLINE SECURE CORE
