@@ -185,7 +185,7 @@ export default function Hero() {
                   <div className="relative w-full h-full">
                     {/* Generated photorealistic image of operations command screen */}
                     <img
-                      src="/src/assets/images/cyber_security_center_1780689979069.png"
+                      src="/src/assets/images/ids_global_cyber_soc_1780951724880.png"
                       alt="IDS Security Command Dashboard"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover brightness-95 opacity-90 transition-transform duration-500 group-hover/screen:scale-105"

@@ -14,8 +14,8 @@ export default function SeoAeoSection() {
         "Multi-channel Content pillar matrices",
         "SEO / AEO indexing authority integration"
       ],
-      image: "/src/assets/images/creator_mood_1780950377032.png",
-      alt: "Content creator styled desk setup, professional ring light and mood board",
+      image: "/src/assets/images/ids_aeo_search_dominance_1780951708040.png",
+      alt: "IDS Dynamic AEO Search Dominance Dashboard on AI Conversational Engines",
       reverse: false,
       accent: "from-fuchsia-600/30 to-purple-600/30"
     },
