@@ -15,15 +15,15 @@ export default function TechLabShowcase() {
   const videos: TechVideo[] = [
     {
       id: "video-1",
-      title: "Interactive AEO Search Routing",
-      subtitle: "ANSWER ENGINE INTAKE GRAPH VISUAL",
-      url: "https://assets.mixkit.co/videos/preview/mixkit-tunnel-of-blue-and-purple-neon-lights-41734-large.mp4",
-      icon: Cpu,
-      description: "When ChatGPT, Gemini, or Perplexity parse Silicon Valley or Dubai regional hubs, our Answer Engine Optimization structures your schema maps to respond instantly, putting your brand at the absolute top of AI suggestions.",
+      title: "Tactical Threat Detection Node",
+      subtitle: "REAL-TIME CYBER SECURITY OPERATIONS",
+      url: "https://assets.mixkit.co/videos/preview/mixkit-data-center-server-room-with-blinking-lights-41356-large.mp4",
+      icon: Shield,
+      description: "Every deployment of IDS cybersecurity services monitors for intrusion attempts, exploits, and common attack patterns on servers located in both Silicon Valley and Dubai. Secure, resilient, active protection.",
       kpis: [
-        { value: "No. 1", label: "AI Answer Choice" },
-        { value: "0.2s", label: "Query Matching" },
-        { value: "AEO/SEO", label: "Unified Growth" }
+        { value: "24/7", label: "Incident Watch" },
+        { value: "< 3ms", label: "Threat Isolation" },
+        { value: "99.99%", label: "System Uptime" }
       ]
     },
     {
@@ -32,24 +32,37 @@ export default function TechLabShowcase() {
       subtitle: "FULL-STACK HIGH VELOCITY CODE RELEASES",
       url: "https://assets.mixkit.co/videos/preview/mixkit-web-development-codes-on-a-computer-screen-40292-large.mp4",
       icon: Code,
-      description: "We compile, scan, and deploy React 18 & Node applications with built-in anti-tampering guards and OWASP Top 10 defenses. The resulting interface converts and remains fully safe against external disruptions.",
+      description: "We compile, scan, and deploy modern, high-performance frameworks with built-in anti-tampering guards and OWASP Top 10 defenses. The resulting interface converts and remains fully safe against external disruptions.",
       kpis: [
-        { value: "React 18", label: "Modern Stack" },
+        { value: "Modern", label: "Frameworks" },
         { value: "0", label: "Critical Weaknesses" },
         { value: "+300%", label: "Conversion Lift" }
       ]
     },
     {
       id: "video-3",
-      title: "Tactical Threat Detection Node",
-      subtitle: "REAL-TIME CYBER SECURITY OPERATIONS",
-      url: "https://assets.mixkit.co/videos/preview/mixkit-data-center-server-room-with-blinking-lights-41356-large.mp4",
-      icon: Shield,
-      description: "Every deployment of IDS cybersecurity services monitors for abnormal handshake signals, exploits, and SQL injection payloads on servers located in both Silicon Valley and Dubai. Secure, resilient, active protection.",
+      title: "Interactive AEO Search Routing",
+      subtitle: "ANSWER ENGINE INTAKE GRAPH VISUAL",
+      url: "https://assets.mixkit.co/videos/preview/mixkit-tunnel-of-blue-and-purple-neon-lights-41734-large.mp4",
+      icon: Cpu,
+      description: "When ChatGPT, Gemini, or Perplexity parse Silicon Valley or Dubai regional hubs, our Answer Engine Optimization structures your structured data optimized for AI engines, putting your brand at the absolute top of AI suggestions.",
       kpis: [
-        { value: "24/7", label: "Incident Watch" },
-        { value: "< 3ms", label: "Threat Isolation" },
-        { value: "99.99%", label: "System Uptime" }
+        { value: "No. 1", label: "AI Answer Choice" },
+        { value: "0.2s", label: "Query Matching" },
+        { value: "AEO/SEO", label: "Unified Growth" }
+      ]
+    },
+    {
+      id: "video-4",
+      title: "CREATOR BRAND & MONETIZATION ENGINE",
+      subtitle: "Creator Growth Node",
+      url: "https://assets.mixkit.co/videos/preview/mixkit-holding-a-smartphone-next-to-a-laptop-42171-large.mp4",
+      icon: Sparkles,
+      description: "We turn audiences into businesses building the brand identity, content growth system, and monetization infrastructure (media kit, rate card, outreach) that scale a creator from a profile into a global name, with direct access to premium Gulf brand networks through our Dubai team.",
+      kpis: [
+        { value: "Brand System", label: "Live" },
+        { value: "Growth Engine", label: "Active" },
+        { value: "Gulf Network", label: "Connected" }
       ]
     }
   ];

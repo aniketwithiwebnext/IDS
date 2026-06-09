@@ -21,7 +21,7 @@ const cardColors: Record<number, { border: string; glow: string; text: string; i
 
 export default function ProblemSection() {
   return (
-    <section id="problems" className="py-24 bg-[#020617] relative overflow-hidden">
+    <section id="challenge" className="py-24 bg-[#020617] relative overflow-hidden">
       {/* Dynamic light triggers */}
       <div className="absolute top-1/4 right-0 w-[40rem] h-[40rem] bg-indigo-900/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[30rem] h-[30rem] bg-rose-950/10 rounded-full blur-[140px] pointer-events-none" />

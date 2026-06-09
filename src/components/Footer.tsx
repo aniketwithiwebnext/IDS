@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Linkedin, href: "https://linkedin.com/company/impulse-digital-solutions", label: "LinkedIn" },
+    { icon: Linkedin, href: "https://linkedin.com/company/ids-agency-global", label: "LinkedIn" },
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Youtube, href: "#", label: "YouTube" },
     { icon: Instagram, href: "#", label: "Instagram" }
@@ -30,19 +30,19 @@ export default function Footer() {
           <div className="space-y-2 font-sans sm:border-r sm:border-white/5 sm:pr-4">
             <div className="flex items-center gap-2 text-[10px] font-bold text-white uppercase tracking-widest font-mono justify-center">
               <span className="w-1.5 h-1.5 rounded-full bg-ids-magenta animate-pulse" />
-              <span>US HEADQUARTERS</span>
+              <span>US Operations Hub</span>
             </div>
             <p className="text-xs text-slate-400">California, USA</p>
-            <p className="font-mono text-[9px] text-slate-500">Sacramento Edge Node Hub</p>
+            <p className="font-mono text-[9px] text-slate-500">Covina Node (440 N Barranca Ave #3471, Covina, CA 91723)</p>
           </div>
 
           <div className="space-y-2 font-sans sm:pl-4">
             <div className="flex items-center gap-2 text-[10px] font-bold text-white uppercase tracking-widest font-mono justify-center">
               <span className="w-1.5 h-1.5 rounded-full bg-ids-purple animate-pulse" />
-              <span>UAE HUB — IGS</span>
+              <span>UAE Operations Hub — IGS</span>
             </div>
             <p className="text-xs text-slate-400">Dubai, UAE</p>
-            <p className="font-mono text-[9px] text-slate-500">Marina Office District</p>
+            <p className="font-mono text-[9px] text-slate-500">Dubai Production City Node (Production Region Nodes)</p>
           </div>
         </div>
 
@@ -68,7 +68,7 @@ export default function Footer() {
         {/* Lower Legal rows */}
         <div className="flex flex-col items-center gap-4 pt-4 border-t border-white/5 w-full max-w-4xl text-xs text-slate-500 font-sans">
           <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center">
-            <span>© 2026 IDS — Impulse Digital Solutions. All rights reserved.</span>
+            <span>© 2026 IDS. All rights reserved.</span>
             <span>California, USA</span>
             <span>Dubai, UAE</span>
           </div>
@@ -79,10 +79,10 @@ export default function Footer() {
             <span className="text-xs font-sans text-slate-400">
               Developed by{" "}
               <a
-                href="https://impulsedigitalsolutions.us"
+                href="https://ids-agency.com"
                 className="font-semibold text-ids-magenta hover:text-ids-purple transition-all"
               >
-                Impulse Digital Solutions
+                IDS Global
               </a>
             </span>
           </div>

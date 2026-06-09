@@ -14,27 +14,27 @@ export default function UaeSpotlight() {
           {/* Main Info Box */}
           <div className="lg:col-span-6 flex flex-col space-y-6">
             <span className="inline-flex self-start px-3 py-1 bg-indigo-500/15 border border-indigo-500/30 text-indigo-300 text-[10px] font-bold uppercase tracking-wider rounded-full font-mono">
-              The UAE Opportunity
+              Gulf Spotlight
             </span>
             <h2 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-              The World's Most Exciting <br />Business Market Is Waiting For Your Brand.
+              The World's Most Exciting <br />Gulf Markets Are Waiting For Your Brand.
             </h2>
             <p className="font-sans text-xs sm:text-sm text-slate-300 leading-relaxed">
-              The UAE and GCC represent one of the most compelling business expansion opportunities available to US companies today. With zero personal income tax, 9% corporate tax, 100% foreign ownership, and a young, digitally-savvy consumer base with one of the world's highest GDP per capita — the UAE is not just a market, it is a launchpad for global growth.
+              The UAE and GCC represent some of the most compelling business expansion opportunities available to US companies today. With favorable regional tax policies, low tax rates across special zones, strong foreign-ownership access, and a young, digitally-savvy consumer base with one of the world's highest GDP per capita — the Gulf is a powerful launchpad for global growth.
             </p>
             <p className="font-sans text-xs sm:text-sm text-slate-400 leading-relaxed">
-              IDS, through its sister company Impulse Growth Solutions in Dubai, offers US businesses a complete turnkey UAE market entry solution — from initial market research and competitive intelligence to full digital marketing execution, branding, and ongoing performance management.
+              IDS, through its sister company Impulse Growth Solutions in Dubai, offers US businesses a complete turnkey Gulf market entry solution — from initial market research and competitive intelligence to full digital marketing execution, branding, and ongoing performance management.
             </p>
             <p className="font-sans text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Our regional market monitoring capability — delivered through IGS in Dubai — gives brands entering the UAE a unique intelligence advantage. We track consumer sentiment across all major platforms in the GCC market, providing insights that are completely invisible to US-only agencies and absolutely critical for any brand serious about the Gulf.
+              Our regional market monitoring capability — delivered through IGS in Dubai — gives brands entering the Gulf a unique intelligence advantage. We track consumer sentiment across all major platforms in the GCC market, providing insights that are completely invisible to US-only agencies and absolutely critical for any brand serious about the Gulf.
             </p>
-
+ 
             <div className="pt-4">
               <a
                 href="#contact"
                 className="group relative inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-indigo-500 to-indigo-700 text-xs font-mono font-bold text-white transition-all duration-300 shadow-md hover:shadow-indigo-500/20 hover:-translate-y-0.5"
               >
-                <span>Explore UAE Market Entry</span>
+                <span>Let's take your brand global to the Gulf</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
             </div>
@@ -58,7 +58,7 @@ export default function UaeSpotlight() {
               {/* Dynamic Dubai Skyline/DIFC Sunset Hero Media Container (Change 5) */}
               <div className="relative rounded-xl overflow-hidden border border-white/5 shadow-2xl mb-6 aspect-video">
                 <img
-                  src="/src/assets/images/dubai_marina_sunset_1780689994078.png"
+                  src="/assets/images/dubai_marina_sunset_1780689994078.png"
                   alt="Dubai DIFC Sunset and Skyline Operations"
                   className="w-full h-full object-cover object-center transform hover:scale-[1.01] transition-transform duration-500"
                   loading="lazy"
@@ -89,7 +89,7 @@ export default function UaeSpotlight() {
               <div className="mt-8 p-4 bg-indigo-500/5 border border-indigo-500/10 rounded-xl flex items-start gap-3">
                 <Coins className="w-5 h-5 text-indigo-400 shrink-0 mt-0.5" />
                 <p className="font-sans text-[11px] text-indigo-200/90 leading-relaxed">
-                  <strong>International Expansion Advantage:</strong> Combine Silicon Valley agility with 0% personal tax, 100% foreign business ownership, and high consumer margins.
+                  <strong>International Expansion Advantage:</strong> Combine Silicon Valley agility with favorable regional tax policies, strong foreign-ownership access, and high consumer margins.
                 </p>
               </div>
 

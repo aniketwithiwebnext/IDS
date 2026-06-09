@@ -32,32 +32,32 @@ export const PROBLEMS: ProblemCard[] = [
   {
     id: 1,
     title: "Your Pipeline is Empty",
-    description: "Most businesses rely on referrals and hope. Without a structured branding identity, active digital marketing, and a systematic lead generation engine, your growth is unpredictable, inconsistent, and dangerously dependent on luck.",
+    description: "Most businesses rely on referrals and hope. Without a structured brand identity, active digital marketing, and a systematic lead generation engine, your growth is unpredictable, inconsistent, and dangerously dependent on luck.",
     icon: "TrendingDown"
   },
   {
     id: 2,
-    title: "Invisible to AI Search",
-    description: "Google rankings alone are no longer enough. In 2026, ChatGPT, Perplexity, and Copilot answer millions of business queries daily — bypassing traditional search entirely. If AI doesn't know you exist, your competitors are getting those clients right now.",
-    icon: "Bot"
+    title: "Your Vendors Don’t Talk to Each Other",
+    description: "When your IT team, security firm, web developer, and marketing agency work in silos, your business pays the price in gaps, inefficiency, and wasted budget. Disconnected vendors create dangerous blind spots that cost you money and expose you to risk.",
+    icon: "Layers"
   },
   {
     id: 3,
-    title: "You Are Flying Blind",
-    description: "Your brand is being talked about right now — on social media, news sites, review platforms, and AI engines — and you have absolutely no idea what is being said. One unaddressed negative story, one viral complaint, one competitor move you missed — and the damage is done before you even knew it happened.",
+    title: "You’re Invisible Where It Counts",
+    description: "Your customers are searching on Google and asking ChatGPT, Perplexity, and Copilot — while your brand is being discussed across social, news, and review sites. If you’re invisible in search and unaware of what’s being said, competitors win the clients you never even knew you lost.",
     icon: "EyeOff"
   },
   {
     id: 4,
-    title: "No UAE & GCC Market Strategy",
-    description: "The UAE and GCC represent one of the world's fastest-growing digital markets with zero income tax, 100% foreign ownership, and a premium consumer base actively seeking global brands. Most US businesses have no strategy to capture this extraordinary opportunity.",
-    icon: "Globe"
+    title: "Your Audience Isn’t Paying You What It Should",
+    description: "You’ve built a following, but content alone has stopped working. Brand deals plateau, the algorithm keeps shifting, and there’s no system turning your audience into predictable income — or opening doors to premium global markets like the Gulf.",
+    icon: "Bot"
   },
   {
     id: 5,
-    title: "Your Vendors Don't Talk to Each Other",
-    description: "When your IT team, security firm, web developer, and marketing agency work in silos, your business pays the price in gaps, inefficiency, and wasted budget. Disconnected vendors create dangerous blind spots that cost you money and expose you to risk.",
-    icon: "Layers"
+    title: "No UAE & GCC Market Strategy",
+    description: "The UAE and GCC represent one of the world’s fastest-growing digital markets — with zero income tax, 100% foreign ownership, and a premium consumer base actively seeking global brands. Most US businesses have no strategy to capture this extraordinary opportunity.",
+    icon: "Globe"
   },
   {
     id: 6,
@@ -215,7 +215,7 @@ export const PILLARS: Pillar[] = [
     description: "Growth without security is exposure.",
     services: [
       {
-        id: 11,
+        id: 9,
         name: "Managed Security Services",
         description: "Continuous, enterprise-grade protection and monitoring of your systems, networks, and data — security as an always-on service, not a one-time setup.",
         whatItIs: "Continuous, enterprise-grade protection and monitoring of your systems, networks, and data — security as an always-on service, not a one-time setup.",
@@ -230,7 +230,7 @@ export const PILLARS: Pillar[] = [
         whyItMatters: "Cyber threats are constant and automated; ongoing protection is the difference between catching an attack early and discovering a breach too late."
       },
       {
-        id: 12,
+        id: 10,
         name: "Cloud & Microsoft Solutions",
         description: "Setup, migration, and management of your cloud and Microsoft environment for secure, reliable, productive operations.",
         whatItIs: "Setup, migration, and management of your cloud and Microsoft environment for secure, reliable, productive operations.",
@@ -245,7 +245,7 @@ export const PILLARS: Pillar[] = [
         whyItMatters: "A properly configured cloud environment is faster, safer, and cheaper to run — a misconfigured one is one of the most common ways businesses get breached."
       },
       {
-        id: 13,
+        id: 11,
         name: "Core IT Infrastructure Management",
         description: "Day-to-day management of the IT backbone your business runs on — networks, servers, devices, and support.",
         whatItIs: "Day-to-day management of the IT backbone your business runs on — networks, servers, devices, and support.",
@@ -260,7 +260,7 @@ export const PILLARS: Pillar[] = [
         whyItMatters: "Reliable infrastructure keeps your team productive and your operations running; downtime and IT chaos cost real money and momentum."
       },
       {
-        id: 14,
+        id: 12,
         name: "Penetration Testing & Vulnerability Assessment",
         description: "Controlled, authorized testing that finds the weaknesses in your systems before real attackers do.",
         whatItIs: "Controlled, authorized testing that finds the weaknesses in your systems before real attackers do.",
@@ -275,7 +275,7 @@ export const PILLARS: Pillar[] = [
         whyItMatters: "You can't fix what you don't know is broken; proactive testing closes the gaps that lead to breaches and meets the security standards clients and regulators expect."
       },
       {
-        id: 15,
+        id: 13,
         name: "Digital Forensics & Incident Response",
         description: "Rapid response when something goes wrong — containing incidents, investigating what happened, and getting you back to safe operations.",
         whatItIs: "Rapid response when something goes wrong — containing incidents, investigating what happened, and getting you back to safe operations.",
@@ -290,7 +290,7 @@ export const PILLARS: Pillar[] = [
         whyItMatters: "When an incident hits, speed and expertise limit the damage, protect your reputation, and help you recover and prove what happened."
       },
       {
-        id: 16,
+        id: 14,
         name: "Application Security & Protection",
         description: "Security built into and around your applications so the software your business and customers rely on can't be turned against you.",
         whatItIs: "Security built into and around your applications so the software your business and customers rely on can't be turned against you.",
@@ -313,7 +313,7 @@ export const PILLARS: Pillar[] = [
     description: "Turn an audience into a business — then take it global.",
     services: [
       {
-        id: 17,
+        id: 15,
         name: "Personal Brand Identity & Positioning",
         description: "A complete personal brand system that turns a profile into a recognizable, authoritative name.",
         whatItIs: "A complete personal brand system that turns a profile into a recognizable, authoritative name.",
@@ -327,7 +327,7 @@ export const PILLARS: Pillar[] = [
         whyItMatters: "A defined brand makes every post compound your authority instead of just filling a feed — and it's what attracts serious brand partners."
       },
       {
-        id: 18,
+        id: 16,
         name: "Content & Growth Strategy (SEO + AEO)",
         description: "A full growth engine that turns content into reach, audience, and discoverability across platforms and AI search.",
         whatItIs: "A full growth engine that turns content into reach, audience, and discoverability across platforms and AI search.",
@@ -340,7 +340,7 @@ export const PILLARS: Pillar[] = [
         whyItMatters: "It replaces guesswork and algorithm-dependence with a repeatable system for growing the right audience — and being found on Google and AI engines alike."
       },
       {
-        id: 19,
+        id: 17,
         name: "Monetization Systems — Media Kit, Rate Card & Outreach",
         description: "The business infrastructure that turns an audience into income.",
         whatItIs: "The business infrastructure that turns an audience into income.",
@@ -354,7 +354,7 @@ export const PILLARS: Pillar[] = [
         whyItMatters: "Most creators leave money on the table because they're not packaged to be bought; this makes you easy to hire and confident to charge what you're worth."
       },
       {
-        id: 20,
+        id: 18,
         name: "Brand Partnership & Deal Negotiation",
         description: "Hands-on support securing and negotiating brand deals on your behalf.",
         whatItIs: "Hands-on support securing and negotiating brand deals on your behalf.",
@@ -368,7 +368,7 @@ export const PILLARS: Pillar[] = [
         whyItMatters: "Better deals, better terms, and partners you might never have reached alone — handled by people who do this for a living."
       },
       {
-        id: 21,
+        id: 19,
         name: "Dubai & Gulf Brand Network Access",
         description: "Direct access to one of the world's most premium creator markets through our on-ground Dubai team and brand network.",
         whatItIs: "Direct access to one of the world's most premium creator markets through our on-ground Dubai team and brand network.",
@@ -390,7 +390,7 @@ export const PILLARS: Pillar[] = [
     description: "The only California partner with a team on the ground in Dubai.",
     services: [
       {
-        id: 22,
+        id: 20,
         name: "UAE Market Entry Strategy",
         description: "A complete, turnkey roadmap for US businesses entering the UAE and Gulf markets.",
         whatItIs: "A complete, turnkey roadmap for US businesses entering the UAE and Gulf markets.",
@@ -404,7 +404,7 @@ export const PILLARS: Pillar[] = [
         whyItMatters: "The UAE offers extraordinary opportunity but punishes guesswork; a real strategy built by a team on the ground is the difference between expansion and an expensive misstep."
       },
       {
-        id: 23,
+        id: 21,
         name: "MENA Market Research & Intelligence",
         description: "On-the-ground research and consumer intelligence across the MENA region that US-only agencies simply can't access.",
         whatItIs: "On-the-ground research and consumer intelligence across the MENA region that US-only agencies simply can't access.",
@@ -418,7 +418,7 @@ export const PILLARS: Pillar[] = [
         whyItMatters: "Decisions made on real regional data — not assumptions — dramatically raise your odds of success in an unfamiliar market."
       },
       {
-        id: 24,
+        id: 22,
         name: "GCC Marketing Execution",
         description: "Full marketing delivery across the Gulf, executed locally by our Dubai team.",
         whatItIs: "Full marketing delivery across the Gulf, executed locally by our Dubai team.",
@@ -432,7 +432,7 @@ export const PILLARS: Pillar[] = [
         whyItMatters: "Marketing that's culturally fluent and locally executed performs far better than campaigns simply translated and exported from the US."
       },
       {
-        id: 25,
+        id: 23,
         name: "UAE Branding & Creative Production",
         description: "Region-specific branding and creative built to resonate with Gulf audiences.",
         whatItIs: "Region-specific branding and creative built to resonate with Gulf audiences.",
@@ -453,7 +453,7 @@ export const HOW_IT_WORKS: HowItWorksStep[] = [
     id: "step-1",
     number: "01",
     title: "Free Discovery Call",
-    description: "We start with a free 30-minute strategy session to understand your business, your vulnerabilities, and your growth goals across USA and UAE markets. No pressure. No obligation. Pure value."
+    description: "We start with a free 30-minute strategy session to understand your business, your goals, and your growth opportunities across the US and UAE markets."
   },
   {
     id: "step-2",
@@ -484,38 +484,38 @@ export const HOW_IT_WORKS: HowItWorksStep[] = [
 export const WHY_IDS: WhyIDSPoint[] = [
   {
     id: 1,
-    title: "SEO + AEO Combined",
-    description: "We don't just rank you on Google. We make you the answer that AI recommends. SEO and AEO delivered together by one integrated team for maximum digital visibility across every platform in 2026."
-  },
-  {
-    id: 2,
-    title: "Full Funnel Growth",
-    description: "From brand identity to lead generation to conversion — IDS manages your complete digital growth funnel. We don't just build presence, we actively fill your pipeline with qualified, hot buyer leads."
-  },
-  {
-    id: 3,
     title: "USA + UAE Dual Operations",
     description: "The only digital partner operating simultaneously in California and Dubai — giving you unmatched reach and operational capability across two of the world's most powerful and fastest-growing business markets."
   },
   {
-    id: 4,
+    id: 2,
     title: "Security-First Foundation",
     description: "Cybersecurity is not an add-on at IDS. It is backed by enterprise-grade safety, baked into every website, campaign, configuration, and structural pipeline we build. Safe expansion is sustainable growth."
   },
   {
-    id: 5,
+    id: 3,
+    title: "Full Funnel Growth",
+    description: "From brand identity to lead generation to conversion — IDS manages your complete digital growth funnel. We don't just build presence, we actively fill your pipeline with qualified, hot buyer leads."
+  },
+  {
+    id: 4,
     title: "One Vendor, Total Savings",
     description: "Replace 5 to 6 separate vendors with one unified partner. Consolidate your vendor stack and cut overlapping costs significantly while increasing efficiency, eliminating gaps, and giving your team back hours."
   },
   {
-    id: 6,
+    id: 5,
     title: "Total Brand Intelligence",
     description: "Through our media monitoring service, you always know exactly what is being said about your brand, your competitors, and your industry across every platform and in every market you operate in."
   },
   {
-    id: 7,
+    id: 6,
     title: "International Market Intelligence",
     description: "Through IGS in Dubai, we bring real operational international market expertise — not theory. We have the team, the network, and the on-the-ground intelligence that makes UAE GCC entry highly successful."
+  },
+  {
+    id: 7,
+    title: "SEO + AEO Combined",
+    description: "We don't just rank you on Google. We make you the answer that AI recommends. SEO and AEO delivered together by one integrated team for maximum digital visibility across every platform in 2026."
   },
   {
     id: 8,
@@ -529,8 +529,8 @@ export const WHY_IDS: WhyIDSPoint[] = [
   },
   {
     id: 10,
-    title: "Remote-First Global Delivery",
-    description: "Every single service we offer can be delivered remotely — from California to Dubai to anywhere. No geographical limitations. No timezone excuses. No delays. Pure delivery."
+    title: "Creator Growth, Globally",
+    description: "We turn audiences into secure, monetizable operations, giving you direct access to premium Gulf brand partnerships through our on-ground Dubai team. Your influence, professionalized."
   }
 ];
 
@@ -539,24 +539,18 @@ export const UAE_FACTS = [
   { value: "9.9M", label: "Population (89% Urban)" },
   { value: "99%", label: "Internet Penetration" },
   { value: "$27B+", label: "E-Commerce Market Size" },
-  { value: "100%", label: "Foreign Ownership Allowed" },
-  { value: "0%", label: "Personal Income Tax" },
+  { value: "Strong Access", label: "Foreign ownership access" },
+  { value: "Favorable", label: "Regional tax policies" },
   { value: "Gateway", label: "To 2.5B MENA Consumers" },
   { value: "No. 1", label: "Dubai World Business Hub" }
 ];
 
 export const CALL_EXPECTATIONS = [
-  "Full review of your IT infrastructure and security posture",
-  "SEO and AEO visibility audit",
-  "Media presence and brand sentiment audit",
-  "UAE market opportunity assessment",
-  "Top 3 digital vulnerabilities identified",
-  "Brand reputation risk assessment",
-  "Branding audit and recommendations",
-  "Lead generation opportunity assessment",
-  "Custom 90-day growth roadmap",
-  "Clear service recommendation",
-  "No hard sell — pure strategy and value"
+  "Full audit of your current digital footprint (USA + UAE).",
+  "Top 3 security & design vulnerabilities identified.",
+  "Brand sentiment & reputation assessment.",
+  "Favorable tax & market entry analysis.",
+  "Custom 90-day growth roadmap."
 ];
 
 export const SERVICE_OPTIONS = [

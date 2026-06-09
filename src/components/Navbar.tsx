@@ -16,11 +16,11 @@ export default function Navbar() {
 
   const menuItems = [
     { name: "About", href: "#about" },
-    { name: "Problems", href: "#problems" },
+    { name: "The Challenge", href: "#challenge" },
     { name: "Services", href: "#services" },
     { name: "Creators & Influencers", href: "#creators" },
     { name: "Process", href: "#process" },
-    { name: "UAE Spotlight", href: "#uae-spotlight" }
+    { name: "Gulf Spotlight", href: "#uae-spotlight" }
   ];
 
   return (

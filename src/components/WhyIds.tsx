@@ -30,8 +30,8 @@ export default function WhyIds() {
               <div>
                 <div className="flex items-center justify-between mb-6">
                   {/* Glowing Numeric label */}
-                  <span className="font-mono text-xs font-semibold px-2 py-0.5 rounded bg-white/5 border border-white/10 text-slate-400 group-hover:text-cyan-400 group-hover:border-cyan-500/20 transition-all">
-                    ADVANTAGE 0{point.id === 10 ? "10" : `${point.id}`}
+                  <span className="font-mono text-xs font-semibold px-2 py-0.5 rounded bg-white/5 border border-white/10 text-slate-400 group-hover:text-cyan-400 group-hover:border-cyan-500/20 transition-all font-bold">
+                    ADVANTAGE {point.id < 10 ? `0${point.id}.` : `${point.id}.`}
                   </span>
                   <Check className="w-4 h-4 text-cyan-400 opacity-60 group-hover:opacity-100 transition-opacity" />
                 </div>

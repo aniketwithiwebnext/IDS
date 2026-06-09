@@ -34,13 +34,13 @@ export default function AboutSection() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-ids-purple via-ids-magenta to-ids-violet font-black">
                 We Grow. We Secure.
               </span> <br />
-              We Make You The Answer.
+              We Deliver.
             </h2>
 
             {/* Human Team/Office Photo (Change 5) */}
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-md aspect-[16/9] w-full">
               <img
-                src="/src/assets/images/corporate_team_1780950428207.png"
+                src="/assets/images/corporate_team_1780950428207.png"
                 alt="IDS Corporate Specialists and Digital Security Group"
                 className="w-full h-full object-cover object-center transform hover:scale-[1.01] transition-transform duration-500"
                 loading="lazy"
@@ -74,9 +74,16 @@ export default function AboutSection() {
             
             {/* USA Card (Light Theme) */}
             <div className="bg-slate-50 border border-slate-200 p-6 rounded-2xl flex flex-col justify-between shadow-md relative overflow-hidden group hover:shadow-lg transition-all duration-300">
+              <div className="absolute inset-0 opacity-[0.03] pointer-events-none mix-blend-multiply transition-opacity duration-300 group-hover:opacity-[0.05]">
+                <img 
+                  src="/assets/images/california_office_hq_1780690098348.png" 
+                  alt="" 
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
               <div className="absolute top-0 right-0 w-24 h-24 bg-ids-purple/5 rounded-full blur-2xl group-hover:bg-ids-purple/10 transition-all duration-300" />
               
-              <div>
+              <div className="relative z-10">
                 <div className="flex items-center gap-2.5 mb-3">
                   <span className="w-2.5 h-2.5 rounded-full bg-ids-purple animate-pulse" />
                   <h3 className="font-display font-extrabold text-ids-purple uppercase text-xs tracking-wider">USA Operations</h3>
@@ -85,7 +92,7 @@ export default function AboutSection() {
                 {/* Regional HQ Node Photo */}
                 <div className="mb-5 h-28 w-full rounded-xl overflow-hidden border border-slate-200 shadow-inner relative z-10">
                   <img 
-                    src="/src/assets/images/california_office_hq_1780690098348.png" 
+                    src="/assets/images/california_office_hq_1780690098348.png" 
                     alt="IDS California HQ Node" 
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-500 scale-100 group-hover:scale-105"
@@ -113,25 +120,34 @@ export default function AboutSection() {
                 </div>
               </div>
               
-              <div className="pt-6 border-t border-slate-200 mt-8 text-[9px] font-mono text-slate-400">
+              <div className="pt-6 border-t border-slate-200 mt-8 text-[9px] font-mono text-slate-400 relative z-10">
                 HO: SACRAMENTO, CALIFORNIA
               </div>
             </div>
 
             {/* UAE Card (Dark Theme for Depth Contrast) */}
             <div className="bg-slate-950 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-ids-violet/40 transition-all duration-300">
+              <div className="absolute inset-0 opacity-[0.04] pointer-events-none transition-opacity duration-300 group-hover:opacity-[0.06]">
+                <img 
+                  src="/assets/images/dubai_marina_sunset_1780689994078.png" 
+                  alt="" 
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
               <div className="absolute top-0 right-0 w-24 h-24 bg-ids-violet/20 rounded-full blur-2xl group-hover:bg-ids-violet/30 transition-all duration-300" />
               
-              <div>
+              <div className="relative z-10">
                 <div className="flex items-center gap-2.5 mb-3">
                   <span className="w-2.5 h-2.5 rounded-full bg-ids-magenta animate-pulse" />
-                  <h3 className="font-display font-extrabold text-ids-magenta uppercase text-xs tracking-wider">UAE Operations</h3>
+                  <h3 className="font-display font-extrabold text-ids-magenta uppercase text-xs tracking-wider">
+                    UAE Operations - Dubai Production City Node
+                  </h3>
                 </div>
 
                 {/* Regional Dubai Node Photo */}
                 <div className="mb-5 h-28 w-full rounded-xl overflow-hidden border border-white/5 shadow-inner relative z-10">
                   <img 
-                    src="/src/assets/images/dubai_marina_sunset_1780689994078.png" 
+                    src="/assets/images/dubai_marina_sunset_1780689994078.png" 
                     alt="IDS Dubai Marina Regional Node" 
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-500 scale-100 group-hover:scale-105"
@@ -159,8 +175,8 @@ export default function AboutSection() {
                 </div>
               </div>
 
-              <div className="pt-6 border-t border-white/5 mt-8 text-[9px] font-mono text-ids-magenta/80">
-                MIDDLE EAST OFFICE: MARINA, DUBAI
+              <div className="pt-6 border-t border-white/5 mt-8 text-[9px] font-mono text-ids-magenta/80 relative z-10">
+                MIDDLE EAST OFFICE: IN PRODUCTION CITY, DUBAI
               </div>
             </div>
 

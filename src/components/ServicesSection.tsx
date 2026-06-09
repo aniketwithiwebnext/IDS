@@ -38,29 +38,29 @@ const serviceIconMap: Record<number, React.ComponentType<any>> = {
   6: Eye,          // Media Monitoring
   7: Code,         // Website Dev
   8: Smartphone,   // Mobile App Dev
-  11: ShieldCheck, // Managed Security
-  12: Cpu,         // Cloud Solutions
-  13: Terminal,    // Core IT Infrastructure
-  14: Target,      // Penetration Testing
-  15: Terminal,    // Digital Forensics
-  16: Lock,        // Application Protection
-  17: Target,      // Personal Brand Identity
-  18: Cpu,         // Content Growth Strategy
-  19: Megaphone,   // Monetization Systems
-  20: Briefcase,   // Brand Partnership
-  21: Award,       // Dubai Gulf Network Access
-  22: Plane,       // UAE Market entry
-  23: Map,         // MENA Market Research
-  24: Compass,     // GCC Marketing Execution
-  25: Briefcase    // UAE Branding
+  9: ShieldCheck,  // Managed Security
+  10: Cpu,         // Cloud Solutions
+  11: Terminal,    // Core IT Infrastructure
+  12: Target,      // Penetration Testing
+  13: Terminal,    // Digital Forensics
+  14: Lock,        // Application Protection
+  15: Target,      // Personal Brand Identity
+  16: Cpu,         // Content Growth Strategy
+  17: Megaphone,   // Monetization Systems
+  18: Briefcase,   // Brand Partnership
+  19: Award,       // Dubai Gulf Network Access
+  20: Plane,       // UAE Market entry
+  21: Map,         // MENA Market Research
+  22: Compass,     // GCC Marketing Execution
+  23: Briefcase    // UAE Branding
 };
 
 const pillarColors: Record<string, { bgGlow: string; text: string; label: string; border: string; icon: React.ComponentType<any> }> = {
   "pillar-1": { bgGlow: "from-ids-magenta/20 to-transparent", text: "text-ids-magenta", label: "01 / DIGITAL GROWTH & MARKETING", border: "border-ids-magenta/20", icon: Sparkles },
-  "pillar-2": { bgGlow: "from-ids-purple/20 to-transparent", text: "text-ids-purple", label: "02 / CONVERSIONS & WEB DEV", border: "border-ids-purple/20", icon: Code },
-  "pillar-3": { bgGlow: "from-indigo-600/20 to-transparent", text: "text-indigo-400", label: "03 / CYBERSECURITY & IT backbone", border: "border-indigo-500/20", icon: Lock },
-  "pillar-4": { bgGlow: "from-pink-500/20 to-transparent", text: "text-pink-400", label: "04 / CREATORS & INFLUENCERS OVERVIEW", border: "border-pink-500/20", icon: Tv },
-  "pillar-5": { bgGlow: "from-emerald-500/20 to-transparent", text: "text-emerald-400", label: "05 / UAE & GCC REGIONAL MARGINS", border: "border-emerald-500/20", icon: Award }
+  "pillar-2": { bgGlow: "from-ids-purple/20 to-transparent", text: "text-ids-purple", label: "02 / WEB & APP DEVELOPMENT", border: "border-ids-purple/20", icon: Code },
+  "pillar-3": { bgGlow: "from-indigo-600/20 to-transparent", text: "text-indigo-400", label: "03 / CYBERSECURITY & IT INFRASTRUCTURE", border: "border-indigo-500/20", icon: Lock },
+  "pillar-4": { bgGlow: "from-pink-500/20 to-transparent", text: "text-pink-400", label: "04 / CREATORS & INFLUENCERS", border: "border-pink-500/20", icon: Tv },
+  "pillar-5": { bgGlow: "from-emerald-500/20 to-transparent", text: "text-emerald-400", label: "05 / UAE & GCC REGIONAL EXPANSION", border: "border-emerald-500/20", icon: Award }
 };
 
 export default function ServicesSection() {
@@ -87,9 +87,11 @@ export default function ServicesSection() {
           <span className="inline-flex px-4 py-1.5 bg-ids-purple/10 border border-ids-purple/30 text-ids-magenta text-[10px] font-bold uppercase tracking-wider rounded-full mb-4 font-mono">
             Strategic Solutions
           </span>
-          <h2 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-tight mb-6">
+          <h2 className="font-display font-black text-3xl sm:text-4.5xl lg:text-5xl text-white tracking-tight leading-snug mb-6">
             A Full Suite of Enterprise Services. <br className="hidden sm:inline" />
-            Five Strategic Pillars. One Partner.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-ids-magenta via-ids-purple to-ids-violet font-black">
+              Five Strategic Pillars. One Partner.
+            </span>
           </h2>
           <p className="font-sans text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
             We eliminate disconnected vendor silos. Our unified experts synchronize your Security, Codebase, organic Search dominance, creator monetization, and GCC Market entry.

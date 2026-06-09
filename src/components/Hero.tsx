@@ -55,7 +55,7 @@ export default function Hero() {
       {/* Dynamic Dual-Skyline background image (Change 5) */}
       <div className="absolute inset-0 z-0 opacity-[0.06] pointer-events-none mix-blend-luminosity">
         <img
-          src="/src/assets/images/ca_dxb_skyline_1780950361788.png"
+          src="/assets/images/ca_dxb_skyline_1780950361788.png"
           alt="California and Dubai Dual Skylines Panoramic Background"
           className="w-full h-full object-cover object-center"
           loading="lazy"
@@ -100,17 +100,17 @@ export default function Hero() {
             </div>
 
             {/* Headline title banner */}
-            <h1 className="font-display font-black text-4xl sm:text-6xl md:text-7xl xl:text-[72px] xl:leading-[1.05] text-white tracking-tight">
-              AI-Powered SEO, AEO & Web Dev, <br className="hidden sm:inline" />
+            <h1 className="font-display font-black text-4xl sm:text-6xl md:text-[54px] xl:text-[62px] xl:leading-[1.1] text-white tracking-tight">
+              One Team. <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-ids-magenta via-ids-purple to-ids-violet font-black">
-                Unstoppable Digital Growth
-              </span> <br className="hidden lg:inline" />
-              — Shielded & Secured.
+                Total Digital Growth
+              </span> <br />
+              — Built, Secured and Taken Global.
             </h1>
 
             {/* Subheadline description information list */}
             <p id="hero-subheadline" className="font-sans text-[15px] sm:text-[16px] text-slate-300 leading-relaxed max-w-2xl">
-              IDS is California's only all-in-one digital partner that drives your revenue, generates qualified leads, builds your brand, grows creators and influencers into global names, and dynamically secures your entire IT infrastructure — simultaneously. No more juggling multiple vendors. One team. Total control. Two continents.
+              One team that builds your brand, grows your audience and secures everything across the US and UAE. No more juggling vendors. No more gaps. Just total digital growth, fully protected.
             </p>
 
             {/* Action buttons trigger anchors */}
@@ -185,7 +185,7 @@ export default function Hero() {
                   <div className="relative w-full h-full">
                     {/* Generated photorealistic image of operations command screen */}
                     <img
-                      src="/src/assets/images/ids_global_cyber_soc_1780951724880.png"
+                      src="/assets/images/ids_global_cyber_soc_1780951724880.png"
                       alt="IDS Security Command Dashboard"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover brightness-95 opacity-90 transition-transform duration-500 group-hover/screen:scale-105"
@@ -255,6 +255,17 @@ export default function Hero() {
             </div>
           </div>
 
+        </div>
+
+        {/* Sleek styled Proof Strip at the bottom fold of the hero */}
+        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-[11px] text-slate-400 select-none">
+          <div className="flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-ids-magenta animate-pulse" />
+            <span>A decade behind brands like DHL &middot; The Beauty secrets &middot; Starbucks &middot; Bloomingdale&rsquo;s</span>
+          </div>
+          <div className="text-slate-500 font-semibold uppercase tracking-wider text-[10px]">
+            California &amp; Dubai
+          </div>
         </div>
       </div>
     </section>

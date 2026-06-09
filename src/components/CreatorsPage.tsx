@@ -9,7 +9,7 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
   const serviceTiers = [
     {
       name: "Creator Starter",
-      price: "$2,499",
+      price: "Starting at $2,499",
       period: "one-time setup",
       desc: "For growing creators ready to formalize their digital presence and look like a premium business to brands.",
       features: [
@@ -24,7 +24,7 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
     },
     {
       name: "Agency Standard",
-      price: "$4,999",
+      price: "Starting at $4,999",
       period: "per month",
       desc: "Our most popular tier. Complete hand-off Content direction, growth engine optimization, and brand partnership representation.",
       features: [
@@ -107,14 +107,14 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
               </span>
             </h1>
             <p className="font-sans text-[15px] sm:text-[16px] text-slate-300 leading-relaxed max-w-2xl">
-              We turn content feeds into enterprise businesses. By engineering secure, lightning-fast personal pipelines, automating rate cards, and brokering VIP introductions to the premium, premium lifestyle markets of Dubai and Gulf (GCC), we eliminate algorithm dependence.
+              We turn content feeds into enterprise businesses. By engineering lightning-fast personal portfolios, automating rate cards, and brokering VIP introductions to premium lifestyle brands in Dubai and across the GCC, we help you secure your own digital capital and scale direct income.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
                 href="#contact"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-ids-purple to-ids-violet hover:from-ids-magenta hover:to-ids-purple font-bold text-white shadow-lg transition duration-300 hover:-translate-y-0.5 text-center"
               >
-                <span>Apply for Representation</span>
+                <span>Secure Your Brand Growth & Income</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
               <button
@@ -130,7 +130,7 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
             <div className="absolute -inset-1.5 bg-gradient-to-r from-ids-magenta/30 to-ids-purple/30 rounded-3xl blur-xl opacity-60" />
             <div className="relative aspect-square w-full max-w-[400px] overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
               <img
-                src="/src/assets/images/creator_mood_1780950377032.png"
+                src="/assets/images/creator_mood_1780950377032.png"
                 alt="Modern studio camera and creator space mockup"
                 className="w-full h-full object-cover object-center"
                 loading="lazy"
@@ -169,19 +169,19 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="w-full md:w-1/2 space-y-4">
                 <span className="font-mono text-xs text-ids-magenta font-bold">SYSTEM 01</span>
-                <h3 className="font-display font-bold text-2xl text-white">Continuous Personal Web Infrastructure</h3>
+                <h3 className="font-display font-bold text-2xl text-white">Continuous Personal Web Portfolios</h3>
                 <p className="font-sans text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  We design custom digital platforms, single portfolio pages, and bio directories that load at blazing-fast speeds. Every web host is secure-hardened, protecting you from hacking, DDoS interruptions, and data breaches.
+                  We design custom digital platforms, single portfolio pages, and bio directories that load at blazing-fast speeds. Every setup is optimized for premium brands, ensuring maximum speed, search indexing, and flawless performance.
                 </p>
                 <div className="flex items-center gap-2.5 text-xs text-slate-400 font-sans">
                   <CheckCircle className="w-4 h-4 text-ids-magenta" />
-                  <span>SSL encryption & secure sandbox protection</span>
+                  <span>High security, custom discovery & uptime compliance</span>
                 </div>
               </div>
               <div className="w-full md:w-1/2">
                 <div className="overflow-hidden rounded-2xl border border-white/10 aspect-video bg-neutral-900 shadow-md">
                   <img
-                    src="/src/assets/images/creator_growth_1780950393366.png"
+                    src="/assets/images/creator_growth_1780950393366.png"
                     alt="Growth analytics board showing numbers climbing"
                     className="w-full h-full object-cover object-center"
                     loading="lazy"
@@ -206,7 +206,7 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
               <div className="w-full md:w-1/2">
                 <div className="overflow-hidden rounded-2xl border border-white/10 aspect-video bg-neutral-900 shadow-md">
                   <img
-                    src="/src/assets/images/creator_mood_1780950377032.png"
+                    src="/assets/images/creator_mood_1780950377032.png"
                     alt="Creative workspace highlighting physical camera setup"
                     className="w-full h-full object-cover object-center"
                     loading="lazy"
@@ -228,19 +228,19 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
                 <Flame className="w-3.5 h-3.5" /> High-Budget Region Growth
               </span>
               <h2 className="font-display font-black text-3xl sm:text-4xl text-white tracking-tight">
-                The Dubai Advantage: Zero Tax, Maximum Return
+                The Dubai Advantage: Brand Monetization & Audience Capitalization
               </h2>
               <p className="font-sans text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Dubai pays the most and competes the least for elite international marketing campaigns. Through our physical, on-the-ground agents at **Marina Office District, Dubai**, we pitch your personal brand to ultra-premium Gulf brands in lifestyle, tourism, technology, and real estate, securing five-figure partnerships.
+                Dubai is the premier global hub for creators, offering unprecedented access to high-budget brand partnerships and campaign revenue. Through our physical, on-the-ground representatives at the Dubai Production City Node, we position your personal brand directly to premium regional giants, securing lucrative five-figure partnerships.
               </p>
               <div className="grid grid-cols-2 gap-4 font-mono">
                 <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5">
-                  <p className="text-xl sm:text-2xl font-black text-ids-magenta">0%</p>
-                  <p className="text-[10px] text-slate-400 uppercase tracking-wider">Personal Income Tax on campaigns</p>
+                  <p className="text-xl sm:text-2xl font-black text-ids-magenta">3.5x</p>
+                  <p className="text-[10px] text-slate-400 uppercase tracking-wider">Average Campaign Deal Value Increase</p>
                 </div>
                 <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5">
-                  <p className="text-xl sm:text-2xl font-black text-ids-purple">9%</p>
-                  <p className="text-[10px] text-slate-400 uppercase tracking-wider">Minimal Corporate Tax registry</p>
+                  <p className="text-xl sm:text-2xl font-black text-ids-purple">Top Node</p>
+                  <p className="text-[10px] text-slate-400 uppercase tracking-wider">Production City On-Ground Connections</p>
                 </div>
               </div>
             </div>
@@ -248,7 +248,7 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl overflow-hidden border border-white/10 aspect-video">
                 <img
-                  src="/src/assets/images/creator_luxury_1780950411153.png"
+                  src="/assets/images/creator_luxury_1780950411153.png"
                   alt="Dubai luxury sunset backdrop with pools and skyline"
                   className="w-full h-full object-cover object-center"
                   loading="lazy"
@@ -319,7 +319,7 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
                         : "bg-white/5 border border-white/10 hover:border-white/20 text-slate-300 hover:text-white"
                     }`}
                   >
-                    Select Plan & Submit ID
+                    Maximize Your Brand Partnership Income
                   </a>
                 </div>
               </div>
@@ -380,14 +380,14 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
               Take Control of Your Audience Enterprise
             </h2>
             <p className="font-sans text-xs sm:text-sm text-slate-300 leading-relaxed">
-              We review and reply to qualified submissions within 48 business hours. Let us protect and scale your personal capital.
+              We review and reply to qualified submissions within 48 business hours. Let us help you protect and scale your personal brand revenue.
             </p>
             <div className="pt-4">
               <a
                 href="#contact"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-ids-purple to-ids-violet hover:from-ids-magenta hover:to-ids-purple font-bold text-[#fafafa] shadow-lg hover:-translate-y-0.5 transition duration-300"
               >
-                <span>Apply for Representation Today</span>
+                <span>Scale Your Influence & Brand Revenue Today</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>
