@@ -3,18 +3,21 @@ import React from "react";
 interface LogoProps {
   className?: string;
   height?: number | string;
+  variant?: "full" | "simplified" | "icon";
 }
 
-export default function Logo({ className = "", height = 40 }: LogoProps) {
+export default function Logo({ className = "", height = 40, variant = "full" }: LogoProps) {
   // Convert height to number if possible for exact aspect ratio calculation
   const numHeight = typeof height === "number" 
     ? height 
     : parseInt(height as string, 10) || 40;
-  const numWidth = numHeight * 4.5; // Aspect ratio is 540 / 120 = 4.5
+  
+  // Set aspect ratio: icon is 2.0 (200x100), full and simplified are 4.5 (540x120)
+  const numWidth = variant === "icon" ? numHeight * 2 : numHeight * 4.5;
 
   return (
     <svg
-      viewBox="0 0 540 120"
+      viewBox={variant === "icon" ? "10 10 200 100" : "0 0 540 120"}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       width={numWidth}
@@ -89,64 +92,72 @@ export default function Logo({ className = "", height = 40 }: LogoProps) {
         />
       </g>
 
-      {/* ==================== MIDDLE: VERTICAL DIVIDER ==================== */}
-      <line x1="215" y1="20" x2="215" y2="100" stroke="url(#logoDividerGrad)" strokeWidth="2.5" />
+      {variant !== "icon" && (
+        <>
+          {/* ==================== MIDDLE: VERTICAL DIVIDER ==================== */}
+          <line x1="215" y1="20" x2="215" y2="100" stroke="url(#logoDividerGrad)" strokeWidth="2.5" />
 
-      {/* ==================== RIGHT: BRAND DETAILS ==================== */}
-      {/* IMPULSE - Row 1 */}
-      <text
-        x="235"
-        y="42"
-        fill="#FFFFFF"
-        fontFamily="Space Grotesk, system-ui, -apple-system, sans-serif"
-        fontSize="21"
-        fontWeight="bold"
-        letterSpacing="9"
-      >
-        IMPULSE
-      </text>
+          {/* ==================== RIGHT: BRAND DETAILS ==================== */}
+          {variant === "full" && (
+            <>
+              {/* IMPULSE - Row 1 */}
+              <text
+                x="235"
+                y="42"
+                fill="#FFFFFF"
+                fontFamily="Space Grotesk, system-ui, -apple-system, sans-serif"
+                fontSize="21"
+                fontWeight="bold"
+                letterSpacing="9"
+              >
+                IMPULSE
+              </text>
 
-      {/* DIGITAL - Row 2 */}
-      <text
-        x="235"
-        y="67"
-        fill="#FFFFFF"
-        fontFamily="Space Grotesk, system-ui, -apple-system, sans-serif"
-        fontSize="21"
-        fontWeight="bold"
-        letterSpacing="9"
-      >
-        DIGITAL
-      </text>
+              {/* DIGITAL - Row 2 */}
+              <text
+                x="235"
+                y="67"
+                fill="#FFFFFF"
+                fontFamily="Space Grotesk, system-ui, -apple-system, sans-serif"
+                fontSize="21"
+                fontWeight="bold"
+                letterSpacing="9"
+              >
+                DIGITAL
+              </text>
 
-      {/* SOLUTIONS - Row 3 */}
-      <text
-        x="235"
-        y="92"
-        fill="#FFFFFF"
-        fontFamily="Space Grotesk, system-ui, -apple-system, sans-serif"
-        fontSize="21"
-        fontWeight="bold"
-        letterSpacing="9"
-      >
-        SOLUTIONS
-      </text>
+              {/* SOLUTIONS - Row 3 */}
+              <text
+                x="235"
+                y="92"
+                fill="#FFFFFF"
+                fontFamily="Space Grotesk, system-ui, -apple-system, sans-serif"
+                fontSize="21"
+                fontWeight="bold"
+                letterSpacing="9"
+              >
+                SOLUTIONS
+              </text>
+            </>
+          )}
 
-      {/* — USA — - Row 4 with elegant violet color and dashed alignments */}
-      {/* Decorative lines around USA */}
-      <line x1="235" y1="108" x2="310" y2="108" stroke="#7B2FBE" strokeWidth="1.5" strokeOpacity="0.8" />
-      <text
-        x="320"
-        y="112"
-        fill="#C026D3"
-        fontFamily="Space Grotesk, system-ui, -apple-system, sans-serif"
-        fontSize="12"
-        fontWeight="extrabold"
-        letterSpacing="6"
-      >
-        USA
-      </text>
-      <line x1="375" y1="108" x2="450" y2="108" stroke="#7B2FBE" strokeWidth="1.5" strokeOpacity="0.8" />
+          {/* — USA — - Row 4 with elegant violet color and dashed alignments */}
+          {/* Decorative lines around USA */}
+          <line x1="235" y1="108" x2="310" y2="108" stroke="#7B2FBE" strokeWidth="1.5" strokeOpacity="0.8" />
+          <text
+            x="320"
+            y="112"
+            fill="#C026D3"
+            fontFamily="Space Grotesk, system-ui, -apple-system, sans-serif"
+            fontSize="12"
+            fontWeight="extrabold"
+            letterSpacing="6"
+          >
+            USA
+          </text>
+          <line x1="375" y1="108" x2="450" y2="108" stroke="#7B2FBE" strokeWidth="1.5" strokeOpacity="0.8" />
+        </>
+      )}
     </svg>
   );
 }
