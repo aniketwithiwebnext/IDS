@@ -9,8 +9,8 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
   const serviceTiers = [
     {
       name: "Creator Starter",
-      price: "Starting at $2,499",
-      period: "one-time setup",
+      price: "Starting at $1,500",
+      period: "One-time engagement",
       desc: "For growing creators ready to formalize their digital presence and look like a premium business to brands.",
       features: [
         "Brand audit & positioning framework",
@@ -23,9 +23,9 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
       accent: "border-white/10 text-ids-purple bg-[#0f0f15]/80"
     },
     {
-      name: "Agency Standard",
-      price: "Starting at $4,999",
-      period: "per month",
+      name: "Creator Growth",
+      price: "Starting at $2,500",
+      period: "Monthly retainer",
       desc: "Our most popular tier. Complete hand-off Content direction, growth engine optimization, and brand partnership representation.",
       features: [
         "Everything in Starter setup included",
@@ -40,8 +40,8 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
     },
     {
       name: "Global Enterprise",
-      price: "Custom",
-      period: "strategic partnership",
+      price: "Starting at $5,000",
+      period: "Monthly retainer",
       desc: "For elite creators with 1M+ total audience looking to expand into the GCC, configure private labels, and optimize their business operations.",
       features: [
         "In-depth international corporate & company setup mapping",
@@ -319,7 +319,7 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
                         : "bg-white/5 border border-white/10 hover:border-white/20 text-slate-300 hover:text-white"
                     }`}
                   >
-                    Maximize Your Brand Partnership Income
+                    Request a Quote
                   </a>
                 </div>
               </div>

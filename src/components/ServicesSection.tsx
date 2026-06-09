@@ -88,7 +88,7 @@ export default function ServicesSection() {
             Strategic Solutions
           </span>
           <h2 className="font-display font-black text-3xl sm:text-4.5xl lg:text-5xl text-white tracking-tight leading-snug mb-6">
-            A Full Suite of Enterprise Services. <br className="hidden sm:inline" />
+            A Full Suite of Enterprise Services.{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-ids-magenta via-ids-purple to-ids-violet font-black">
               Five Strategic Pillars. One Partner.
             </span>

@@ -2,7 +2,11 @@ import { useState, useEffect } from "react";
 import { Shield, Menu, X, ArrowRight, Globe } from "lucide-react";
 import Logo from "./Logo";
 
-export default function Navbar() {
+interface NavbarProps {
+  activePage?: string;
+}
+
+export default function Navbar({ activePage }: NavbarProps = {}) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -41,15 +45,22 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            {menuItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="font-sans text-[13px] font-medium text-slate-300 hover:text-ids-magenta transition-colors tracking-wide relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-ids-magenta after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left"
-              >
-                {item.name}
-              </a>
-            ))}
+            {menuItems.map((item) => {
+              const isActive = activePage ? item.href === `#${activePage}` : false;
+              return (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className={`font-sans text-[13px] font-medium transition-colors tracking-wide relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-ids-magenta after:transition-transform after:duration-300 after:origin-left ${
+                    isActive
+                      ? "text-ids-magenta after:scale-x-100"
+                      : "text-slate-300 hover:text-ids-magenta after:scale-x-0 hover:after:scale-x-100"
+                  }`}
+                >
+                  {item.name}
+                </a>
+              );
+            })}
           </nav>
 
           {/* Desktop Call to Action */}
@@ -60,7 +71,7 @@ export default function Navbar() {
             </div>
             <a
               href="#contact"
-              className="relative inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-ids-purple to-ids-violet hover:from-ids-magenta hover:to-ids-purple text-sm font-semibold text-white shadow-[0_4px_15px_rgba(123,47,190,0.3)] hover:shadow-[0_4px_25px_rgba(192,38,211,0.5)] transition-all duration-300 hover:-translate-y-0.5 group active:scale-95"
+              className="relative inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-ids-purple to-ids-violet hover:from-ids-magenta hover:to-ids-purple text-sm font-semibold text-white shadow-[0_4px_15px_rgba(123,47,190,0.35)] hover:shadow-[0_4px_25px_rgba(192,38,211,0.5)] transition-all duration-300 hover:-translate-y-0.5 group active:scale-95"
             >
               <span>Free Strategy Call</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -84,16 +95,23 @@ export default function Navbar() {
         }`}
       >
         <div className="px-4 pt-2 pb-6 space-y-4 shadow-[inset_0_4px_20px_rgba(0,0,0,0.5)]">
-          {menuItems.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              onClick={() => setMobileMenuOpen(false)}
-              className="block text-slate-300 hover:text-ids-magenta py-2.5 px-4 rounded-xl hover:bg-slate-800/30 font-medium transition-all"
-            >
-              {item.name}
-            </a>
-          ))}
+          {menuItems.map((item) => {
+            const isActive = activePage ? item.href === `#${activePage}` : false;
+            return (
+              <a
+                key={item.name}
+                href={item.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className={`block py-2.5 px-4 rounded-xl font-medium transition-all ${
+                  isActive
+                    ? "text-ids-magenta bg-slate-800/20"
+                    : "text-slate-300 hover:text-ids-magenta hover:bg-slate-800/30"
+                }`}
+              >
+                {item.name}
+              </a>
+            );
+          })}
           <div className="pt-4 border-t border-slate-800 flex flex-col gap-3 px-4">
             <div className="flex items-center gap-2 text-slate-400 text-xs font-mono">
               <Globe className="w-4 h-4 text-ids-magenta" />

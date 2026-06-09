@@ -4,6 +4,7 @@
  */
 
 import { useState, useEffect } from "react";
+import { ArrowRight } from "lucide-react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TrustBar from "./components/TrustBar";
@@ -21,18 +22,53 @@ import ChatbotWidget from "./components/ChatbotWidget";
 import ScrollToTop from "./components/ScrollToTop";
 import CreatorsPage from "./components/CreatorsPage";
 
-export default function App() {
-  const [activePage, setActivePage] = useState<"home" | "creators">("home");
+type PageType = "home" | "about" | "challenge" | "services" | "creators" | "process" | "uae-spotlight" | "contact";
 
-  // Multi-route simulation via simple hash patterns
+function PageHeader({ title, subtitle, category }: { title: string; subtitle: string; category: string }) {
+  return (
+    <div className="relative pt-36 pb-12 overflow-hidden bg-ids-black border-b border-white/5">
+      {/* Decorative ambient background */}
+      <div className="absolute inset-x-0 top-0 h-[300px] bg-gradient-to-b from-ids-purple/10 to-transparent pointer-events-none" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <span className="inline-flex px-3 py-1 bg-ids-magenta/15 border border-ids-magenta/30 text-ids-magenta text-[10px] font-bold uppercase tracking-wider rounded-full font-mono mb-4">
+          {category}
+        </span>
+        <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-tight">
+          {title}
+        </h1>
+        <p className="font-sans text-slate-300 text-sm sm:text-base max-w-2xl mt-4 leading-relaxed">
+          {subtitle}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default function App() {
+  const [activePage, setActivePage] = useState<PageType>("home");
+
+  // Multi-route simulation via true page redirection on hash change
   useEffect(() => {
     const handleHashChange = () => {
-      if (window.location.hash === "#creators" || window.location.hash === "#creators-page") {
+      const hash = window.location.hash;
+      if (hash === "#creators" || hash === "#creators-page") {
         setActivePage("creators");
-        window.scrollTo(0, 0);
-      } else if (window.location.hash === "#" || window.location.hash === "" || !window.location.hash.startsWith("#creators")) {
+      } else if (hash === "#about") {
+        setActivePage("about");
+      } else if (hash === "#challenge") {
+        setActivePage("challenge");
+      } else if (hash === "#services") {
+        setActivePage("services");
+      } else if (hash === "#process") {
+        setActivePage("process");
+      } else if (hash === "#uae-spotlight") {
+        setActivePage("uae-spotlight");
+      } else if (hash === "#contact") {
+        setActivePage("contact");
+      } else {
         setActivePage("home");
       }
+      window.scrollTo(0, 0);
     };
 
     window.addEventListener("hashchange", handleHashChange);
@@ -53,26 +89,240 @@ export default function App() {
       <div className="absolute top-0 inset-x-0 h-[1000px] bg-gradient-to-b from-ids-purple/10 via-transparent to-transparent pointer-events-none z-0" />
       
       {/* Fixed Layout Modules */}
-      <Navbar />
+      <Navbar activePage={activePage} />
       
       <main className="relative z-10 w-full flex flex-col">
-        {activePage === "home" ? (
+        {activePage === "home" && (
           <>
-            {/* Core Sections conforming to original specifications */}
             <Hero />
             <TrustBar />
-            <ProblemSection />
-            <AboutSection />
-            <ServicesSection />
-            <TechLabShowcase />
-            <SeoAeoSection />
-            <HowItWorks />
-            <WhyIds />
-            <UaeSpotlight />
+            
+            {/* Immersive Home Exploration Hub */}
+            <section className="py-20 bg-ids-black relative border-t border-white/5">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center max-w-3xl mx-auto mb-16">
+                  <span className="font-mono text-[10px] font-bold text-ids-magenta uppercase tracking-widest bg-ids-magenta/15 px-3 py-1 rounded-full border border-ids-magenta/30">
+                    Explore Our Ecosystem
+                  </span>
+                  <h2 className="font-display font-black text-3xl sm:text-4xl text-white tracking-tight mt-4">
+                    Your Complete Growth Ecosystem
+                  </h2>
+                  <p className="font-sans text-xs sm:text-sm text-slate-400 mt-3 leading-relaxed">
+                    IDS bridges secure, high-tech infrastructure with elite brand monetization and dual-market expansion. Select a pillar to explore its capabilities.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {/* Card 1: About Us */}
+                  <a
+                    href="#about"
+                    className="group p-6 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-ids-purple/30 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_10px_40px_rgba(123,47,190,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[220px]"
+                  >
+                    <div>
+                      <span className="font-mono text-[10px] text-ids-purple font-bold block mb-2">01 / BRAND</span>
+                      <h3 className="font-display font-bold text-xl text-white group-hover:text-ids-purple transition-colors">
+                        Dual-Market Identity
+                      </h3>
+                      <p className="font-sans text-xs text-slate-400 mt-2 leading-relaxed">
+                        Understand our dual Operations center spanning Covina, California & Dubai Production City. One cohesive brand intelligence.
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-2 mt-6 text-xs text-slate-300 group-hover:text-ids-purple transition-all font-semibold">
+                      <span>Meet the Partner</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </a>
+
+                  {/* Card 2: The Challenge */}
+                  <a
+                    href="#challenge"
+                    className="group p-6 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-ids-magenta/30 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_10px_40px_rgba(192,38,211,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[220px]"
+                  >
+                    <div>
+                      <span className="font-mono text-[10px] text-ids-magenta font-bold block mb-2">02 / PROBLEM</span>
+                      <h3 className="font-display font-bold text-xl text-white group-hover:text-ids-magenta transition-colors">
+                        The Multi-Vendor Threat
+                      </h3>
+                      <p className="font-sans text-xs text-slate-400 mt-2 leading-relaxed">
+                        Managing 5-6 fragmented agencies creates alignment gaps and security vulnerabilities. Explore our unified response.
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-2 mt-6 text-xs text-slate-300 group-hover:text-ids-magenta transition-all font-semibold">
+                      <span>Review the Threat</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </a>
+
+                  {/* Card 3: Strategic Services */}
+                  <a
+                    href="#services"
+                    className="group p-6 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-ids-purple/30 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_10px_40px_rgba(123,47,190,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[220px]"
+                  >
+                    <div>
+                      <span className="font-mono text-[10px] text-ids-purple font-bold block mb-2">03 / SOLUTIONS</span>
+                      <h3 className="font-display font-bold text-xl text-white group-hover:text-ids-purple transition-colors">
+                        The Five Strategic Pillars
+                      </h3>
+                      <p className="font-sans text-xs text-slate-400 mt-2 leading-relaxed">
+                        Browse our comprehensive elite services, including custom software delivery, SEO + AEO dominance, and cybersecurity-first setups.
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-2 mt-6 text-xs text-slate-300 group-hover:text-ids-purple transition-all font-semibold">
+                      <span>Browse Services</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </a>
+
+                  {/* Card 4: Creators & Influencers */}
+                  <a
+                    href="#creators"
+                    className="group p-6 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-ids-magenta/30 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_10px_40px_rgba(192,38,211,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[220px]"
+                  >
+                    <div>
+                      <span className="font-mono text-[10px] text-ids-magenta font-bold block mb-2">04 / AGENCY</span>
+                      <h3 className="font-display font-bold text-xl text-white group-hover:text-ids-magenta transition-colors">
+                        Global Creator Growth
+                      </h3>
+                      <p className="font-sans text-xs text-slate-400 mt-2 leading-relaxed">
+                        Professionalize your influence. Secure lightning-fast portfolios, automate rate cards, and unlock GCC brand partnerships.
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-2 mt-6 text-xs text-slate-300 group-hover:text-ids-magenta transition-all font-semibold">
+                      <span>Explore Representation</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </a>
+
+                  {/* Card 5: Our Process */}
+                  <a
+                    href="#process"
+                    className="group p-6 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-ids-purple/30 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_10px_40px_rgba(123,47,190,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[220px]"
+                  >
+                    <div>
+                      <span className="font-mono text-[10px] text-ids-purple font-bold block mb-2">05 / TIMELINE</span>
+                      <h3 className="font-display font-bold text-xl text-white group-hover:text-ids-purple transition-colors">
+                        90-Day Execution Roadmap
+                      </h3>
+                      <p className="font-sans text-xs text-slate-400 mt-2 leading-relaxed">
+                        How the dual USA-UAE setup goes from diagnostic audit map to active security monitoring and scaled brand revenue.
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-2 mt-6 text-xs text-slate-300 group-hover:text-ids-purple transition-all font-semibold">
+                      <span>See Our Roadmap</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </a>
+
+                  {/* Card 6: Gulf Spotlight */}
+                  <a
+                    href="#uae-spotlight"
+                    className="group p-6 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-ids-magenta/30 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_10px_40px_rgba(192,38,211,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[220px]"
+                  >
+                    <div>
+                      <span className="font-mono text-[10px] text-ids-magenta font-bold block mb-2">06 / REGION</span>
+                      <h3 className="font-display font-bold text-xl text-white group-hover:text-ids-magenta transition-colors">
+                        Gulf Expansion Opportunity
+                      </h3>
+                      <p className="font-sans text-xs text-slate-400 mt-2 leading-relaxed">
+                        Enter the world's fastest growing consumer market with turnkey research, local brand access, and cross-border agility.
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-2 mt-6 text-xs text-slate-300 group-hover:text-ids-magenta transition-all font-semibold">
+                      <span>Seize Regional Growth</span>
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </section>
+            
             <ContactSection />
           </>
-        ) : (
+        )}
+
+        {activePage === "about" && (
+          <div className="pb-16">
+            <PageHeader
+              title="Dual-Market Operational Headquarters"
+              subtitle="The Silicon Valley of digital marketing combined with physical elite brand deployment in the Gulf. Meet the masterminds of IDS."
+              category="Aesthetic Identity"
+            />
+            <div className="mt-8">
+              <AboutSection />
+            </div>
+          </div>
+        )}
+
+        {activePage === "challenge" && (
+          <div className="pb-16">
+            <PageHeader
+              title="The Multi-Vendor Fragmentation Threat"
+              subtitle="Why managing multiple single-service agencies leads to configuration drift, massive security risks, and communication roadblocks."
+              category="The Diagnostic"
+            />
+            <div className="mt-8 space-y-12">
+              <ProblemSection />
+              <WhyIds />
+            </div>
+          </div>
+        )}
+
+        {activePage === "services" && (
+          <div className="pb-16">
+            <PageHeader
+              title="Enterprise Service Deliverables"
+              subtitle="Explore our five master pillars spanning digital infrastructure engineering, total search dominance (SEO + AEO), list growth, and complete brand positioning."
+              category="Elite Suite"
+            />
+            <div className="mt-8 space-y-16">
+              <ServicesSection />
+              <TechLabShowcase />
+              <SeoAeoSection />
+            </div>
+          </div>
+        )}
+
+        {activePage === "creators" && (
           <CreatorsPage onBackToHome={handleBackToHome} />
+        )}
+
+        {activePage === "process" && (
+          <div className="pb-16">
+            <PageHeader
+              title="Our 90-Day Execution Paradigm"
+              subtitle="A highly optimized sequence of strategic diagnosis, defensive deployment, campaign scaling, and continuous operational intelligence."
+              category="Execution Roadmap"
+            />
+            <div className="mt-8">
+              <HowItWorks />
+            </div>
+          </div>
+        )}
+
+        {activePage === "uae-spotlight" && (
+          <div className="pb-16">
+            <PageHeader
+              title="Gulf Regional Expansion"
+              subtitle="Turnkey market analysis, targeted campaign localization, and direct access to premium Gulf brand partnerships."
+              category="Gulf Spotlight"
+            />
+            <div className="mt-8">
+              <UaeSpotlight />
+            </div>
+          </div>
+        )}
+
+        {activePage === "contact" && (
+          <div className="pb-16">
+            <PageHeader
+              title="Schedule a Priority Strategy Call"
+              subtitle="Audit your security posture, evaluate search parameters, and build a custom 90-day trajectory roadmap. Let's make you dominant."
+              category="Direct Access"
+            />
+            <div className="mt-8">
+              <ContactSection />
+            </div>
+          </div>
         )}
       </main>
 
