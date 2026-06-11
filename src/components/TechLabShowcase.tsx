@@ -1,14 +1,15 @@
 import { useState, useRef, useEffect } from "react";
-import { Play, Pause, Shield, Code, Cpu, Volume2, VolumeX, Maximize2, Sparkles, CheckCircle } from "lucide-react";
+import { Play, Pause, Shield, Code, Cpu, Volume2, VolumeX, Maximize2, Sparkles, CheckCircle, Globe } from "lucide-react";
 
 interface TechVideo {
   id: string;
   title: string;
   subtitle: string;
   url: string;
-  icon: typeof Shield;
+  icon: any;
   description: string;
   kpis: { value: string; label: string }[];
+  poster?: string;
 }
 
 export default function TechLabShowcase() {
@@ -16,7 +17,7 @@ export default function TechLabShowcase() {
     {
       id: "video-1",
       title: "Tactical Threat Detection Node",
-      subtitle: "REAL-TIME CYBER SECURITY OPERATIONS",
+      subtitle: "REAL TIME CYBER SECURITY OPERATIONS",
       url: "https://assets.mixkit.co/videos/preview/mixkit-data-center-server-room-with-blinking-lights-41356-large.mp4",
       icon: Shield,
       description: "Every deployment of IDS cybersecurity services monitors for intrusion attempts, exploits, and common attack patterns on servers located in both Silicon Valley and Dubai. Secure, resilient, active protection.",
@@ -24,20 +25,22 @@ export default function TechLabShowcase() {
         { value: "24/7", label: "Incident Watch" },
         { value: "< 3ms", label: "Threat Isolation" },
         { value: "99.99%", label: "System Uptime" }
-      ]
+      ],
+      poster: "/assets/images/cyber_security_center_1780689979069.png"
     },
     {
       id: "video-2",
-      title: "Security-Hardened Development",
-      subtitle: "FULL-STACK HIGH VELOCITY CODE RELEASES",
+      title: "Security Hardened Development",
+      subtitle: "FULL STACK HIGH VELOCITY CODE RELEASES",
       url: "https://assets.mixkit.co/videos/preview/mixkit-web-development-codes-on-a-computer-screen-40292-large.mp4",
       icon: Code,
-      description: "We compile, scan, and deploy modern, high-performance frameworks with built-in anti-tampering guards and OWASP Top 10 defenses. The resulting interface converts and remains fully safe against external disruptions.",
+      description: "We compile, scan, and deploy modern, high performance frameworks with built in anti tampering guards and OWASP Top 10 defenses. The resulting interface converts and remains fully safe against external disruptions.",
       kpis: [
         { value: "Modern", label: "Frameworks" },
         { value: "0", label: "Critical Weaknesses" },
         { value: "+300%", label: "Conversion Lift" }
-      ]
+      ],
+      poster: "/assets/images/corporate_team_1780950428207.png"
     },
     {
       id: "video-3",
@@ -50,7 +53,8 @@ export default function TechLabShowcase() {
         { value: "No. 1", label: "AI Answer Choice" },
         { value: "0.2s", label: "Query Matching" },
         { value: "AEO/SEO", label: "Unified Growth" }
-      ]
+      ],
+      poster: "/assets/images/ids_aeo_search_dominance_1780951708040.png"
     },
     {
       id: "video-4",
@@ -63,7 +67,22 @@ export default function TechLabShowcase() {
         { value: "Brand System", label: "Live" },
         { value: "Growth Engine", label: "Active" },
         { value: "Gulf Network", label: "Connected" }
-      ]
+      ],
+      poster: "/assets/images/creator_mood_1780950377032.png"
+    },
+    {
+      id: "video-5",
+      title: "Gulf Regional Entry Gateway",
+      subtitle: "UAE & GCC MARKET EXPANSION NODE",
+      url: "https://assets.mixkit.co/videos/preview/mixkit-low-angle-of-futuristic-dubai-skyscrapers-at-night-42207-large.mp4",
+      icon: Globe,
+      description: "Execution of bilingual branding, localized MENA digital campaigns, regional market analytics tracking, and direct access integrations across major Gulf consumer centers.",
+      kpis: [
+        { value: "Turnkey", label: "Roadmap Setup" },
+        { value: "100%", label: "Foreign Ownership" },
+        { value: "Riyadh/Dxb", label: "Local Support Hub" }
+      ],
+      poster: "/assets/images/dubai_marina_sunset_1780689994078.png"
     }
   ];
 
@@ -124,7 +143,7 @@ export default function TechLabShowcase() {
             Watch Our Security, Dev, and AI Nodes in Action.
           </h2>
           <p className="font-sans text-sm text-slate-300 leading-relaxed max-w-2xl mx-auto font-normal">
-            Take a digital tour inside the code streams and monitoring hubs that power IDS California and UAE operations. Select any active feed below to load its real-time stream.
+            Take a digital tour inside the code streams and monitoring hubs that power IDS California and UAE operations. Select any active feed below to load its real time stream.
           </p>
         </div>
 
@@ -190,7 +209,7 @@ export default function TechLabShowcase() {
             <div className="p-4 bg-white/[0.01] border border-white/5 rounded-xl flex items-center gap-3 mt-4">
               <Sparkles className="w-5 h-5 text-ids-magenta shrink-0" />
               <p className="text-[11px] text-slate-400 font-sans leading-relaxed">
-                All feeds loop on <strong>100% secure sandboxed servers</strong>. Our dual hubs ensure zero bandwidth leakage across regions.
+                All feeds run on standard secure, encrypted server infrastructure. Our dual US and UAE hubs ensure synchronized high-performance delivery across regions.
               </p>
             </div>
           </div>
@@ -219,6 +238,7 @@ export default function TechLabShowcase() {
               <video
                 ref={videoRef}
                 src={activeVid.url}
+                poster={activeVid.poster}
                 autoPlay
                 loop
                 muted={isMuted}
@@ -259,7 +279,7 @@ export default function TechLabShowcase() {
                 </div>
 
                 <span className="text-[9px] font-mono text-slate-400">
-                  REAL-TIME LOOPING RECREATION FEED
+                  REAL TIME LOOPING RECREATION FEED
                 </span>
 
                 <button

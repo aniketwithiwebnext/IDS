@@ -10,12 +10,12 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
     {
       name: "Creator Starter",
       price: "Starting at $1,500",
-      period: "One-time engagement",
+      period: "One time engagement",
       desc: "For growing creators ready to formalize their digital presence and look like a premium business to brands.",
       features: [
         "Brand audit & positioning framework",
         "Personal brand kit (colors, typography, style guidelines)",
-        "Premium, hyper-fast single-page bio & portfolio website",
+        "Premium, hyper fast single page bio & portfolio website",
         "Polished media kit & interactive rate card system",
         "SEO / AEO baseline authority submission"
       ],
@@ -44,11 +44,11 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
       period: "Monthly retainer",
       desc: "For elite creators with 1M+ total audience looking to expand into the GCC, configure private labels, and optimize their business operations.",
       features: [
-        "In-depth international corporate & company setup mapping",
+        "In depth international corporate & company setup mapping",
         "VIP physical introductions to luxury Gulf brand networks",
-        "Multi-lingual (Arabic/English) localized growth strategy",
-        "Private product label / merchandising supply-chain guidance",
-        "Dedicated day-to-day manager & custom legal contract protection"
+        "Multi lingual (Arabic/English) localized growth strategy",
+        "Private product label / merchandising supply chain guidance",
+        "Dedicated day to day manager & custom legal contract protection"
       ],
       popular: false,
       accent: "border-white/10 text-indigo-400 bg-[#0f0f15]/80"
@@ -63,7 +63,7 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
       niche: "Luxury Lifestyle Creator (1.2M following)"
     },
     {
-      quote: "Algorithm updates used to terrify me because my entire business depended on one platform. IDS built me a private members-only community system and optimized my brand on Perplexity and ChatGPT. Now, search is a predictable lead engine.",
+      quote: "Algorithm updates used to terrify me because my entire business depended on one platform. IDS built me a private members only community system and optimized my brand on Perplexity and ChatGPT. Now, search is a predictable lead engine.",
       author: "Marcus Chen",
       metric: "12,000+ paid subscribers base",
       niche: "Tech & Finance Influencer (850K following)"
@@ -107,7 +107,7 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
               </span>
             </h1>
             <p className="font-sans text-[15px] sm:text-[16px] text-slate-300 leading-relaxed max-w-2xl">
-              We turn content feeds into enterprise businesses. By engineering lightning-fast personal portfolios, automating rate cards, and brokering VIP introductions to premium lifestyle brands in Dubai and across the GCC, we help you secure your own digital capital and scale direct income.
+              We turn content feeds into enterprise businesses. By engineering lightning fast personal portfolios, automating rate cards, and brokering VIP introductions to premium lifestyle brands in Dubai and across the GCC, we help you secure your own digital capital and scale direct income.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
@@ -150,7 +150,7 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
 
         </div>
 
-        {/* Section 2: "What We Build" - Zig Zag Visual Section */}
+        {/* Section 2: "What We Build": Zig Zag Visual Section */}
         <div className="py-16 border-t border-white/5 mb-24">
           <div className="max-w-3xl mb-16">
             <span className="text-[10px] font-mono font-bold text-ids-magenta uppercase tracking-widest block mb-2">
@@ -171,7 +171,7 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
                 <span className="font-mono text-xs text-ids-magenta font-bold">SYSTEM 01</span>
                 <h3 className="font-display font-bold text-2xl text-white">Continuous Personal Web Portfolios</h3>
                 <p className="font-sans text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  We design custom digital platforms, single portfolio pages, and bio directories that load at blazing-fast speeds. Every setup is optimized for premium brands, ensuring maximum speed, search indexing, and flawless performance.
+                  We design custom digital platforms, single portfolio pages, and bio directories that load at blazing fast speeds. Every setup is optimized for premium brands, ensuring maximum speed, search indexing, and flawless performance.
                 </p>
                 <div className="flex items-center gap-2.5 text-xs text-slate-400 font-sans">
                   <CheckCircle className="w-4 h-4 text-ids-magenta" />
@@ -225,13 +225,13 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-6 text-left">
               <span className="inline-flex gap-2 px-3 py-1 items-center bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[10px] font-mono font-bold uppercase tracking-widest rounded-full">
-                <Flame className="w-3.5 h-3.5" /> High-Budget Region Growth
+                <Flame className="w-3.5 h-3.5" /> High Budget Region Growth
               </span>
               <h2 className="font-display font-black text-3xl sm:text-4xl text-white tracking-tight">
                 The Dubai Advantage: Brand Monetization & Audience Capitalization
               </h2>
               <p className="font-sans text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Dubai is the premier global hub for creators, offering unprecedented access to high-budget brand partnerships and campaign revenue. Through our physical, on-the-ground representatives at the Dubai Production City Node, we position your personal brand directly to premium regional giants, securing lucrative five-figure partnerships.
+                Dubai is the premier global hub for creators, offering unprecedented access to high-budget brand partnerships and campaign revenue. Through our physical, on the ground representatives at the Dubai Production City Node, we position your personal brand directly to premium regional giants, securing lucrative five figure partnerships.
               </p>
               <div className="grid grid-cols-2 gap-4 font-mono">
                 <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5">
@@ -240,7 +240,7 @@ export default function CreatorsPage({ onBackToHome }: CreatorsPageProps) {
                 </div>
                 <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5">
                   <p className="text-xl sm:text-2xl font-black text-ids-purple">Top Node</p>
-                  <p className="text-[10px] text-slate-400 uppercase tracking-wider">Production City On-Ground Connections</p>
+                  <p className="text-[10px] text-slate-400 uppercase tracking-wider">Production City On Ground Connections</p>
                 </div>
               </div>
             </div>

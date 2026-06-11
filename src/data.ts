@@ -25,7 +25,7 @@ export const STATS: StatItem[] = [
   { id: "stat-1", value: "30+", label: "Specialists" },
   { id: "stat-2", value: "10+", label: "Years in Market" },
   { id: "stat-3", value: "USA + UAE", label: "2 Continents Operations" },
-  { id: "stat-4", value: "Security-First", label: "Delivery Guarantee" }
+  { id: "stat-4", value: "Security First", label: "Delivery Guarantee" }
 ];
 
 export const PROBLEMS: ProblemCard[] = [
@@ -56,7 +56,7 @@ export const PROBLEMS: ProblemCard[] = [
   {
     id: 5,
     title: "No UAE & GCC Market Strategy",
-    description: "The UAE and GCC represent one of the world’s fastest-growing digital markets — with zero income tax, 100% foreign ownership, and a premium consumer base actively seeking global brands. Most US businesses have no strategy to capture this extraordinary opportunity.",
+    description: "The UAE and GCC represent one of the world’s fastest-growing digital markets — with a highly tax-efficient environment, 100% foreign ownership, and a premium consumer base actively seeking global brands. Most US businesses have no strategy to capture this extraordinary opportunity.",
     icon: "Globe"
   },
   {
@@ -70,7 +70,7 @@ export const PROBLEMS: ProblemCard[] = [
 export const PILLARS: Pillar[] = [
   {
     id: "pillar-1",
-    name: "PILLAR I — DIGITAL GROWTH & MARKETING",
+    name: "PILLAR I: DIGITAL GROWTH & MARKETING",
     shortName: "Digital Growth",
     icon: "Sparkles",
     description: "Brand. Marketing. Lead generation. Growth.",
@@ -93,9 +93,9 @@ export const PILLARS: Pillar[] = [
       },
       {
         id: 2,
-        name: "Full-Funnel Digital Marketing",
-        description: "End-to-end marketing that moves people from first impression to paying customer across every channel, managed as one coordinated system.",
-        whatItIs: "End-to-end marketing that moves people from first impression to paying customer across every channel, managed as one coordinated system.",
+        name: "Full Funnel Digital Marketing",
+        description: "End to end marketing that moves people from first impression to paying customer across every channel, managed as one coordinated system.",
+        whatItIs: "End to end marketing that moves people from first impression to paying customer across every channel, managed as one coordinated system.",
         included: [
           "Marketing strategy & channel planning",
           "Social media management",
@@ -104,7 +104,7 @@ export const PILLARS: Pillar[] = [
           "Paid social & display",
           "Analytics & reporting"
         ],
-        whyItMatters: "Disconnected one-off campaigns leak money; a full funnel turns attention into revenue and makes every dollar of USD spend work harder."
+        whyItMatters: "Disconnected one off campaigns leak money; a full funnel turns attention into revenue and makes every dollar of USD spend work harder."
       },
       {
         id: 3,
@@ -122,9 +122,9 @@ export const PILLARS: Pillar[] = [
       },
       {
         id: 4,
-        name: "AI-Powered SEO",
-        description: "Search engine optimization that gets you found and ranked on Google through technical, content, and authority work — sharpened with AI-driven research and optimization.",
-        whatItIs: "Search engine optimization that gets you found and ranked on Google through technical, content, and authority work — sharpened with AI-driven research and optimization.",
+        name: "AI Powered SEO",
+        description: "Search engine optimization that gets you found and ranked on Google through technical, content, and authority work, sharpened with AI driven research and optimization.",
+        whatItIs: "Search engine optimization that gets you found and ranked on Google through technical, content, and authority work, sharpened with AI driven research and optimization.",
         included: [
           "Technical SEO audit & fixes",
           "Keyword & competitor research",
@@ -138,14 +138,14 @@ export const PILLARS: Pillar[] = [
       },
       {
         id: 5,
-        name: "AEO — Answer Engine Optimization",
-        description: "Optimization for AI answer engines — ChatGPT, Perplexity, Microsoft Copilot — so your business is the brand they recommend, not just a blue link on Google.",
-        whatItIs: "Optimization for AI answer engines — ChatGPT, Perplexity, Microsoft Copilot — so your business is the brand they recommend, not just a blue link on Google.",
+        name: "AEO: Answer Engine Optimization",
+        description: "Optimization for AI answer engines: ChatGPT, Perplexity, Microsoft Copilot, so your business is the brand they recommend, not just a blue link on Google.",
+        whatItIs: "Optimization for AI answer engines: ChatGPT, Perplexity, Microsoft Copilot, so your business is the brand they recommend, not just a blue link on Google.",
         included: [
           "AI visibility audit",
           "Structured data & entity optimization",
           "Authoritative content built for AI citation",
-          "Answer-engine monitoring",
+          "Answer engine monitoring",
           "Reputation signals across the sources AI reads"
         ],
         whyItMatters: "Millions of buying decisions now start with an AI prompt that returns one answer. If that answer isn't you, your competitor is winning clients you never see."
@@ -153,14 +153,14 @@ export const PILLARS: Pillar[] = [
       {
         id: 6,
         name: "Media Monitoring & Brand Intelligence",
-        description: "Always-on tracking of what's being said about your brand, competitors, and industry across social, news, review sites, and AI engines.",
-        whatItIs: "Always-on tracking of what's being said about your brand, competitors, and industry across social, news, review sites, and AI engines.",
+        description: "Always on tracking of what's being said about your brand, competitors, and industry across social, news, review sites, and AI engines.",
+        whatItIs: "Always on tracking of what's being said about your brand, competitors, and industry across social, news, review sites, and AI engines.",
         included: [
-          "Real-time brand & keyword monitoring",
+          "Real time brand & keyword monitoring",
           "Sentiment analysis",
           "Competitor tracking",
           "Reputation alerts",
-          "Crisis early-warning",
+          "Crisis early warning",
           "Regular intelligence reports"
         ],
         whyItMatters: "You can't manage what you can't see. One unaddressed story can do damage before you know it exists — monitoring lets you act before it spreads."
@@ -169,7 +169,7 @@ export const PILLARS: Pillar[] = [
   },
   {
     id: "pillar-2",
-    name: "PILLAR II — WEB & APP DEVELOPMENT",
+    name: "PILLAR II: WEB & APP DEVELOPMENT",
     shortName: "Web & App Dev",
     icon: "Code",
     description: "Platforms that perform, convert, and scale.",
@@ -177,14 +177,14 @@ export const PILLARS: Pillar[] = [
       {
         id: 7,
         name: "Website Design & Development",
-        description: "High-performance websites engineered to convert visitors into customers — fast, secure, and built to scale, not just to look good.",
-        whatItIs: "High-performance websites engineered to convert visitors into customers — fast, secure, and built to scale, not just to look good.",
+        description: "High performance websites engineered to convert visitors into customers, fast, secure, and built to scale, not just to look good.",
+        whatItIs: "High performance websites engineered to convert visitors into customers, fast, secure, and built to scale, not just to look good.",
         included: [
           "UX/UI design",
           "Responsive development",
           "CMS & e-commerce builds",
           "Speed & performance optimization",
-          "SEO-ready architecture",
+          "SEO ready architecture",
           "Security by design",
           "Maintenance & support"
         ],
@@ -193,8 +193,8 @@ export const PILLARS: Pillar[] = [
       {
         id: 8,
         name: "Mobile App Development",
-        description: "Native and cross-platform mobile apps designed for performance, usability, and global scale.",
-        whatItIs: "Native and cross-platform mobile apps designed for performance, usability, and global scale.",
+        description: "Native and cross platform mobile apps designed for performance, usability, and global scale.",
+        whatItIs: "Native and cross platform mobile apps designed for performance, usability, and global scale.",
         included: [
           "App strategy & UX design",
           "iOS & Android development",
@@ -203,13 +203,13 @@ export const PILLARS: Pillar[] = [
           "App store launch",
           "Ongoing updates & support"
         ],
-        whyItMatters: "A well-built app deepens customer loyalty and opens a direct, high-engagement channel to your audience."
+        whyItMatters: "A well built app deepens customer loyalty and opens a direct, high engagement channel to your audience."
       }
     ]
   },
   {
     id: "pillar-3",
-    name: "PILLAR III — CYBERSECURITY & IT",
+    name: "PILLAR III: CYBERSECURITY & IT",
     shortName: "Cybersecurity & IT",
     icon: "Lock",
     description: "Growth without security is exposure.",
@@ -217,8 +217,8 @@ export const PILLARS: Pillar[] = [
       {
         id: 9,
         name: "Managed Security Services",
-        description: "Continuous, enterprise-grade protection and monitoring of your systems, networks, and data — security as an always-on service, not a one-time setup.",
-        whatItIs: "Continuous, enterprise-grade protection and monitoring of your systems, networks, and data — security as an always-on service, not a one-time setup.",
+        description: "Continuous, enterprise grade protection and monitoring of your systems, networks, and data, security as an always on service, not a one time setup.",
+        whatItIs: "Continuous, enterprise grade protection and monitoring of your systems, networks, and data, security as an always on service, not a one time setup.",
         included: [
           "24/7 threat monitoring",
           "Endpoint & network protection",
@@ -247,8 +247,8 @@ export const PILLARS: Pillar[] = [
       {
         id: 11,
         name: "Core IT Infrastructure Management",
-        description: "Day-to-day management of the IT backbone your business runs on — networks, servers, devices, and support.",
-        whatItIs: "Day-to-day management of the IT backbone your business runs on — networks, servers, devices, and support.",
+        description: "Day to day management of the IT backbone your business runs on, networks, servers, devices, and support.",
+        whatItIs: "Day to day management of the IT backbone your business runs on, networks, servers, devices, and support.",
         included: [
           "Network & server management",
           "Device & endpoint management",
@@ -307,10 +307,10 @@ export const PILLARS: Pillar[] = [
   },
   {
     id: "pillar-4",
-    name: "PILLAR IV — CREATORS & INFLUENCERS",
+    name: "PILLAR IV: CREATORS & INFLUENCERS",
     shortName: "Creators & Influencers",
     icon: "Tv",
-    description: "Turn an audience into a business — then take it global.",
+    description: "Turn an audience into a business, then take it global.",
     services: [
       {
         id: 15,
@@ -335,9 +335,9 @@ export const PILLARS: Pillar[] = [
           "Content strategy & creative direction",
           "SEO + AEO visibility",
           "Paid growth campaigns",
-          "Platform-specific optimization (Instagram, TikTok, YouTube, LinkedIn)"
+          "Platform specific optimization (Instagram, TikTok, YouTube, LinkedIn)"
         ],
-        whyItMatters: "It replaces guesswork and algorithm-dependence with a repeatable system for growing the right audience — and being found on Google and AI engines alike."
+        whyItMatters: "It replaces guesswork and algorithm dependence with a repeatable system for growing the right audience, and being found on Google and AI engines alike."
       },
       {
         id: 17,
@@ -365,7 +365,7 @@ export const PILLARS: Pillar[] = [
           "Contract guidance",
           "Campaign coordination"
         ],
-        whyItMatters: "Better deals, better terms, and partners you might never have reached alone — handled by people who do this for a living."
+        whyItMatters: "Better deals, better terms, and partners you might never have reached alone, handled by people who do this for a living."
       },
       {
         id: 19,
@@ -378,13 +378,13 @@ export const PILLARS: Pillar[] = [
           "Brand trip & activation coordination",
           "VIP network access via Impulse Growth Solutions"
         ],
-        whyItMatters: "The Gulf pays the most and competes the least for international creators — and almost no US creator is positioned to access it. We are."
+        whyItMatters: "The Gulf pays the most and competes the least for international creators, and almost no US creator is positioned to access it. We are."
       }
     ]
   },
   {
     id: "pillar-5",
-    name: "PILLAR V — UAE & GCC MARKET SERVICES",
+    name: "PILLAR V: UAE & GCC MARKET SERVICES",
     shortName: "UAE & GCC Expansion",
     icon: "Award",
     description: "The only California partner with a team on the ground in Dubai.",
@@ -406,8 +406,8 @@ export const PILLARS: Pillar[] = [
       {
         id: 21,
         name: "MENA Market Research & Intelligence",
-        description: "On-the-ground research and consumer intelligence across the MENA region that US-only agencies simply can't access.",
-        whatItIs: "On-the-ground research and consumer intelligence across the MENA region that US-only agencies simply can't access.",
+        description: "On the ground research and consumer intelligence across the MENA region that US only agencies simply can't access.",
+        whatItIs: "On the ground research and consumer intelligence across the MENA region that US only agencies simply can't access.",
         included: [
           "Market & competitor research",
           "Consumer insight",
@@ -415,7 +415,7 @@ export const PILLARS: Pillar[] = [
           "Demand & opportunity sizing",
           "Cultural & localization intelligence"
         ],
-        whyItMatters: "Decisions made on real regional data — not assumptions — dramatically raise your odds of success in an unfamiliar market."
+        whyItMatters: "Decisions made on real regional data, not assumptions, dramatically raise your odds of success in an unfamiliar market."
       },
       {
         id: 22,
@@ -434,15 +434,15 @@ export const PILLARS: Pillar[] = [
       {
         id: 23,
         name: "UAE Branding & Creative Production",
-        description: "Region-specific branding and creative built to resonate with Gulf audiences.",
-        whatItIs: "Region-specific branding and creative built to resonate with Gulf audiences.",
+        description: "Region specific branding and creative built to resonate with Gulf audiences.",
+        whatItIs: "Region specific branding and creative built to resonate with Gulf audiences.",
         included: [
           "Localized brand & creative strategy",
           "Arabic & bilingual creative",
           "Campaign & content production",
           "Event & activation creative"
         ],
-        whyItMatters: "Premium Gulf audiences expect a premium, culturally-attuned brand experience; generic creative signals you don't understand the market."
+        whyItMatters: "Premium Gulf audiences expect a premium, culturally attuned brand experience; generic creative signals you don't understand the market."
       }
     ]
   }
@@ -453,7 +453,7 @@ export const HOW_IT_WORKS: HowItWorksStep[] = [
     id: "step-1",
     number: "01",
     title: "Free Discovery Call",
-    description: "We start with a free 30-minute strategy session to understand your business, your goals, and your growth opportunities across the US and UAE markets."
+    description: "We start with a free 30 minute strategy session to understand your business, your goals, and your growth opportunities across the US and UAE markets."
   },
   {
     id: "step-2",
@@ -471,7 +471,7 @@ export const HOW_IT_WORKS: HowItWorksStep[] = [
     id: "step-4",
     number: "04",
     title: "Integrated Execution",
-    description: "Our unified US and UAE teams execute across all pillars in a coordinated, timeline-driven delivery. No silos. No gaps. No excuses. Total integration from day one."
+    description: "Our unified US and UAE teams execute across all pillars in a coordinated, timeline driven delivery. No silos. No gaps. No excuses. Total integration from day one."
   },
   {
     id: "step-5",
@@ -485,11 +485,11 @@ export const WHY_IDS: WhyIDSPoint[] = [
   {
     id: 1,
     title: "USA + UAE Dual Operations",
-    description: "The only digital partner operating simultaneously in California and Dubai — giving you unmatched reach and operational capability across two of the world's most powerful and fastest-growing business markets."
+    description: "The only digital partner operating simultaneously in California and Dubai, giving you unmatched reach and operational capability across two of the world's most powerful and fastest growing business markets."
   },
   {
     id: 2,
-    title: "Security-First Foundation",
+    title: "Security First Foundation",
     description: "Cybersecurity is not an add-on at IDS. It is backed by enterprise-grade safety, baked into every website, campaign, configuration, and structural pipeline we build. Safe expansion is sustainable growth."
   },
   {
@@ -510,7 +510,7 @@ export const WHY_IDS: WhyIDSPoint[] = [
   {
     id: 6,
     title: "International Market Intelligence",
-    description: "Through IGS in Dubai, we bring real operational international market expertise — not theory. We have the team, the network, and the on-the-ground intelligence that makes UAE GCC entry highly successful."
+    description: "Through IGS in Dubai, we bring real operational international market expertise, not theory. We have the team, the network, and the on the ground intelligence that makes UAE GCC entry highly successful."
   },
   {
     id: 7,
@@ -520,12 +520,12 @@ export const WHY_IDS: WhyIDSPoint[] = [
   {
     id: 8,
     title: "Transparent Reporting",
-    description: "Real-time dashboards, monthly performance reports, and open-door communication at all times. You always know exactly what is happening across every service, campaign, and market with complete clarity."
+    description: "Real time dashboards, monthly performance reports, and open door communication at all times. You always know exactly what is happening across every service, campaign, and market with complete clarity."
   },
   {
     id: 9,
-    title: "Long-Term Partnership",
-    description: "We measure our success by your growth. Our entire business model is built on long-term retainers, not one-off projects. When you grow, we grow. That alignment of incentives changes everything."
+    title: "Long Term Partnership",
+    description: "We measure our success by your growth. Our entire business model is built on long term retainers, not one off projects. When you grow, we grow. That alignment of incentives changes everything."
   },
   {
     id: 10,
@@ -538,7 +538,7 @@ export const UAE_FACTS = [
   { value: "$500B+", label: "UAE GDP 2026" },
   { value: "9.9M", label: "Population (89% Urban)" },
   { value: "99%", label: "Internet Penetration" },
-  { value: "$27B+", label: "E-Commerce Market Size" },
+  { value: "$27B+", label: "Ecommerce Market Size" },
   { value: "Strong Access", label: "Foreign ownership access" },
   { value: "Favorable", label: "Regional tax policies" },
   { value: "Gateway", label: "To 2.5B MENA Consumers" },
@@ -550,7 +550,7 @@ export const CALL_EXPECTATIONS = [
   "Top 3 security & design vulnerabilities identified.",
   "Brand sentiment & reputation assessment.",
   "Favorable tax & market entry analysis.",
-  "Custom 90-day growth roadmap."
+  "Custom 90 day growth roadmap."
 ];
 
 export const SERVICE_OPTIONS = [

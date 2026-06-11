@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Linkedin, href: "https://linkedin.com/company/ids-agency-global", label: "LinkedIn" },
+    { icon: Linkedin, href: "https://linkedin.com/company/impulse-digital-solutions", label: "LinkedIn" },
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Youtube, href: "#", label: "YouTube" },
     { icon: Instagram, href: "#", label: "Instagram" }
@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="flex flex-col items-center space-y-4 max-w-lg">
           <Logo height={42} className="w-auto" />
           <p className="font-sans text-xs text-slate-400 leading-relaxed">
-            IDS is California's only all-in-one digital partner integrating enterprise Cybersecurity, robust Web & App Development, cutting-edge AI-Powered SEO/AEO, creator monetization pipelines, and GCC/US Growth Execution.
+            IDS is California's only all in one digital partner integrating enterprise Cybersecurity, robust Web & App Development, cutting edge AI Powered SEO/AEO, creator monetization pipelines, and GCC/US Growth Execution.
           </p>
         </div>
 
@@ -39,11 +39,20 @@ export default function Footer() {
           <div className="space-y-2 font-sans sm:pl-4">
             <div className="flex items-center gap-2 text-[10px] font-bold text-white uppercase tracking-widest font-mono justify-center">
               <span className="w-1.5 h-1.5 rounded-full bg-ids-purple animate-pulse" />
-              <span>UAE Operations Hub — IGS</span>
+              <span>UAE Operations Hub: IGS</span>
             </div>
             <p className="text-xs text-slate-400">Dubai, UAE</p>
             <p className="font-mono text-[9px] text-slate-500">Dubai Production City Node (Production Region Nodes)</p>
           </div>
+        </div>
+
+        {/* Contact details */}
+        <div className="font-sans text-xs text-slate-350 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 py-2">
+          <a href="mailto:grow@impulsedigitalsolutions.us" className="hover:text-ids-magenta transition-colors">grow@impulsedigitalsolutions.us</a>
+          <span className="text-white/25 hidden sm:inline">•</span>
+          <a href="tel:+16575409315" className="hover:text-ids-magenta transition-colors">+1 (657) 540 9315</a>
+          <span className="text-white/25 hidden sm:inline">•</span>
+          <a href="https://linkedin.com/company/impulse-digital-solutions" target="_blank" rel="noreferrer" className="hover:text-ids-magenta transition-colors">linkedin.com/company/impulse-digital-solutions</a>
         </div>
 
         {/* Social media connections row */}

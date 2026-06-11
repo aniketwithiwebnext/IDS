@@ -56,7 +56,7 @@ export default function ContactSection() {
 
       setSuccess(successMessage);
       // Generate a mock unique reference token for cyber realism
-      const randomToken = "IDS-" + Math.floor(100000 + Math.random() * 900000) + "-SEC";
+      const randomToken = "IDS SEC " + Math.floor(100000 + Math.random() * 900000);
       setSecureToken(randomToken);
 
       // Reset form variables
@@ -97,7 +97,7 @@ export default function ContactSection() {
                 Your Business Deserves to Be Built, Secured, and Dominant.
               </h2>
               <p className="font-sans text-sm text-slate-350 leading-relaxed mt-4 font-normal">
-                Book a free 30-minute strategy call. We audit your complete digital position and show you exactly where the gaps are — at zero cost and zero obligation.
+                Book a free 30 minute strategy call. We audit your complete digital position and show you exactly where the gaps are, at zero cost and zero obligation.
               </p>
             </div>
 
@@ -137,11 +137,7 @@ export default function ContactSection() {
             <div className="space-y-4 pt-4 border-t border-white/5">
               <div className="flex items-center gap-3 text-xs text-slate-300 font-sans hover:text-[#fafafa] transition-colors">
                 <Mail className="w-4 h-4 text-ids-magenta" />
-                <a href="mailto:grow@ids-agency.com">grow@ids-agency.com</a>
-              </div>
-              <div className="flex items-center gap-3 text-xs text-slate-300 font-sans hover:text-[#fafafa] transition-colors">
-                <Globe className="w-4 h-4 text-ids-magenta" />
-                <a href="https://ids-agency.com" target="_blank" rel="noreferrer">ids-agency.com</a>
+                <a href="mailto:grow@impulsedigitalsolutions.us">grow@impulsedigitalsolutions.us</a>
               </div>
               <div className="flex items-center gap-3 text-xs text-slate-300 font-sans hover:text-[#fafafa] transition-colors">
                 <Phone className="w-4 h-4 text-ids-magenta" />
@@ -149,7 +145,7 @@ export default function ContactSection() {
               </div>
               <div className="flex items-center gap-3 text-xs text-slate-300 font-sans hover:text-[#fafafa] transition-colors">
                 <Linkedin className="w-4 h-4 text-ids-magenta" />
-                <a href="https://linkedin.com/company/ids-agency-global" target="_blank" rel="noreferrer">linkedin.com/company/ids-agency-global</a>
+                <a href="https://linkedin.com/company/impulse-digital-solutions" target="_blank" rel="noreferrer">linkedin.com/company/impulse-digital-solutions</a>
               </div>
             </div>
           </div>
@@ -279,7 +275,7 @@ export default function ContactSection() {
                           id="phoneNumber"
                           type="tel"
                           className="w-full px-4 py-3 rounded-xl bg-slate-950/40 border border-white/10 text-white font-sans text-xs focus:bg-slate-900/40 focus:border-ids-magenta focus:ring-1 focus:ring-ids-magenta outline-none transition-colors"
-                          placeholder="+1 (555) 000-0000"
+                          placeholder="+1 (555) 000 0000"
                           value={formData.phoneNumber}
                           onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
                         />

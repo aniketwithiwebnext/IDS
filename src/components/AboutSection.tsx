@@ -52,7 +52,7 @@ export default function AboutSection() {
             </div>
 
             <p className="font-sans text-sm text-slate-700 leading-relaxed font-normal">
-              IDS — Impulse Digital Solutions — is a California-based digital powerhouse that integrates world-class web and app development, AI-driven SEO, cutting-edge AEO, full-service branding, digital marketing, lead generation systems, comprehensive media monitoring intelligence, IT infrastructure, and enterprise-grade cybersecurity into one seamless, unified growth solution.
+              IDS: Impulse Digital Solutions is a California based digital powerhouse that integrates world class web and app development, AI driven SEO, cutting edge AEO, full service branding, digital marketing, lead generation systems, comprehensive media monitoring intelligence, Creators & Influencers growth and enterprise grade cybersecurity into one seamless, unified growth solution.
             </p>
             <p className="font-sans text-sm text-slate-600 leading-relaxed font-normal">
               We are backed by a global team with active operations in both the United States and the UAE — giving our clients a rare competitive advantage: Silicon Valley innovation combined with deep international market expertise through our sister company, Impulse Growth Solutions, operating from the heart of Dubai. When you partner with IDS, you don't just get a vendor. You get an aggressive marketing and corporate expansion partner who secures your operations and safeguards your reputation as vigilantly as it matches your vision for global digital growth — across two of the world's most dynamic business markets.
@@ -140,7 +140,7 @@ export default function AboutSection() {
                 <div className="flex items-center gap-2.5 mb-3">
                   <span className="w-2.5 h-2.5 rounded-full bg-ids-magenta animate-pulse" />
                   <h3 className="font-display font-extrabold text-ids-magenta uppercase text-xs tracking-wider">
-                    UAE Operations - Dubai Production City Node
+                    UAE Operations: Dubai Production City Node
                   </h3>
                 </div>
 

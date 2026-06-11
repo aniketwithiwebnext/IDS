@@ -19,8 +19,8 @@ export default function UaeSpotlight() {
             <h2 className="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
               The World's Most Exciting <br />Gulf Markets Are Waiting For Your Brand.
             </h2>
-            <p className="font-sans text-xs sm:text-sm text-slate-300 leading-relaxed">
-              The UAE and GCC represent some of the most compelling business expansion opportunities available to US companies today. With favorable regional tax policies, low tax rates across special zones, strong foreign-ownership access, and a young, digitally-savvy consumer base with one of the world's highest GDP per capita — the Gulf is a powerful launchpad for global growth.
+            <p className="font-sans text-xs sm:text-sm text-slate-305 leading-relaxed">
+              The UAE and GCC represent some of the most compelling business expansion opportunities available to US companies today. With favorable regional tax policies, low tax rates across special zones, strong foreign ownership access, and a young, digitally savvy consumer base with one of the world's highest GDP per capita, the Gulf is a powerful launchpad for global growth.
             </p>
             <p className="font-sans text-xs sm:text-sm text-slate-400 leading-relaxed">
               IDS, through its sister company Impulse Growth Solutions in Dubai, offers US businesses a complete turnkey Gulf market entry solution — from initial market research and competitive intelligence to full digital marketing execution, branding, and ongoing performance management.
@@ -89,7 +89,7 @@ export default function UaeSpotlight() {
               <div className="mt-8 p-4 bg-indigo-500/5 border border-indigo-500/10 rounded-xl flex items-start gap-3">
                 <Coins className="w-5 h-5 text-indigo-400 shrink-0 mt-0.5" />
                 <p className="font-sans text-[11px] text-indigo-200/90 leading-relaxed">
-                  <strong>International Expansion Advantage:</strong> Combine Silicon Valley agility with favorable regional tax policies, strong foreign-ownership access, and high consumer margins.
+                  <strong>International Expansion Advantage:</strong> Combine Silicon Valley agility with favorable regional tax policies, strong foreign ownership access, and high consumer margins.
                 </p>
               </div>
 

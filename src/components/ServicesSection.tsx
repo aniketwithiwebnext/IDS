@@ -83,7 +83,7 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div id="services-header" className="text-center max-w-3xl mx-auto mb-20">
+        <div id="services-header" className="text-center max-w-5xl mx-auto mb-20">
           <span className="inline-flex px-4 py-1.5 bg-ids-purple/10 border border-ids-purple/30 text-ids-magenta text-[10px] font-bold uppercase tracking-wider rounded-full mb-4 font-mono">
             Strategic Solutions
           </span>
@@ -107,7 +107,8 @@ export default function ServicesSection() {
             return (
               <div 
                 key={pillar.id} 
-                className="relative p-8 sm:p-12 rounded-3xl bg-white/[0.015] border border-white/5 overflow-hidden transition-all duration-300 hover:border-white/10"
+                id={pillar.id}
+                className="relative p-8 sm:p-12 rounded-3xl bg-white/[0.015] border border-white/5 overflow-hidden transition-all duration-300 hover:border-white/10 scroll-mt-24"
               >
                 {/* Micro glow matching the pillar theme */}
                 <div className={`absolute top-0 inset-x-0 h-48 bg-gradient-to-b ${colors.bgGlow} opacity-30 pointer-events-none`} />
@@ -214,7 +215,7 @@ export default function ServicesSection() {
                 
                 {/* Identifier Label */}
                 <span className="text-[10px] font-mono font-bold text-ids-magenta uppercase tracking-widest bg-ids-magenta/15 px-3 py-1 rounded-full inline-flex">
-                  Service Specifications — ID {selectedService.id}
+                  Service Specifications: ID {selectedService.id}
                 </span>
 
                 {/* Primary Category Heading */}

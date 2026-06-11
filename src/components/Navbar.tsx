@@ -70,7 +70,9 @@ export default function Navbar({ activePage }: NavbarProps = {}) {
               <span>CA | DXB</span>
             </div>
             <a
-              href="#contact"
+              href="https://calendly.com/impulsedigitalsolutions"
+              target="_blank"
+              rel="noreferrer"
               className="relative inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-ids-purple to-ids-violet hover:from-ids-magenta hover:to-ids-purple text-sm font-semibold text-white shadow-[0_4px_15px_rgba(123,47,190,0.35)] hover:shadow-[0_4px_25px_rgba(192,38,211,0.5)] transition-all duration-300 hover:-translate-y-0.5 group active:scale-95"
             >
               <span>Free Strategy Call</span>
@@ -118,7 +120,9 @@ export default function Navbar({ activePage }: NavbarProps = {}) {
               <span>Dual Operations: California & Dubai</span>
             </div>
             <a
-              href="#contact"
+              href="https://calendly.com/impulsedigitalsolutions"
+              target="_blank"
+              rel="noreferrer"
               onClick={() => setMobileMenuOpen(false)}
               className="w-full text-center px-4 py-3 rounded-xl bg-gradient-to-r from-ids-purple to-ids-violet text-sm font-semibold text-white shadow-md active:scale-95 transition-all"
             >

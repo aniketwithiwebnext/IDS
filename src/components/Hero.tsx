@@ -105,7 +105,7 @@ export default function Hero() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-ids-magenta via-ids-purple to-ids-violet font-black">
                 Total Digital Growth
               </span> <br />
-              — Built, Secured and Taken Global.
+              , Built, Secured and Taken Global.
             </h1>
 
             {/* Subheadline description information list */}
@@ -116,7 +116,9 @@ export default function Hero() {
             {/* Action buttons trigger anchors */}
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto pt-4">
               <a
-                href="#contact"
+                href="https://calendly.com/impulsedigitalsolutions"
+                target="_blank"
+                rel="noreferrer"
                 className="w-full sm:w-auto relative group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-ids-purple to-ids-violet hover:from-ids-magenta hover:to-ids-purple font-bold text-white shadow-[0_5px_20px_rgba(123,47,190,0.35)] hover:shadow-[0_5px_30px_rgba(192,38,211,0.5)] transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap"
               >
                 <span>Book a Free Strategy Call</span>
@@ -205,6 +207,7 @@ export default function Hero() {
                     {/* Live network monitoring loop video */}
                     <video
                       src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-screens-with-security-data-and-graphs-41355-large.mp4"
+                      poster="/assets/images/cyber_security_center_1780689979069.png"
                       autoPlay
                       loop
                       muted
@@ -261,7 +264,7 @@ export default function Hero() {
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-[11px] text-slate-400 select-none">
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-ids-magenta animate-pulse" />
-            <span>A decade behind brands like DHL &middot; The Beauty secrets &middot; Starbucks &middot; Bloomingdale&rsquo;s</span>
+            <span>A decade behind brands like DHL &middot; The Beauty Secrets &middot; Starbucks &middot; Bloomingdale&rsquo;s</span>
           </div>
           <div className="text-slate-500 font-semibold uppercase tracking-wider text-[10px]">
             California &amp; Dubai

@@ -35,7 +35,7 @@ export default function ProblemSection() {
             <span>Why Most Businesses Fail Digitally</span>
           </span>
           <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
-            You Are Growing Online. <br />But Are You Growing Safely — And Are You Even Being Found?
+            You Are Growing Online. <br />But Are You Growing Safely, And Are You Even Being Found?
           </h2>
           <p className="font-sans text-slate-300 text-sm sm:text-base leading-relaxed mt-4">
             Most businesses today face multiple silent crises happening simultaneously. They invest heavily in websites, SEO, and digital marketing — but leave the back door wide open to cyber threats and data breaches. Their IT, security, and marketing teams work in silos, creating expensive gaps and missed opportunities. 
