@@ -197,7 +197,7 @@ export default function App() {
                         Creators & Influencers
                       </h3>
                       <p className="font-sans text-xs text-slate-300 mt-3 leading-relaxed font-normal">
-                        "Turn an audience into a business — then take it global."
+                        "Turn an audience into a business, then take it global."
                       </p>
                     </div>
                     <a

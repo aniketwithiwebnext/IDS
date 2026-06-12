@@ -141,7 +141,7 @@ export default function Logo({ className = "", height = 40, variant = "full" }: 
             </>
           )}
 
-          {/* — USA — - Row 4 with elegant violet color and dashed alignments */}
+          {/* USA - Row 4 with elegant violet color and dashed alignments */}
           {/* Decorative lines around USA */}
           <line x1="235" y1="108" x2="310" y2="108" stroke="#7B2FBE" strokeWidth="1.5" strokeOpacity="0.8" />
           <text

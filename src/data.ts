@@ -44,25 +44,25 @@ export const PROBLEMS: ProblemCard[] = [
   {
     id: 3,
     title: "You’re Invisible Where It Counts",
-    description: "Your customers are searching on Google and asking ChatGPT, Perplexity, and Copilot — while your brand is being discussed across social, news, and review sites. If you’re invisible in search and unaware of what’s being said, competitors win the clients you never even knew you lost.",
+    description: "Your customers are searching on Google and asking ChatGPT, Perplexity, and Copilot, while your brand is being discussed across social, news, and review sites. If you’re invisible in search and unaware of what’s being said, competitors win the clients you never even knew you lost.",
     icon: "EyeOff"
   },
   {
     id: 4,
     title: "Your Audience Isn’t Paying You What It Should",
-    description: "You’ve built a following, but content alone has stopped working. Brand deals plateau, the algorithm keeps shifting, and there’s no system turning your audience into predictable income — or opening doors to premium global markets like the Gulf.",
+    description: "You’ve built a following, but content alone has stopped working. Brand deals plateau, the algorithm keeps shifting, and there’s no system turning your audience into predictable income, or opening doors to premium global markets like the Gulf.",
     icon: "Bot"
   },
   {
     id: 5,
     title: "No UAE & GCC Market Strategy",
-    description: "The UAE and GCC represent one of the world’s fastest-growing digital markets — with a highly tax-efficient environment, 100% foreign ownership, and a premium consumer base actively seeking global brands. Most US businesses have no strategy to capture this extraordinary opportunity.",
+    description: "The UAE and GCC represent one of the world’s fastest-growing digital markets, featuring a highly tax-efficient environment, 100% foreign ownership, and a premium consumer base actively seeking global brands. Most US businesses have no strategy to capture this extraordinary opportunity.",
     icon: "Globe"
   },
   {
     id: 6,
     title: "Cyber Threats Are Escalating",
-    description: "With threats escalating daily, without active monitoring and security protection, you are already a target. The question is not whether you will be attacked — it is whether you will be ready when it happens.",
+    description: "With threats escalating daily, without active monitoring and security protection, you are already a target. The question is not whether you will be attacked, it is whether you will be ready when it happens.",
     icon: "ShieldAlert"
   }
 ];
@@ -78,8 +78,8 @@ export const PILLARS: Pillar[] = [
       {
         id: 1,
         name: "Brand Strategy & Development",
-        description: "We build complete brand systems — not just logos — including the strategy, identity, and voice that make your business instantly recognizable and impossible to ignore.",
-        whatItIs: "We build complete brand systems — not just logos — including the strategy, identity, and voice that make your business instantly recognizable and impossible to ignore.",
+        description: "We build complete brand systems (not just logos), including the strategy, identity, and voice that make your business instantly recognizable and impossible to ignore.",
+        whatItIs: "We build complete brand systems (not just logos), including the strategy, identity, and voice that make your business instantly recognizable and impossible to ignore.",
         included: [
           "Brand strategy & positioning",
           "Logo & full visual identity system",
@@ -89,7 +89,7 @@ export const PILLARS: Pillar[] = [
           "Collateral & templates",
           "Rebrand & brand refresh"
         ],
-        whyItMatters: "A strong brand lets you command premium pricing, build instant trust, and stay memorable — it's the foundation everything else is built on."
+        whyItMatters: "A strong brand lets you command premium pricing, build instant trust, and stay memorable: it's the foundation everything else is built on."
       },
       {
         id: 2,
@@ -118,7 +118,7 @@ export const PILLARS: Pillar[] = [
           "Retargeting",
           "Campaign management & A/B testing"
         ],
-        whyItMatters: "Predictable, measurable lead flow replaces guesswork — you know what each customer costs and can scale on demand."
+        whyItMatters: "Predictable, measurable lead flow replaces guesswork: you know what each customer costs and can scale on demand."
       },
       {
         id: 4,
@@ -134,7 +134,7 @@ export const PILLARS: Pillar[] = [
           "Local SEO",
           "Ongoing ranking reporting"
         ],
-        whyItMatters: "Organic search is compounding, high-intent traffic you don't pay per click for — durable visibility that builds over time."
+        whyItMatters: "Organic search is compounding, high-intent traffic you don't pay per click for: durable visibility that builds over time."
       },
       {
         id: 5,
@@ -163,7 +163,7 @@ export const PILLARS: Pillar[] = [
           "Crisis early warning",
           "Regular intelligence reports"
         ],
-        whyItMatters: "You can't manage what you can't see. One unaddressed story can do damage before you know it exists — monitoring lets you act before it spreads."
+        whyItMatters: "You can't manage what you can't see. One unaddressed story can do damage before you know it exists: monitoring lets you act before it spreads."
       }
     ]
   },
@@ -242,7 +242,7 @@ export const PILLARS: Pillar[] = [
           "Backup & recovery",
           "Ongoing administration"
         ],
-        whyItMatters: "A properly configured cloud environment is faster, safer, and cheaper to run — a misconfigured one is one of the most common ways businesses get breached."
+        whyItMatters: "A properly configured cloud environment is faster, safer, and cheaper to run, while a misconfigured one is one of the most common ways businesses get breached."
       },
       {
         id: 11,
@@ -277,8 +277,8 @@ export const PILLARS: Pillar[] = [
       {
         id: 13,
         name: "Digital Forensics & Incident Response",
-        description: "Rapid response when something goes wrong — containing incidents, investigating what happened, and getting you back to safe operations.",
-        whatItIs: "Rapid response when something goes wrong — containing incidents, investigating what happened, and getting you back to safe operations.",
+        description: "Rapid response when something goes wrong (containing incidents, investigating what happened, and getting you back to safe operations).",
+        whatItIs: "Rapid response when something goes wrong (containing incidents, investigating what happened, and getting you back to safe operations).",
         included: [
           "Incident containment",
           "Forensic investigation",
@@ -324,7 +324,7 @@ export const PILLARS: Pillar[] = [
           "Content pillar strategy",
           "Positioning statement"
         ],
-        whyItMatters: "A defined brand makes every post compound your authority instead of just filling a feed — and it's what attracts serious brand partners."
+        whyItMatters: "A defined brand makes every post compound your authority instead of just filling a feed, and it's what attracts serious brand partners."
       },
       {
         id: 16,
@@ -341,7 +341,7 @@ export const PILLARS: Pillar[] = [
       },
       {
         id: 17,
-        name: "Monetization Systems — Media Kit, Rate Card & Outreach",
+        name: "Monetization Systems: Media Kit, Rate Card & Outreach",
         description: "The business infrastructure that turns an audience into income.",
         whatItIs: "The business infrastructure that turns an audience into income.",
         included: [
@@ -465,7 +465,7 @@ export const HOW_IT_WORKS: HowItWorksStep[] = [
     id: "step-3",
     number: "03",
     title: "Custom Roadmap",
-    description: "A tailored action plan covering all pillars simultaneously — cybersecurity, development, SEO, AEO, branding, digital marketing, lead generation, media monitoring, and UAE market strategy — with clear timelines."
+    description: "A tailored action plan covering all pillars simultaneously (cybersecurity, development, SEO, AEO, branding, digital marketing, lead generation, media monitoring, and UAE market strategy) with clear timelines."
   },
   {
     id: "step-4",
@@ -495,7 +495,7 @@ export const WHY_IDS: WhyIDSPoint[] = [
   {
     id: 3,
     title: "Full Funnel Growth",
-    description: "From brand identity to lead generation to conversion — IDS manages your complete digital growth funnel. We don't just build presence, we actively fill your pipeline with qualified, hot buyer leads."
+    description: "From brand identity to lead generation to conversion, IDS manages your complete digital growth funnel. We don't just build presence, we actively fill your pipeline with qualified, hot buyer leads."
   },
   {
     id: 4,

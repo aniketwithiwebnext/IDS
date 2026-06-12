@@ -6,7 +6,7 @@ export default function SeoAeoSection() {
       id: 1,
       eyebrow: "FOUNDATION & DOMINANCE",
       title: "Infrastructure & Growth Engine",
-      text: "Infrastructure & Growth: Personal Brand Audit, Visual Identity, Content Strategy, and Built-for-Speed Web platforms — secured and hardened by design.",
+      text: "Infrastructure & Growth: Personal Brand Audit, Visual Identity, Content Strategy, and Built-for-Speed Web platforms, secured and hardened by design.",
       detail: "We align your public footprint with high-intent discovery points. By combining traditional Google search optimization (SEO) with cutting-edge Answer Engine Optimization (AEO), we ensure your personal brand is the primary recommended solution when potential clients queries ChatGPT, Perplexity, and Copilot.",
       bulletPoints: [
         "Interactive Brand Audit",
@@ -39,7 +39,7 @@ export default function SeoAeoSection() {
     {
       id: 3,
       eyebrow: "INTERNATIONAL ACCESS",
-      title: "The Dubai Bridge — Premium Access",
+      title: "The Dubai Bridge: Premium Access",
       text: "The Dubai Bridge: Direct introductions to premium Gulf & GCC brand networks, contract and partnership deal facilitation, and local presence via Impulse Growth Solutions in Dubai.",
       detail: "The GCC market offers some of the highest brand rates and influencer campaign budgets in the world today, accompanied by a tax-friendly structure. Through our physical operations and core network on the ground in Marina Office District, Dubai, we serve as your direct representative to premium lifestyle, retail, and corporate partners looking for international talent.",
       bulletPoints: [

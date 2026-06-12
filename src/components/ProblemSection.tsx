@@ -38,10 +38,10 @@ export default function ProblemSection() {
             You Are Growing Online. <br />But Are You Growing Safely, And Are You Even Being Found?
           </h2>
           <p className="font-sans text-slate-300 text-sm sm:text-base leading-relaxed mt-4">
-            Most businesses today face multiple silent crises happening simultaneously. They invest heavily in websites, SEO, and digital marketing — but leave the back door wide open to cyber threats and data breaches. Their IT, security, and marketing teams work in silos, creating expensive gaps and missed opportunities. 
+            Most businesses today face multiple silent crises happening simultaneously. They invest heavily in websites, SEO, and digital marketing, but leave the back door wide open to cyber threats and data breaches. Their IT, security, and marketing teams work in silos, creating expensive gaps and missed opportunities. 
           </p>
           <p className="font-sans text-slate-400 text-xs sm:text-sm leading-relaxed mt-3">
-            In 2026, even businesses that rank well on Google are completely invisible on AI platforms like ChatGPT, Perplexity, and Microsoft Copilot — where millions of buying decisions are now made every single day. And while all of this is happening, their brand is being discussed across social media, news sites, and review platforms — with zero awareness of what is being said. The result? Growth that is fragile, exposed, invisible, and unprotected where it matters most.
+            In 2026, even businesses that rank well on Google are completely invisible on AI platforms like ChatGPT, Perplexity, and Microsoft Copilot, where millions of buying decisions are now made every single day. And while all of this is happening, their brand is being discussed across social media, news sites, and review platforms, with zero awareness of what is being said. The result? Growth that is fragile, exposed, invisible, and unprotected where it matters most.
           </p>
         </div>
 

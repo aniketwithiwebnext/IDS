@@ -23,10 +23,10 @@ export default function UaeSpotlight() {
               The UAE and GCC represent some of the most compelling business expansion opportunities available to US companies today. With favorable regional tax policies, low tax rates across special zones, strong foreign ownership access, and a young, digitally savvy consumer base with one of the world's highest GDP per capita, the Gulf is a powerful launchpad for global growth.
             </p>
             <p className="font-sans text-xs sm:text-sm text-slate-400 leading-relaxed">
-              IDS, through its sister company Impulse Growth Solutions in Dubai, offers US businesses a complete turnkey Gulf market entry solution — from initial market research and competitive intelligence to full digital marketing execution, branding, and ongoing performance management.
+              IDS, through its sister company Impulse Growth Solutions in Dubai, offers US businesses a complete turnkey Gulf market entry solution, from initial market research and competitive intelligence to full digital marketing execution, branding, and ongoing performance management.
             </p>
             <p className="font-sans text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Our regional market monitoring capability — delivered through IGS in Dubai — gives brands entering the Gulf a unique intelligence advantage. We track consumer sentiment across all major platforms in the GCC market, providing insights that are completely invisible to US-only agencies and absolutely critical for any brand serious about the Gulf.
+              Our regional market monitoring capability (delivered through IGS in Dubai) gives brands entering the Gulf a unique intelligence advantage. We track consumer sentiment across all major platforms in the GCC market, providing insights that are completely invisible to US-only agencies and absolutely critical for any brand serious about the Gulf.
             </p>
  
             <div className="pt-4">

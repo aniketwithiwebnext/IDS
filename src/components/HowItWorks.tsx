@@ -19,7 +19,7 @@ export default function HowItWorks() {
             Simple Steps. Powerful Results.
           </h2>
           <p className="font-sans text-slate-300 text-sm">
-            A clear, proven path from first conversation to compounding growth — whether you’re a business, a brand expanding into new markets, or a creator going global.
+            A clear, proven path from first conversation to compounding growth, whether you’re a business, a brand expanding into new markets, or a creator going global.
           </p>
         </div>
 
