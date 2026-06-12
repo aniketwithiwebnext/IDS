@@ -104,8 +104,8 @@ export default function Hero() {
               One Team. <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-ids-magenta via-ids-purple to-ids-violet font-black">
                 Total Digital Growth
-              </span> <br />
-              , Built, Secured and Taken Global.
+              </span>, <br />
+              Built, Secured and Taken Global.
             </h1>
 
             {/* Subheadline description information list */}
@@ -199,7 +199,7 @@ export default function Hero() {
 
                     {/* Hud Coordinates */}
                     <div className="absolute bottom-2 left-3 bg-black/70 backdrop-blur-md border border-white/10 rounded px-2 py-0.5 font-mono text-[8px] text-white/80">
-                      SYS: SAC-HQ-01-SEC
+                      SYS: HB-HQ-01-SEC
                     </div>
                   </div>
                 ) : (

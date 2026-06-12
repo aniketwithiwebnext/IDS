@@ -118,8 +118,8 @@ export default function ContactSection() {
             <div className="space-y-4">
               <div className="p-5 bg-white/[0.02] border border-white/5 rounded-xl hover:border-ids-purple/20 transition-all duration-300">
                 <div className="text-slate-400 text-[10px] font-mono uppercase tracking-wider">USA Operations Hub</div>
-                <div className="text-white text-xs font-semibold mt-2 font-display">Covina, California</div>
-                <span className="text-[10px] text-slate-500 font-sans block mt-1">440 N Barranca Ave #3471, Covina, CA 91723</span>
+                <div className="text-white text-xs font-semibold mt-2 font-display">Huntington Beach, California</div>
+                <span className="text-[10px] text-slate-500 font-sans block mt-1">Huntington Beach, CA</span>
               </div>
 
               <div className="p-5 bg-white/[0.02] border border-white/5 rounded-xl hover:border-ids-magenta/20 transition-all duration-300">
@@ -129,7 +129,7 @@ export default function ContactSection() {
               </div>
 
               <div className="text-[9px] font-mono text-slate-500 text-center py-2 border border-white/5 rounded-xl bg-white/[0.01]">
-                Dual Headquartered in Covina, California & Dubai Production City
+                Dual Headquartered in Huntington Beach, California & Dubai Production City
               </div>
             </div>
 
@@ -194,7 +194,7 @@ export default function ContactSection() {
                       </div>
                       <div>
                         <span className="text-slate-500 text-[10px] block">DUAL EXPEDITE:</span>
-                        <span className="text-white text-xs">Sacramento & Dubai Core</span>
+                        <span className="text-white text-xs">Huntington Beach & Dubai Core</span>
                       </div>
                     </div>
 

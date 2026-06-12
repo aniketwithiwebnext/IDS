@@ -33,7 +33,7 @@ export default function Footer() {
               <span>US Operations Hub</span>
             </div>
             <p className="text-xs text-slate-400">California, USA</p>
-            <p className="font-mono text-[9px] text-slate-500">Covina Node (440 N Barranca Ave #3471, Covina, CA 91723)</p>
+            <p className="font-mono text-[9px] text-slate-500">Huntington Beach Node, CA</p>
           </div>
 
           <div className="space-y-2 font-sans sm:pl-4">

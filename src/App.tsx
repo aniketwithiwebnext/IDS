@@ -236,8 +236,15 @@ export default function App() {
             </section>
 
             {/* Immersive Home Exploration Hub */}
-            <section className="py-20 bg-ids-black relative border-t border-white/5">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section className="py-20 bg-ids-black relative border-t border-white/5 overflow-hidden">
+              {/* Dual-Market Skyline Background Image */}
+              <div 
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25 pointer-events-none mix-blend-screen"
+                style={{ backgroundImage: `url('/assets/images/ca_dxb_skyline_1780950361788.png')` }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-ids-black via-ids-black/80 to-ids-black pointer-events-none" />
+
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                   <span className="font-mono text-[10px] font-bold text-ids-magenta uppercase tracking-widest bg-ids-magenta/15 px-3 py-1 rounded-full border border-ids-magenta/30">
                     Explore Our Ecosystem
@@ -245,7 +252,7 @@ export default function App() {
                   <h2 className="font-display font-black text-3xl sm:text-4xl text-white tracking-tight mt-4">
                     Your Complete Growth Ecosystem
                   </h2>
-                  <p className="font-sans text-xs sm:text-sm text-slate-400 mt-3 leading-relaxed">
+                  <p className="font-sans text-xs sm:text-sm text-slate-300 mt-3 leading-relaxed">
                     IDS bridges secure, high-tech infrastructure with elite brand monetization and dual-market expansion. Select a pillar to explore its capabilities.
                   </p>
                 </div>
@@ -254,15 +261,15 @@ export default function App() {
                   {/* Card 1: About Us */}
                   <a
                     href="#about"
-                    className="group p-6 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-ids-purple/30 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_10px_40px_rgba(123,47,190,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[220px]"
+                    className="group p-6 rounded-2xl bg-slate-950/50 backdrop-blur-md border border-white/10 hover:border-ids-purple/40 shadow-[0_4px_30px_rgba(0,0,0,0.4)] hover:shadow-[0_10px_40px_rgba(123,47,190,0.15)] hover:bg-slate-950/70 transition-all duration-300 flex flex-col justify-between min-h-[220px]"
                   >
                     <div>
                       <span className="font-mono text-[10px] text-ids-purple font-bold block mb-2">01 / BRAND</span>
                       <h3 className="font-display font-bold text-xl text-white group-hover:text-ids-purple transition-colors">
                         Dual-Market Identity
                       </h3>
-                      <p className="font-sans text-xs text-slate-400 mt-2 leading-relaxed">
-                        Understand our dual Operations center spanning Covina, California & Dubai Production City. One cohesive brand intelligence.
+                      <p className="font-sans text-xs text-slate-300 mt-2 leading-relaxed">
+                        Understand our dual Operations center spanning Huntington Beach, California & Dubai Production City. One cohesive brand intelligence.
                       </p>
                     </div>
                     <div className="flex items-center gap-2 mt-6 text-xs text-slate-300 group-hover:text-ids-purple transition-all font-semibold">
@@ -274,14 +281,14 @@ export default function App() {
                   {/* Card 2: The Challenge */}
                   <a
                     href="#challenge"
-                    className="group p-6 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-ids-magenta/30 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_10px_40px_rgba(192,38,211,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[220px]"
+                    className="group p-6 rounded-2xl bg-slate-950/50 backdrop-blur-md border border-white/10 hover:border-ids-magenta/40 shadow-[0_4px_30px_rgba(0,0,0,0.4)] hover:shadow-[0_10px_40px_rgba(192,38,211,0.15)] hover:bg-slate-950/70 transition-all duration-300 flex flex-col justify-between min-h-[220px]"
                   >
                     <div>
                       <span className="font-mono text-[10px] text-ids-magenta font-bold block mb-2">02 / PROBLEM</span>
                       <h3 className="font-display font-bold text-xl text-white group-hover:text-ids-magenta transition-colors">
                         The Multi-Vendor Threat
                       </h3>
-                      <p className="font-sans text-xs text-slate-400 mt-2 leading-relaxed">
+                      <p className="font-sans text-xs text-slate-300 mt-2 leading-relaxed">
                         Managing 5-6 fragmented agencies creates alignment gaps and security vulnerabilities. Explore our unified response.
                       </p>
                     </div>
@@ -294,14 +301,14 @@ export default function App() {
                   {/* Card 3: Strategic Services */}
                   <a
                     href="#services"
-                    className="group p-6 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-ids-purple/30 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_10px_40px_rgba(123,47,190,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[220px]"
+                    className="group p-6 rounded-2xl bg-slate-950/50 backdrop-blur-md border border-white/10 hover:border-ids-purple/40 shadow-[0_4px_30px_rgba(0,0,0,0.4)] hover:shadow-[0_10px_40px_rgba(123,47,190,0.15)] hover:bg-slate-950/70 transition-all duration-300 flex flex-col justify-between min-h-[220px]"
                   >
                     <div>
                       <span className="font-mono text-[10px] text-ids-purple font-bold block mb-2">03 / SOLUTIONS</span>
                       <h3 className="font-display font-bold text-xl text-white group-hover:text-ids-purple transition-colors">
                         The Five Strategic Pillars
                       </h3>
-                      <p className="font-sans text-xs text-slate-400 mt-2 leading-relaxed">
+                      <p className="font-sans text-xs text-slate-300 mt-2 leading-relaxed">
                         Browse our comprehensive elite services, including custom software delivery, SEO + AEO dominance, and cybersecurity-first setups.
                       </p>
                     </div>
@@ -314,14 +321,14 @@ export default function App() {
                   {/* Card 4: Creators & Influencers */}
                   <a
                     href="#creators"
-                    className="group p-6 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-ids-magenta/30 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_10px_40px_rgba(192,38,211,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[220px]"
+                    className="group p-6 rounded-2xl bg-slate-950/50 backdrop-blur-md border border-white/10 hover:border-ids-magenta/40 shadow-[0_4px_30px_rgba(0,0,0,0.4)] hover:shadow-[0_10px_40px_rgba(192,38,211,0.15)] hover:bg-slate-950/70 transition-all duration-300 flex flex-col justify-between min-h-[220px]"
                   >
                     <div>
                       <span className="font-mono text-[10px] text-ids-magenta font-bold block mb-2">04 / AGENCY</span>
                       <h3 className="font-display font-bold text-xl text-white group-hover:text-ids-magenta transition-colors">
                         Global Creator Growth
                       </h3>
-                      <p className="font-sans text-xs text-slate-400 mt-2 leading-relaxed">
+                      <p className="font-sans text-xs text-slate-300 mt-2 leading-relaxed">
                         Professionalize your influence. Secure lightning-fast portfolios, automate rate cards, and unlock GCC brand partnerships.
                       </p>
                     </div>
@@ -334,14 +341,14 @@ export default function App() {
                   {/* Card 5: Our Process */}
                   <a
                     href="#process"
-                    className="group p-6 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-ids-purple/30 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_10px_40px_rgba(123,47,190,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[220px]"
+                    className="group p-6 rounded-2xl bg-slate-950/50 backdrop-blur-md border border-white/10 hover:border-ids-purple/40 shadow-[0_4px_30px_rgba(0,0,0,0.4)] hover:shadow-[0_10px_40px_rgba(123,47,190,0.15)] hover:bg-slate-950/70 transition-all duration-300 flex flex-col justify-between min-h-[220px]"
                   >
                     <div>
                       <span className="font-mono text-[10px] text-ids-purple font-bold block mb-2">05 / TIMELINE</span>
                       <h3 className="font-display font-bold text-xl text-white group-hover:text-ids-purple transition-colors">
                         90-Day Execution Roadmap
                       </h3>
-                      <p className="font-sans text-xs text-slate-400 mt-2 leading-relaxed">
+                      <p className="font-sans text-xs text-slate-300 mt-2 leading-relaxed">
                         How the dual USA-UAE setup goes from diagnostic audit map to active security monitoring and scaled brand revenue.
                       </p>
                     </div>
@@ -354,14 +361,14 @@ export default function App() {
                   {/* Card 6: Gulf Spotlight */}
                   <a
                     href="#uae-spotlight"
-                    className="group p-6 rounded-2xl bg-white/[0.01] border border-white/5 hover:border-ids-magenta/30 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_10px_40px_rgba(192,38,211,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[220px]"
+                    className="group p-6 rounded-2xl bg-slate-950/50 backdrop-blur-md border border-white/10 hover:border-ids-magenta/40 shadow-[0_4px_30px_rgba(0,0,0,0.4)] hover:shadow-[0_10px_40px_rgba(192,38,211,0.15)] hover:bg-slate-950/70 transition-all duration-300 flex flex-col justify-between min-h-[220px]"
                   >
                     <div>
                       <span className="font-mono text-[10px] text-ids-magenta font-bold block mb-2">06 / REGION</span>
                       <h3 className="font-display font-bold text-xl text-white group-hover:text-ids-magenta transition-colors">
                         Gulf Expansion Opportunity
                       </h3>
-                      <p className="font-sans text-xs text-slate-400 mt-2 leading-relaxed">
+                      <p className="font-sans text-xs text-slate-300 mt-2 leading-relaxed">
                         Enter the world's fastest growing consumer market with turnkey research, local brand access, and cross-border agility.
                       </p>
                     </div>
@@ -406,13 +413,8 @@ export default function App() {
         )}
 
         {activePage === "services" && (
-          <div className="pb-16">
-            <PageHeader
-              title="Enterprise Service Deliverables"
-              subtitle="Explore our five master pillars spanning digital infrastructure engineering, total search dominance (SEO + AEO), list growth, and complete brand positioning."
-              category="Elite Suite"
-            />
-            <div className="mt-8 space-y-16">
+          <div className="pt-20 pb-16">
+            <div className="space-y-16">
               <ServicesSection />
               <TechLabShowcase />
               <SeoAeoSection />

@@ -63,7 +63,7 @@ export default function AboutSection() {
                 href="#contact"
                 className="group relative inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-xs font-mono font-bold text-white transition-all duration-300 shadow-md hover:shadow-lg active:scale-95"
               >
-                <span>Discover Our Full Story</span>
+                <span>Book a free call</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
             </div>
@@ -98,7 +98,7 @@ export default function AboutSection() {
                     className="w-full h-full object-cover transition-transform duration-500 scale-100 group-hover:scale-105"
                   />
                   <div className="absolute top-2 left-2 bg-slate-950/80 px-2 py-0.5 rounded text-[8px] font-mono text-[#22c55e]">
-                    SECURE NODE: SAC-CA-HQ
+                    SECURE NODE: HB-CA-HQ
                   </div>
                 </div>
                 
@@ -121,7 +121,7 @@ export default function AboutSection() {
               </div>
               
               <div className="pt-6 border-t border-slate-200 mt-8 text-[9px] font-mono text-slate-400 relative z-10">
-                HO: SACRAMENTO, CALIFORNIA
+                HO: HUNTINGTON BEACH, CALIFORNIA
               </div>
             </div>
 
