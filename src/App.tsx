@@ -12,7 +12,6 @@ import ProblemSection from "./components/ProblemSection";
 import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
 import TechLabShowcase from "./components/TechLabShowcase";
-import SeoAeoSection from "./components/SeoAeoSection";
 import HowItWorks from "./components/HowItWorks";
 import WhyIds from "./components/WhyIds";
 import UaeSpotlight from "./components/UaeSpotlight";
@@ -417,7 +416,6 @@ export default function App() {
             <div className="space-y-16">
               <ServicesSection />
               <TechLabShowcase />
-              <SeoAeoSection />
             </div>
           </div>
         )}
