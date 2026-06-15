@@ -183,6 +183,64 @@ export default function AboutSection() {
           </div>
 
         </div>
+
+        {/* Brand Foundation Inset from Slide 4 of Guidelines */}
+        <div className="mt-24 pt-16 border-t border-slate-200">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="font-mono text-[10px] font-bold text-ids-purple uppercase tracking-widest bg-ids-purple/10 px-3 py-1 rounded-full border border-ids-purple/20">
+              Brand Foundation
+            </span>
+            <h3 className="font-display font-black text-2xl sm:text-3xl text-slate-900 tracking-tight mt-3">
+              Who We Are. What We Stand For.
+            </h3>
+            <p className="font-sans text-xs sm:text-sm text-slate-505 mt-2">
+              Our core beliefs and corporate alignment built for premium international execution.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            {/* MISSION */}
+            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-md transition-all duration-300">
+              <span className="font-mono text-[9px] text-[#7B2FBE] font-bold tracking-wider block mb-2 uppercase">MISSION</span>
+              <p className="font-sans text-xs text-slate-700 leading-relaxed font-normal">
+                To empower businesses with integrated digital solutions that build strength, ensure security, drive growth, and unlock global opportunities.
+              </p>
+            </div>
+
+            {/* VISION */}
+            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-md transition-all duration-300">
+              <span className="font-mono text-[9px] text-[#7B2FBE] font-bold tracking-wider block mb-2 uppercase">VISION</span>
+              <p className="font-sans text-xs text-slate-700 leading-relaxed font-normal">
+                To be the most trusted digital partner for businesses in the U.S., UAE, and across the GCC.
+              </p>
+            </div>
+
+            {/* VALUES */}
+            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-md transition-all duration-300">
+              <span className="font-mono text-[9px] text-[#7B2FBE] font-bold tracking-wider block mb-2 uppercase">VALUES</span>
+              <p className="font-sans text-xs text-slate-700 leading-relaxed font-normal">
+                Excellence · Integrity · Innovation · Security · Accountability · Growth Mindset · Client Success
+              </p>
+            </div>
+
+            {/* AUDIENCE */}
+            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-md transition-all duration-300">
+              <span className="font-mono text-[9px] text-[#7B2FBE] font-bold tracking-wider block mb-2 uppercase">AUDIENCE</span>
+              <p className="font-sans text-xs text-slate-700 leading-relaxed font-normal">
+                Forward-thinking businesses, entrepreneurs, and enterprises seeking a reliable digital partner.
+              </p>
+            </div>
+
+            {/* PRESENCE */}
+            <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 hover:shadow-md transition-all duration-300">
+              <span className="font-mono text-[9px] text-[#7B2FBE] font-bold tracking-wider block mb-2 uppercase">PRESENCE</span>
+              <p className="font-sans text-xs text-slate-700 leading-relaxed font-normal">
+                U.S. based. Regional presence in the UAE and across the GCC.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
